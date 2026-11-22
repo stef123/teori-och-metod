@@ -292,3 +292,15 @@ p.nivastyrd, span.nivastyrd { background: var(--niva-yta); border: 1px solid var
 .nivablock.n1 { border-left-color: var(--n1); } .nivablock.n2 { border-left-color: var(--n2); } .nivablock.n3 { border-left-color: var(--n3); } .nivablock.n4 { border-left-color: var(--n4); }
 .nivablock .tabell, .nivablock table { background: var(--yta); }
 @media (max-width: 600px) { .nivablock { padding: 14px 14px 6px; } }
+/* Beskrivande text i nivåväljaren (fast storlek) */
+#nivapilot { width: 222px; padding: 10px 12px 12px; }
+#nivapilot .pilot-rubrik { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--niva-etikett); margin-bottom: 6px; }
+#nivapilot .pilot-rad { padding: 0; gap: 6px; }
+#nivapilot .pilot-rad button { flex: 1; min-width: 0; }
+#nivapilot .pilot-text { margin-top: 8px; font-size: .78rem; line-height: 1.35; color: var(--dampad); height: 4.6em; overflow: hidden; }
+#nivapilot .pilot-text b { display: block; color: var(--black); font-family: var(--rubrik); font-size: .92rem; }
+@media (max-width: 600px) {
+  #nivapilot { width: 176px; padding: 8px 10px 10px; }
+  #nivapilot .pilot-text span { display: none; }
+  #nivapilot .pilot-text { height: auto; margin-top: 6px; }
+}

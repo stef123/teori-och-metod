@@ -435,7 +435,8 @@
   // ---------- Global förklaringsnivå (flytande reglage) ----------
   function pilotHtml() {
     const nv = NIVAER[state.niva - 1];
-    return `<div class="pilot-rad"><span class="pilot-etikett">Nivå</span>${NIVAER.map((x) => `<button type="button" data-gniva="${x.n}" class="${x.n === state.niva ? 'vald' : ''}" aria-pressed="${x.n === state.niva}" title="Nivå ${x.r}: ${esc(x.namn)}">${x.r}</button>`).join('')}</div>`;
+    return `<div class="pilot-rubrik">Förklaringsnivå</div><div class="pilot-rad">${NIVAER.map((x) => `<button type="button" data-gniva="${x.n}" class="${x.n === state.niva ? 'vald' : ''}" aria-pressed="${x.n === state.niva}" title="Nivå ${x.r}: ${esc(x.namn)}">${x.r}</button>`).join('')}</div>
+      <div class="pilot-text" aria-live="polite"><b>${esc(nv.namn)}</b><span>${esc(nv.hjalp)}</span></div>`;
   }
   function byggPilot() {
     const el = document.createElement('div');
