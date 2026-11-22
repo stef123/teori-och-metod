@@ -13,7 +13,7 @@ sammanfattning: Undersöker hur tekniken formar hur vi uppfattar och handlar i v
 nyckelord: [fenomenologi, mediering, Ihde, Verbeek, förkroppsligande, hermeneutik, multistabilitet, teknikfilosofi, etik]
 omraden: [Människa–datorinteraktion, E-hälsa, AI och automatisering, Medier och vardagsliv, Systemutveckling]
 metoder: [fenomenologisk-metod, intervju, etnografi, fallstudie]
-relaterade: [embodied-interaction, heidegger, affordanser, ant, designansatser]
+relaterade: [embodied-interaction, ready-to-hand, affordanser, ant, designansatser]
 referenser:
   - forfattare: Ihde, D.
     ar: 1990
@@ -78,7 +78,7 @@ Peter-Paul Verbeek byggde vidare med begreppet **teknisk mediering**: tekniken f
 
 ## Nivå 4
 
-- **"Post"** betyder att man lämnar klassisk fenomenologis sökande efter en ren, universell erfarenhet och istället studerar konkreta tekniker i konkreta situationer, empiriskt och utan stor teknikpessimism (till skillnad från Heidegger, se [[heidegger]]).
+- **"Post"** betyder att man lämnar klassisk fenomenologis sökande efter en ren, universell erfarenhet och istället studerar konkreta tekniker i konkreta situationer, empiriskt och utan stor teknikpessimism (till skillnad från Heidegger, se [[ready-to-hand]]).
 - **Relation till [[ant]]:** Båda ser tekniken som aktiv. ANT är "platt" och symmetrisk, medan postfenomenologi utgår från människans erfarenhet. Det gör den mer lämpad för upplevelsestudier, men mindre för stora nätverk.
 - **Kritik:** Analysen kan stanna vid den enskilda användaren och säga lite om makt, ekonomi och politik. Kritiker menar också att de fyra relationerna är svåra att avgränsa i nya tekniker som AI, där relationerna ofta blandas.
 - **Vidareutveckling:** Verbeek har föreslagit *cyborgrelationer* (sammansmältning, t.ex. implantat) och *immersion* (smarta miljöer). Postfenomenologi används allt mer för att analysera AI, självspårning och VR.

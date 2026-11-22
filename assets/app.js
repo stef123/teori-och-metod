@@ -472,6 +472,8 @@
     const [vag, qs] = (location.hash.slice(1) || '/').split('?');
     const q = new URLSearchParams(qs || '');
     const d = vag.split('/').filter(Boolean);
+    const ALIAS = { bourdieu: 'praktikteori', goffman: 'dramaturgi', heidegger: 'ready-to-hand' };
+    if (d[0] === 'teori' && ALIAS[d[1]]) { location.replace(`#/teori/${ALIAS[d[1]]}${qs ? '?' + qs : ''}`); return; }
     let html, efter = null, titel = '';
     if (!d.length) html = sidHem();
     else if (d[0] === 'teorier' || d[0] === 'metoder') { const typ = d[0] === 'teorier' ? 'teori' : 'metod'; html = sidLista(typ, q); efter = () => kopplaLista(typ); titel = d[0] === 'teorier' ? 'Teorier' : 'Metoder'; }

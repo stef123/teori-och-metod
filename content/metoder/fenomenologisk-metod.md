@@ -8,7 +8,7 @@ passar: Du vill förstå hur ett fenomen upplevs, vad det är att erfara något,
 sammanfattning: Kvalitativ metod som söker beskriva och förstå hur människor upplever ett fenomen i sin levda erfarenhet, t.ex. hur det är att arbeta med ett system eller leva med en hälsoapp.
 nyckelord: [fenomenologi, levd erfarenhet, livsvärld, epoché, reduktion, essens, beskrivande, tolkande, hermeneutisk, van Manen, Giorgi]
 omraden: [Människa–datorinteraktion, E-hälsa, Utbildning och lärplattformar, Medier och vardagsliv, Systemimplementering]
-teorier: [postfenomenologi, embodied-interaction, heidegger]
+teorier: [postfenomenologi, embodied-interaction, ready-to-hand]
 relaterade: [ipa, intervju, etnografi]
 referenser:
   - forfattare: van Manen, M.

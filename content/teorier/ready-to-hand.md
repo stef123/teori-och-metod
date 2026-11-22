@@ -1,8 +1,8 @@
 ---
-id: heidegger
+id: ready-to-hand
 namn: Readiness-to-hand and Breakdown
 kortnamn: Ready-to-hand & Breakdown
-svnamn: Redo-till-hands och sammanbrott (Heidegger)
+svnamn: Redo-till-hands och sammanbrott
 upphov: Heidegger (1927); Winograd & Flores (1986)
 ar: 1986
 paradigm: [Tolkande]

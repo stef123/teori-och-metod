@@ -13,7 +13,7 @@ sammanfattning: Förklarar hur människors handlingar både formas av och åters
 nyckelord: [struktur, aktör, dualitet, praktik, technology-in-practice, AST]
 omraden: [Organisationsförändring, Systemimplementering, Samarbete och CSCW, Digital transformation]
 metoder: [fallstudie, intervju, etnografi]
-relaterade: [sociomaterialitet, aktivitetsteori, ant, bourdieu, symbolisk-interaktionism]
+relaterade: [sociomaterialitet, aktivitetsteori, ant, praktikteori, symbolisk-interaktionism]
 referenser:
   - forfattare: Giddens, A.
     ar: 1984

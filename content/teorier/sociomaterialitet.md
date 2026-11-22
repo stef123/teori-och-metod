@@ -13,7 +13,7 @@ sammanfattning: Ett perspektiv som ser det sociala och det materiella (t.ex. tek
 nyckelord: [sammanflätning, materialitet, praktik, performativitet, imbrication, agentiell realism]
 omraden: [Organisationsförändring, Digital transformation, AI och automatisering, Samarbete och CSCW]
 metoder: [etnografi, fallstudie, intervju]
-relaterade: [strukturation, ant, heidegger]
+relaterade: [strukturation, ant, ready-to-hand]
 referenser:
   - forfattare: Orlikowski, W. J.
     ar: 2007

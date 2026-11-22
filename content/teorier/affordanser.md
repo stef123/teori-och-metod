@@ -13,7 +13,7 @@ sammanfattning: Beskriver vilka handlingsmöjligheter en teknik erbjuder en viss
 nyckelord: [affordans, handlingsmöjlighet, design, signifier, sociala medier, synlighet, Gibson, Norman]
 omraden: [Människa–datorinteraktion, Sociala medier och plattformar, Samarbete och CSCW, Systemutveckling, Medier och vardagsliv]
 metoder: [intervju, enkat, etnografi, designvetenskap]
-relaterade: [sociomaterialitet, strukturation, distribuerad-kognition, designansatser, goffman, context-collapse]
+relaterade: [sociomaterialitet, strukturation, distribuerad-kognition, designansatser, dramaturgi, context-collapse]
 referenser:
   - forfattare: Gibson, J. J.
     ar: 1979

@@ -8,7 +8,7 @@ passar: Du vill skapa och utvärdera en IT-artefakt som löser ett verkligt prob
 sammanfattning: Forskning där man skapar en artefakt, till exempel ett system, en modell eller en metod, och utvärderar hur väl den löser ett problem.
 nyckelord: [artefakt, design, prototyp, utvärdering, Hevner, Peffers, DSRM]
 omraden: [Systemutveckling, Människa–datorinteraktion, E-hälsa, AI och automatisering, Utbildning och lärplattformar]
-teorier: [designansatser, affordanser, embodied-interaction, heidegger, social-presence]
+teorier: [designansatser, affordanser, embodied-interaction, ready-to-hand, social-presence]
 relaterade: [aktionsforskning]
 referenser:
   - forfattare: Hevner, A. R., March, S. T., Park, J. & Ram, S.

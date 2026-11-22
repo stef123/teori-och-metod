@@ -13,7 +13,7 @@ sammanfattning: Beskriver hur sociala medier slår ihop publiker som annars är 
 nyckelord: [kontextkollaps, föreställd publik, självpresentation, integritet, sociala medier, publik, Marwick, boyd, Meyrowitz]
 omraden: [Sociala medier och plattformar, Medier och vardagsliv, Samarbete och CSCW, Människa–datorinteraktion]
 metoder: [intervju, enkat, etnografi]
-relaterade: [goffman, affordanser, medialisering, parasocial-interaction]
+relaterade: [dramaturgi, affordanser, medialisering, parasocial-interaction]
 referenser:
   - forfattare: Marwick, A. E. & boyd, d.
     ar: 2011
@@ -53,7 +53,7 @@ När du lägger ut något på sociala medier är det ofta precis så. Alla olika
 
 ## Nivå 2
 
-I vardagen håller vi olika publiker åtskilda: vi beter oss olika i skolan, hemma och på jobbet (jfr [[goffman]]). Joshua Meyrowitz (1985) visade redan hur tv suddade ut sådana gränser. Alice Marwick och danah boyd (2011) beskrev hur sociala medier gör det i ännu högre grad.
+I vardagen håller vi olika publiker åtskilda: vi beter oss olika i skolan, hemma och på jobbet (jfr [[dramaturgi]]). Joshua Meyrowitz (1985) visade redan hur tv suddade ut sådana gränser. Alice Marwick och danah boyd (2011) beskrev hur sociala medier gör det i ännu högre grad.
 
 | Begrepp | Betyder |
 |---|---|

@@ -8,7 +8,7 @@ passar: Du vill mäta hur vanligt något är eller testa samband mellan variable
 sammanfattning: Systematisk insamling av standardiserade svar från ett större antal personer, ofta för att testa hypoteser härledda från teori.
 nyckelord: [enkät, survey, Likert, mätskala, urval, hypotes, SEM, PLS, validitet]
 omraden: [Teknikacceptans, E-handel och digitala tjänster, Utvärdering av IS, E-hälsa, Utbildning och lärplattformar, Digital förvaltning, Sociala medier och plattformar, Medier och vardagsliv, Digital ojämlikhet]
-teorier: [tam, utaut, delone-mclean, diffusion, uses-and-gratifications, affordanser, bourdieu, medialisering, social-presence, parasocial-interaction, context-collapse]
+teorier: [tam, utaut, delone-mclean, diffusion, uses-and-gratifications, affordanser, praktikteori, medialisering, social-presence, parasocial-interaction, context-collapse]
 relaterade: [intervju]
 referenser:
   - forfattare: Pinsonneault, A. & Kraemer, K. L.

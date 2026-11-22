@@ -13,7 +13,7 @@ sammanfattning: Menar att människor handlar utifrån den mening saker har för 
 nyckelord: [mening, interaktion, symbol, tolkning, jaget, Mead, Blumer, Chicagoskolan, grounded theory]
 omraden: [Systemimplementering, Organisationsförändring, Samarbete och CSCW, Sociala medier och plattformar, E-hälsa]
 metoder: [etnografi, intervju, fallstudie]
-relaterade: [goffman, scot, strukturation, domesticering]
+relaterade: [dramaturgi, scot, strukturation, domesticering]
 referenser:
   - forfattare: Blumer, H.
     ar: 1969
@@ -73,8 +73,8 @@ Traditionen kommer från **Chicagoskolan** i sociologi. George Herbert Mead besk
 
 ## Nivå 4
 
-- **Släktskap:** Närliggande perspektiv är [[goffman]], [[scot]] (där olika grupper tolkar en teknik olika) och teknologiska ramar (*technological frames*, Orlikowski & Gash). Strukturationsteori ([[strukturation]]) delar fokus på tolkning men lägger till regler och resurser.
-- **Kritik: för lite struktur och makt.** Kritiker menar att traditionen betonar mikronivån och lokala tolkningar, och säger lite om ekonomi, klass och makt. Bourdieu ([[bourdieu]]) och kritiska teorier kompletterar här.
+- **Släktskap:** Närliggande perspektiv är [[dramaturgi]], [[scot]] (där olika grupper tolkar en teknik olika) och teknologiska ramar (*technological frames*, Orlikowski & Gash). Strukturationsteori ([[strukturation]]) delar fokus på tolkning men lägger till regler och resurser.
+- **Kritik: för lite struktur och makt.** Kritiker menar att traditionen betonar mikronivån och lokala tolkningar, och säger lite om ekonomi, klass och makt. Bourdieu ([[praktikteori]]) och kritiska teorier kompletterar här.
 - **Teknikens roll:** Symbolisk interaktionism kan ge tekniken en passiv roll, som bara bärare av mening. [[ant]] och [[sociomaterialitet]] har kritiserat detta.
 - **Sociala medier:** Begrepp som "spegeljaget" (Cooley) och "den generaliserade andre" (Mead) har fått nytt liv i studier av likes, kommentarer och identitetsarbete.
 

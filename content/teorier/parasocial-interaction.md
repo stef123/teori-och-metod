@@ -13,7 +13,7 @@ sammanfattning: Beskriver den ensidiga känsla av relation som publiken kan få 
 nyckelord: [parasocial interaktion, parasocial relation, influencer, streamer, kändis, intimitet, publik, AI-kompanjon, fandom]
 omraden: [Sociala medier och plattformar, Medier och vardagsliv, E-handel och digitala tjänster, AI och automatisering]
 metoder: [enkat, intervju, etnografi]
-relaterade: [social-presence, uses-and-gratifications, goffman, context-collapse]
+relaterade: [social-presence, uses-and-gratifications, dramaturgi, context-collapse]
 referenser:
   - forfattare: Horton, D. & Wohl, R. R.
     ar: 1956
@@ -75,7 +75,7 @@ Parasociala relationer är inte konstiga eller sjukliga. De är en vanlig del av
 - **Är det fortfarande "para"?** När influencers svarar på kommentarer och fans kan skapa innehåll tillsammans med idoler blir gränsen mellan parasocialt och socialt otydlig. Vissa forskare talar därför om semi-sociala relationer.
 - **Positiva och negativa sidor:** Parasociala relationer kan minska ensamhet och ge förebilder, men också leda till överdriven tidsanvändning, kommersiell påverkan eller sårbarhet när relationen upphör ("parasocialt uppbrott").
 - **Etik och design:** Plattformar och AI-tjänster kan designas för att förstärka parasocial bindning för att öka engagemang, vilket väcker etiska frågor, särskilt för barn och unga.
-- **Teoretisk inramning:** Teorin kombineras ofta med [[uses-and-gratifications]] (vilka behov fyller relationen?) eller [[goffman]] (hur skapar influencern autenticitet?).
+- **Teoretisk inramning:** Teorin kombineras ofta med [[uses-and-gratifications]] (vilka behov fyller relationen?) eller [[dramaturgi]] (hur skapar influencern autenticitet?).
 
 ## Exempel: så hjälper teorin dig att förstå
 

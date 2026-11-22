@@ -13,7 +13,7 @@ sammanfattning: Menar att interaktion med datorer alltid sker av kroppar i fysis
 nyckelord: [förkroppsligande, tangible interaction, social computing, kontext, mening, koppling, fenomenologi, Dourish]
 omraden: [Människa–datorinteraktion, Systemutveckling, Samarbete och CSCW, Utbildning och lärplattformar]
 metoder: [designvetenskap, etnografi, fenomenologisk-metod, intervju]
-relaterade: [heidegger, postfenomenologi, distribuerad-kognition, affordanser, aktivitetsteori]
+relaterade: [ready-to-hand, postfenomenologi, distribuerad-kognition, affordanser, aktivitetsteori]
 referenser:
   - forfattare: Dourish, P.
     ar: 2001
@@ -76,7 +76,7 @@ Tre nyckelbegrepp:
 
 **Kontext är inte data.** Dourish (2004) kritiserade idén att kontext är ett antal variabler (plats, tid, aktivitet) som sensorer kan mäta. Kontext är snarare något som *uppstår* i interaktion och förhandlas av deltagarna.
 
-**Designimplikationer:** Låt användare själva skapa och förändra mening. Stöd att tekniken kan "försvinna" i handlingen (jfr *ready-to-hand* i [[heidegger]]). Klemmer m.fl. (2006) och Hornecker och Buur (2006) har gjort principerna mer konkreta för fysisk och social interaktion.
+**Designimplikationer:** Låt användare själva skapa och förändra mening. Stöd att tekniken kan "försvinna" i handlingen (jfr *ready-to-hand* i [[ready-to-hand]]). Klemmer m.fl. (2006) och Hornecker och Buur (2006) har gjort principerna mer konkreta för fysisk och social interaktion.
 
 **Typisk studie:** Designforskning där prototyper av fysiska eller sociala gränssnitt utvecklas och studeras i användning, ofta med videoobservation och etnografi.
 

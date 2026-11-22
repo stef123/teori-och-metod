@@ -1,8 +1,8 @@
 ---
-id: bourdieu
-namn: Field, Capital and Habitus
-kortnamn: Bourdieu
-svnamn: Fält, kapital och habitus (Bourdieu)
+id: praktikteori
+namn: Theory of Practice: Field, Capital and Habitus
+kortnamn: Field, Capital & Habitus
+svnamn: Praktikteori: fält, kapital och habitus
 upphov: Bourdieu (1979/1984)
 ar: 1979
 paradigm: [Kritisk, Tolkande]
@@ -13,7 +13,7 @@ sammanfattning: Förklarar hur sociala skillnader återskapas genom människors 
 nyckelord: [Bourdieu, kapital, kulturellt kapital, socialt kapital, habitus, fält, praktik, digitala klyftor, distinktion]
 omraden: [Digital ojämlikhet, Sociala medier och plattformar, Utbildning och lärplattformar, Organisationsförändring, Systemimplementering]
 metoder: [intervju, enkat, etnografi, fallstudie]
-relaterade: [strukturation, symbolisk-interaktionism, goffman, plattformisering]
+relaterade: [strukturation, symbolisk-interaktionism, dramaturgi, plattformisering]
 referenser:
   - forfattare: Bourdieu, P.
     ar: 1984

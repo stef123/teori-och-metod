@@ -105,8 +105,8 @@ Teorier växer fram i olika forskningstraditioner. Varje tradition har sina typi
 
 | Tradition | Typisk fråga | Exempel på teorier |
 |---|---|---|
-| **Fenomenologi** | Hur *upplevs* tekniken, och hur formar den vår erfarenhet? | [[postfenomenologi]], [[embodied-interaction]], [[heidegger]] |
-| **Sociologi** | Hur hänger teknik ihop med sociala strukturer, grupper, makt och identitet? | [[goffman]], [[bourdieu]], [[strukturation]], [[symbolisk-interaktionism]] |
+| **Fenomenologi** | Hur *upplevs* tekniken, och hur formar den vår erfarenhet? | [[postfenomenologi]], [[embodied-interaction]], [[ready-to-hand]] |
+| **Sociologi** | Hur hänger teknik ihop med sociala strukturer, grupper, makt och identitet? | [[dramaturgi]], [[praktikteori]], [[strukturation]], [[symbolisk-interaktionism]] |
 | **Psykologi och socialpsykologi** | Hur tänker, känner och beter sig individer i mötet med teknik? | [[tam]], [[social-presence]], [[parasocial-interaction]], [[distribuerad-kognition]] |
 | **STS** (vetenskaps- och teknikstudier) | Hur formas teknik och samhälle tillsammans? | [[ant]], [[scot]], [[sociomaterialitet]] |
 | **Design och HCI** | Hur kan vi förstå och forma interaktionen mellan människor och teknik? | [[designansatser]], [[affordanser]], [[aktivitetsteori]] |

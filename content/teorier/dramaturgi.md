@@ -1,7 +1,7 @@
 ---
-id: goffman
+id: dramaturgi
 namn: Dramaturgical Theory of Self-Presentation
-kortnamn: Self-Presentation (Goffman)
+kortnamn: Dramaturgical Theory
 svnamn: Dramaturgiskt perspektiv på självpresentation
 upphov: Goffman (1959)
 ar: 1959

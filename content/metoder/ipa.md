@@ -8,7 +8,7 @@ passar: Du vill förstå hur specifika personer upplever och ger mening åt en v
 sammanfattning: Tolkande fenomenologisk metod där forskaren noggrant analyserar hur några få personer upplever och förstår en erfarenhet, fall för fall. Särskilt vanlig i hälso- och psykologiforskning, men används även i informatik.
 nyckelord: [IPA, tolkande fenomenologisk analys, dubbel hermeneutik, idiografi, levd erfarenhet, Smith, teman, intervju]
 omraden: [E-hälsa, Människa–datorinteraktion, Utbildning och lärplattformar, Medier och vardagsliv, Sociala medier och plattformar]
-teorier: [postfenomenologi, embodied-interaction, heidegger, parasocial-interaction]
+teorier: [postfenomenologi, embodied-interaction, ready-to-hand, parasocial-interaction]
 relaterade: [fenomenologisk-metod, intervju]
 referenser:
   - forfattare: Smith, J. A.
