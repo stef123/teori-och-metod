@@ -54,7 +54,7 @@ Frågans form styr metoden:
 ## 3. Teori och vetenskapssyn
 
 - Vilken teori hjälper dig att se det du vill undersöka? Läs [Vad är en teori?](#/sida/vad-ar-en-teori).
-- Ska teorin testas (positivistisk ansats), användas som tolkningslins (tolkande) eller byggas (teorigenererande)?
+- Ska teorin testas (positivistisk ansats), användas som tolkningslins (tolkande) eller byggas (teorigenererande)? Tänk på att teoribyggande är ovanligt i uppsatser och ofta kräver ett mer omfattande arbete. I de flesta uppsatser används teorin som lins eller prövas.
 - Var konsekvent: din vetenskapssyn påverkar val av metod och kvalitetskriterier.
 
 ## 4. Metod och design

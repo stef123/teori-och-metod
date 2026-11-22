@@ -83,6 +83,8 @@ De flesta teorier har fyra byggstenar (Whetten, 1989):
 2. **Teori under**: teorin är en *lins* du tolkar data genom.
 3. **Teori efter**: teori är *resultatet*, du bygger ny teori från data.
 
+> **Teoribyggande är ovanligt i uppsatser.** Att bygga ny teori (roll 3) kräver ofta ett mer omfattande arbete än vad en uppsats rymmer: mycket data, flera analysvarv och god kännedom om tidigare teorier inom området. Därför är det något man oftare gör i en avhandling eller ett större forskningsprojekt. I de flesta uppsatser används teorin i stället som **lins** för att tolka data (roll 2) eller som utgångspunkt för det du undersöker och **testar** (roll 1). Det är helt i sin ordning och ger ofta en starkare uppsats.
+
 **Vad teori *inte* är** (Sutton & Staw, 1995): en lista med referenser, data, en lista med variabler, en figur med pilar eller en hypotes. Allt detta kan vara *delar* av teoretiskt arbete, men utan en förklaring av *varför* är det inte teori.
 
 ## Nivå 4
@@ -97,7 +99,7 @@ De flesta teorier har fyra byggstenar (Whetten, 1989):
 
 **Inhemsk eller lånad teori?** Många teorier i IS är lånade från psykologi, sociologi eller ekonomi. En återkommande debatt gäller om fältet behöver fler egna teorier om IT-artefakten själv.
 
-**Teoretiskt bidrag.** I en uppsats är målet sällan att skapa en helt ny teori. Ett rimligt bidrag kan vara att visa hur en teori fungerar i ett nytt sammanhang, att lägga till ett begrepp, att visa var en teori inte räcker till, eller att jämföra hur två teorier belyser samma fenomen.
+**Teoretiskt bidrag.** I en uppsats är målet sällan att skapa en helt ny teori. Teoribyggande, till exempel med grounded theory, kräver ofta ett mer omfattande arbete än en uppsats rymmer, och görs oftare i avhandlingar och större forskningsprojekt. Ett rimligt bidrag kan vara att visa hur en teori fungerar i ett nytt sammanhang, att lägga till ett begrepp, att visa var en teori inte räcker till, eller att jämföra hur två teorier belyser samma fenomen.
 
 ## Teoritraditioner
 
@@ -121,4 +123,5 @@ Teorier växer fram i olika forskningstraditioner. Varje tradition har sina typi
 - Är teorins begrepp tydligt definierade i uppsatsen?
 - Använder jag teorin i analysen, inte bara i teorikapitlet?
 - Passar teorin ihop med min metod och min vetenskapssyn?
+- Om jag vill *bygga* ny teori: har jag tid och data nog? Teoribyggande är ovanligt i uppsatser och kräver ofta ett mer omfattande arbete. Oftast är det bättre att använda en befintlig teori som lins eller att pröva den.
 - Diskuterar jag vad teorin hjälpte mig att se, och vad den missade?
