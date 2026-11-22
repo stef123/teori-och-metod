@@ -96,6 +96,14 @@ Centrala begrepp:
 - **Makt och förändring:** Teorin förklarar väl hur ordning reproduceras, men har kritiserats för att säga mindre om *när* och *varför* större förändringar sker.
 - **Vetenskapssyn:** Tolkande; fokus på mening, praktik och process snarare än variabler och prediktion.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Samma system, olika arbetssätt.** Två avdelningar inför samma ärendesystem. Den ena använder det flexibelt, den andra stelt enligt manualen. Strukturationsteorin hjälper dig att se att människor **återskapar eller förändrar strukturer** när de använder tekniken. Skillnaden beror på avdelningarnas regler, resurser och vanor, inte bara på systemet.
+
+**Hemarbete och digitala möten.** Efter pandemin har ett företag kvar många videomöten. Med teorin kan du studera hur nya normer (kamera på eller av, svarstider i chatten) har uppstått genom vardaglig användning och nu styr hur folk arbetar, trots att ingen bestämde dem.
+
+**Ett dashboardsystem för chefer.** Chefer börjar följa nyckeltal i ett dashboardsystem. Teorin får dig att fråga hur systemet blir en resurs för makt och kontroll, och hur medarbetare anpassar sig eller gör motstånd. Tekniken formar organisationen, men organisationen formar också hur tekniken används.
+
 ## Typiska forskningsfrågor
 
 - Hur har användningen av ett samarbetsverktyg utvecklats olika i två avdelningar, och varför?

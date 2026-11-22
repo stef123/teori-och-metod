@@ -109,6 +109,14 @@ Anne Helmond (2015) visade hur detta började tekniskt: genom **API:er** och del
 - **Metodutmaningar:** Plattformarnas algoritmer och data är ofta stängda. Forskare använder därför "walkthrough"-metoder, dataspenden från användare eller analyser av API:er.
 - **Relation till IS-forskningens ekosystemsyn:** IS-traditionen har kritiserats för att ta plattformsägarens perspektiv; den kritiska traditionen för att vara svag på hur plattformar faktiskt är byggda.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Lokala restauranger och matleveransappar.** Restauranger blir beroende av leveransappar för sina beställningar. Plattformisering hjälper dig att se hur plattformen blir **mellanhand**: den sätter avgifter, styr synlighet genom algoritmer och äger kunddata. Restaurangens affär formas om efter plattformens villkor.
+
+**Skolan och Google Workspace.** En kommun lägger all skolverksamhet i en global plattform. Med perspektivet kan du granska beroenden, datainsamling och vem som bestämmer över offentlig verksamhet.
+
+**Musikskapare och strömningstjänster.** Artister kortar låtintron för att passa strömningstjänsternas algoritmer. Plattformisering visar hur kulturproduktion anpassas efter plattformens affärsmodell och kuratering. Det är inte bara smak som förändras, det är villkoren för att skapa.
+
 ## Typiska forskningsfrågor
 
 - Hur påverkar plattformisering lokala nyhetsredaktioners arbete och publicering?

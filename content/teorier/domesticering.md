@@ -82,6 +82,14 @@ Hemmet ses som en **moralisk ekonomi**: ett hushåll har egna värderingar och r
 - **Släktskap:** Domesticering delar mycket med praktikteorier och [[sociomaterialitet]], men har en tydligare tyngdpunkt i vardagsliv, identitet och moralisk ordning.
 - **Vetenskapssyn:** Tolkande och etnografiskt inspirerad.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Familjen och den smarta högtalaren.** En familj köper en smart högtalare. Domesticering hjälper dig att följa hur tekniken blir en del av hemmet: var den placeras, vilka regler som uppstår (får barnen beställa saker?) och vilken betydelse den får. Du ser att användningen förhandlas fram över tid.
+
+**Äldre och surfplattor.** En kommun delar ut surfplattor till äldre för videosamtal med anhöriga. Med teorin kan du studera hur plattan antingen "tämjs" och blir vardag, eller hamnar i en låda, och vilka rutiner, hjälp och betydelser som avgör skillnaden.
+
+**Skärmtid i barnfamiljer.** Föräldrar försöker begränsa barnens mobilanvändning. Domesticering visar att mobilen inte bara är en apparat, utan något som formar familjens tider, rum och moral, och att regler och konflikter är en del av hur tekniken blir hemmastadd.
+
 ## Typiska forskningsfrågor
 
 - Hur får äldre personer digitala vårdtjänster att passa in i sin vardag?

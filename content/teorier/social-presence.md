@@ -100,6 +100,14 @@ Teorin förutsäger att människor väljer medier med hög social närvaro för 
 - **Etik:** Design som ökar social närvaro (t.ex. människolika chattbotar) kan öka förtroendet, men också vilseleda användare.
 - **Vetenskapssyn:** Främst positivistisk och kvantitativ.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Distansstudenter som hoppar av.** En nätkurs har många avhopp jämfört med campuskursen. Social närvaro hjälper dig att fråga om studenterna upplever lärare och kurskamrater som **verkligt närvarande**. Låg social närvaro kan förklara känslan av ensamhet och avhoppen.
+
+**En människolik chattbot.** En e-handel byter till en chattbot med namn och bild. Med teorin kan du testa om ökad social närvaro ger mer förtroende och köpvilja, och diskutera när det blir vilseledande.
+
+**Val av kanal i ett team.** Ett team diskuterar svåra beslut i chatten och får missförstånd. Social närvaro och medierikedom hjälper dig att förklara varför komplexa och känsliga frågor fungerar bättre i video eller möte än i text.
+
 ## Typiska forskningsfrågor
 
 - Hur påverkar lärarens videoinspelningar studenternas upplevda sociala närvaro i en nätkurs?

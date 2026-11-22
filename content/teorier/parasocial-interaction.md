@@ -77,6 +77,14 @@ Parasociala relationer är inte konstiga eller sjukliga. De är en vanlig del av
 - **Etik och design:** Plattformar och AI-tjänster kan designas för att förstärka parasocial bindning för att öka engagemang, vilket väcker etiska frågor, särskilt för barn och unga.
 - **Teoretisk inramning:** Teorin kombineras ofta med [[uses-and-gratifications]] (vilka behov fyller relationen?) eller [[goffman]] (hur skapar influencern autenticitet?).
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Streamers och deras publik.** Tittare donerar pengar till en streamer de aldrig träffat. Teorin hjälper dig att förstå den **ensidiga relation** som uppstår, och hur streamern skapar känslan av närhet genom att tala direkt till kameran och svara i chatten.
+
+**Influencers och köpbeslut.** Unga köper produkter som influencers rekommenderar. Med parasociala relationer kan du förklara varför rekommendationer upplevs som råd från en vän snarare än reklam.
+
+**AI-kompanjoner.** Användare beskriver en AI-chattbot som en vän. Teorin ger begrepp för att analysera relationer till icke-mänskliga figurer och väcker etiska frågor om design som förstärker bindningen.
+
 ## Typiska forskningsfrågor
 
 - Hur påverkar parasociala relationer till influencers ungas köpbeslut?

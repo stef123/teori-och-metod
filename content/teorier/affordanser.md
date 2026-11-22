@@ -106,6 +106,14 @@ Donald Norman tog in begreppet i design och HCI (1988). Han betonade **upplevda 
 - **Begränsningar och makt:** Kritiker påpekar att fokus ofta ligger på vad teknik *möjliggör*, inte vad den *begränsar* eller vem som designat den. Senare forskning talar därför om *constraints* och om hur affordanser varierar mellan grupper (t.ex. personer med funktionsnedsättning).
 - **Nivåer:** Affordanser kan analyseras för enskilda funktioner, hela plattformar eller kommunikationsformer. Var tydlig med vilken nivå du analyserar.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Varför ingen använder kommentarsfunktionen.** Ett dokumentverktyg har en kommentarsfunktion som få använder. Affordansbegreppet får dig att fråga om funktionen faktiskt **upplevs** som en möjlighet av användarna. En funktion som finns tekniskt men inte syns eller passar arbetet ger ingen affordans.
+
+**Försvinnande meddelanden.** Unga använder försvinnande bilder i chattappar. Med affordanser kan du analysera vad funktionen gör möjligt (spontanitet, mindre rädsla för att innehåll sprids) och vad den begränsar, och hur olika användare uppfattar det olika.
+
+**Sociala medier på jobbet.** En organisation inför ett internt socialt nätverk. Teorin hjälper dig att se affordanser som synlighet och beständighet: medarbetare kan se vad andra gör och inlägg sparas. Det kan öka kunskapsdelning, men också försiktighet.
+
 ## Typiska forskningsfrågor
 
 - Vilka affordanser hos Teams påverkar hur kunskap delas i en distansarbetande organisation?

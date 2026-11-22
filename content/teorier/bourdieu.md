@@ -90,6 +90,14 @@ Kapital kan **omvandlas**. Kulturellt kapital kan ge ett bra jobb (ekonomiskt), 
 - **Operationalisering:** Kvantitativa studier mäter ofta kapital med enkla indikatorer (t.ex. föräldrars utbildning), vilket kan förlora teorins komplexitet. Bourdieu själv använde korrespondensanalys.
 - **Vetenskapssyn:** Kritisk realism eller "konstruktivistisk strukturalism". Teorin är både förklarande och kritisk.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Samma dator, olika användning.** Alla elever på en skola får en dator, men skillnaderna i hur de använder den består. Bourdieu hjälper dig att se att **kulturellt kapital** och **habitus** från hemmet avgör vad eleverna gör med datorn. Lika tillgång ger inte lika möjligheter.
+
+**Influencers och kapital.** En influencer omvandlar följare till samarbeten och inkomster. Med teorin kan du analysera hur socialt och symboliskt kapital omvandlas till ekonomiskt kapital, och vilka regler som gäller på plattformen som **fält**.
+
+**E-tjänster och äldre.** Äldre med hög utbildning använder kommunens e-tjänster mer än andra äldre. Bourdieu ger ett sätt att förklara digitala klyftor som en fortsättning på andra sociala skillnader, inte bara som brist på kunskap.
+
 ## Typiska forskningsfrågor
 
 - Hur påverkar elevers kulturella kapital deras användning av skolans lärplattform?

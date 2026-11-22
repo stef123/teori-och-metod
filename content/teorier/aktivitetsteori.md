@@ -88,6 +88,14 @@ Teknik ses alltså som ett verktyg *inom* en meningsfull verksamhet, inte som n�
 - **Jämfört med andra teorier:** Till skillnad från [[ant]] gör aktivitetsteori en tydlig skillnad mellan människor (som har motiv) och verktyg. Jämfört med [[strukturation]] har den ett mer konkret analysverktyg men en mindre utvecklad teori om makt.
 - **Vetenskapssyn:** Ofta tolkande, men med marxistiska rötter och en interventionistisk, förändringsinriktad ambition.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Krångel med ett journalsystem.** Undersköterskor dokumenterar på papperslappar innan de skriver in i journalsystemet. Aktivitetsteorin hjälper dig att se hela **aktivitetssystemet**: målet (god omvårdnad), verktyget (systemet), reglerna (dokumentationskrav) och arbetsdelningen. Papperslapparna är inte slarv, de är ett tecken på en **motsättning** mellan verktyget och arbetet.
+
+**Studenter som använder AI i grupparbeten.** Studentgrupper använder AI-verktyg på olika sätt i ett projekt. Med teorin kan du analysera hur AI förändrar arbetsdelningen i gruppen och vilka regler (kursens krav, gruppens normer) som uppstår, och var konflikter visar sig.
+
+**Utveckling av en app tillsammans med användare.** Ett team ska förbättra en app för hemtjänsten. Aktivitetsteorin ger ett sätt att hitta designproblem: leta efter motsättningar mellan delar av systemet, t.ex. mellan schemat (regler) och appens funktioner (verktyg), och använd dem som utgångspunkt för förändring.
+
 ## Typiska forskningsfrågor
 
 - Vilka motsättningar uppstår när en lärplattform införs i en verksamhet med etablerade undervisningsrutiner?

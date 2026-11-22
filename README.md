@@ -26,7 +26,7 @@ tools/bygg-index.mjs
 
 1. Kopiera en befintlig fil, t.ex. `content/teorier/tam.md`, och ge den ett nytt namn.
 2. Uppdatera huvudet (mellan `---`): `id`, `namn` (originalnamn, oftast engelska), `kortnamn`, `svnamn` (svenskt namn, valfritt), `tradition` (lista med teoritraditioner, t.ex. `[Sociologi, STS]`; används i filtret och på sidan Områden), `sammanfattning`, `omraden`, `metoder`, `relaterade` och `referenser`.
-3. Skriv texten under `## Nivå 1` … `## Nivå 4`. Övriga `##`-rubriker (t.ex. `## Typiska forskningsfrågor`) visas under nivåerna.
+3. Skriv texten under `## Nivå 1` … `## Nivå 4`. Övriga `##`-rubriker (t.ex. `## Exempel: så hjälper teorin dig att förstå` och `## Typiska forskningsfrågor`) visas under nivåerna.
 4. Kör `node tools/bygg-index.mjs` (eller låt GitHub göra det).
 
 Länka till andra teorier/metoder med `[[id]]`, t.ex. `[[utaut]]`. Referenser har fälten `forfattare`, `ar`, `titel`, `kalla`, `doi`, `typ: bok` (om bok), `roll` (`grund`, `tillampning` eller `oversikt`) och `kommentar`.

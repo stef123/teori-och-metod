@@ -84,6 +84,14 @@ Peter-Paul Verbeek byggde vidare med begreppet **teknisk mediering**: tekniken f
 - **Vidareutveckling:** Verbeek har föreslagit *cyborgrelationer* (sammansmältning, t.ex. implantat) och *immersion* (smarta miljöer). Postfenomenologi används allt mer för att analysera AI, självspårning och VR.
 - **Vetenskapssyn:** Tolkande. Fokus på mening och erfarenhet, inte kausala samband.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**En symptomapp och kroppen.** Personer med diabetes använder en app som visar blodsockret i realtid. Postfenomenologin hjälper dig att se att appen **medierar** hur de upplever sin kropp. Kroppen blir siffror och kurvor (en hermeneutisk relation), vilket kan skapa både trygghet och oro.
+
+**Navigationsappen.** Människor följer kartappen även när de känner till vägen. Med teorin kan du analysera hur appen formar vad vi lägger märke till i staden och hur vi fattar beslut, och hur tekniken "försvinner" i användningen.
+
+**En röstassistent i hemmet.** Barn pratar med en röstassistent som om den vore en person. Postfenomenologin hjälper dig att beskriva detta som en **alteritetsrelation** och fråga vad det gör med barnens bild av teknik, frågor och svar.
+
 ## Typiska forskningsfrågor
 
 - Hur medierar en symptomapp patienters upplevelse av sin kropp och sjukdom?

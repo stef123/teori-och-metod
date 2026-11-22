@@ -84,6 +84,14 @@ Centrala begrepp:
 - **Var börjar och slutar nätverket?** Utan avgränsningsprinciper riskerar studien att växa okontrollerat. Senare "efter-ANT" (Law, Mol m.fl.) betonar multiplicitet och flytande objekt.
 - **Släktskap:** ANT har starkt påverkat [[sociomaterialitet]].
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Varför stannade införandet av ett nytt system?** Ett nytt journalsystem införs på ett sjukhus men fastnar efter ett halvår. ANT får dig att följa alla **aktörer**, även icke-mänskliga: servrar, integrationer, avtal, lagkrav och gamla system. Du ser hur nätverket hålls ihop eller faller isär, och att ett tekniskt gränssnitt kan vara lika avgörande som en chef.
+
+**En kommuns app för felanmälan.** Invånare kan rapportera trasiga gatlampor via en app. Med ANT kan du följa hur en anmälan **översätts** mellan invånare, app, ärendesystem, entreprenörer och budget. Du ser var den fastnar och vilka aktörer som egentligen styr resultatet.
+
+**Ett öppet dataset som blir standard.** Ett dataset om kollektivtrafik används av allt fler appar. ANT hjälper dig att förstå hur datasetet blev en stabil aktör, vem som "värvade" andra (utvecklare, myndigheter) och vad som skulle hända om formatet ändrades.
+
 ## Typiska forskningsfrågor
 
 - Hur blev en nationell e-tjänst till, och vilka aktörer (människor, lagar, system) formade den?

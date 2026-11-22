@@ -90,6 +90,14 @@ Tanken är att kvalitet leder till användning och nöjdhet, som i sin tur leder
 - **Empiriskt stöd varierar:** Vissa samband har starkt stöd (t.ex. systemkvalitet → nöjdhet), andra svagare, särskilt på organisationsnivå.
 - **Normativ utgångspunkt:** Modellen förutsätter att framgång går att definiera och mäta i förväg. Tolkande och kritiska forskare skulle i stället fråga hur framgång och misslyckande *konstrueras* av olika aktörer.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Är det nya intranätet en framgång?** En kommun har lanserat ett nytt intranät och ledningen vill veta om det var värt pengarna. D&M-modellen delar upp "framgång" i delar: **systemkvalitet** (fungerar sökningen?), **informationskvalitet** (är innehållet aktuellt?), **tjänstekvalitet** (finns support?), **användning**, **nöjdhet** och **nytta**. Då ser du var det brister i stället för att få ett ja eller nej.
+
+**E-handelns kundtjänstchatt.** En webbutik inför en chattbot för kundtjänst. Med modellen kan du följa kedjan från chattbotens svarskvalitet till kundernas nöjdhet och vidare till nettonytta, t.ex. färre ärenden till personalen eller fler genomförda köp.
+
+**Ett beslutsstöd i vården.** Sjuksköterskor använder ett beslutsstöd för läkemedelsdosering. D&M hjälper dig att skilja mellan att systemet används (det är obligatoriskt) och att det faktiskt ger nytta. Hög användning betyder inte automatiskt framgång om informationskvaliteten är låg.
+
 ## Typiska forskningsfrågor
 
 - Hur framgångsrikt är det nya ärendehanteringssystemet i kommunen, enligt användarna?

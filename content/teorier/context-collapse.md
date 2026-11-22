@@ -86,6 +86,14 @@ Vanliga strategier för att hantera kontextkollaps:
 - **Makt och sårbarhet:** Konsekvenserna är olika för olika grupper. För HBTQ+-personer, aktivister eller personer med skyddad identitet kan kontextkollaps vara farlig, inte bara pinsam.
 - **AI och data:** När inlägg samlas in för att träna AI eller används i nya sammanhang uppstår en ny sorts kontextkollaps, kopplad till begreppet *kontextuell integritet* (Nissenbaum).
 
+## Exempel: så hjälper teorin dig att förstå
+
+**När chefen ser festbilderna.** En anställd får frågor på jobbet om ett privat inlägg. Kontextkollaps hjälper dig att förstå att olika publiker, som vänner och kollegor, har slagits ihop. Det som var lämpligt i ett sammanhang blir pinsamt i ett annat.
+
+**Lärare som håller isär publiker.** Lärare använder olika konton och plattformar för elever, kollegor och vänner. Med begreppet kan du studera strategier för att hantera **föreställda publiker** och hur plattformarnas funktioner gör det lättare eller svårare.
+
+**Interna sociala medier.** Medarbetare delar sällan åsikter i företagets interna nätverk. Kontextkollaps förklarar försiktigheten: när chefer, kollegor och andra avdelningar läser samma flöde väljer många att bara dela det som passar alla.
+
 ## Typiska forskningsfrågor
 
 - Hur hanterar lärare kontextkollaps när elever, föräldrar och kollegor följer dem på samma plattform?

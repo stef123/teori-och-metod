@@ -88,6 +88,14 @@ Dessutom finns fyra **modererande variabler** som påverkar *hur starka* samband
 - **Kontextfrågan:** Upphovspersonerna själva (Venkatesh m.fl., 2016) efterlyser teori om *kontexten*: vad det är med en viss organisation, kultur eller teknik som gör att sambanden ser olika ut.
 - **Samma grundkritik som TAM:** Individen ses som en rationell beslutsfattare, och tekniken som en svart låda.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Digitala vårdbesök i regionen.** En region erbjuder videobesök, men användningen varierar kraftigt mellan vårdcentraler. UTAUT pekar på fler faktorer än TAM: **socialt inflytande** (rekommenderar läkaren det?) och **underlättande förutsättningar** (har patienterna teknik och stöd?). Ålder och erfarenhet kan förstärka eller försvaga sambanden.
+
+**AI-verktyg för lärare.** Skolor ger lärare tillgång till ett AI-verktyg för att planera lektioner. Med UTAUT kan du undersöka om lärare använder verktyget för att de förväntar sig bättre resultat, för att kollegor gör det, eller för att skolan erbjuder fortbildning, och om det skiljer sig mellan erfarna och nya lärare.
+
+**Mobilbetalning bland pensionärer.** Pensionärer på en ort börjar använda Swish i olika takt. UTAUT hjälper dig att se rollen av förväntad ansträngning och socialt tryck från barn och barnbarn, och att erfarenhet modererar hur mycket ansträngningen spelar roll.
+
 ## Typiska forskningsfrågor
 
 - Vad påverkar äldre personers användning av digitala vårdtjänster?

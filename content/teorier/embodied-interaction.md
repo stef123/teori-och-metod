@@ -88,6 +88,14 @@ Tre nyckelbegrepp:
 - **Kritik:** Det kan vara svårt att operationalisera begreppen. Perspektivet har ibland reducerats till "gester och fysiska gränssnitt", vilket missar den fenomenologiska poängen.
 - **Aktuellt:** VR, AR, bärbar teknik och smarta hem har gjort perspektivet mer relevant.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Fysisk programmering för barn.** Barn programmerar robotar med fysiska klossar i stället för på skärm. Embodied interaction hjälper dig att se att barnen förstår programmering genom att röra, peka och samarbeta runt klossarna. Mening skapas i handling, inte bara i huvudet.
+
+**VR-möten.** Ett distribuerat team testar möten i VR. Med perspektivet kan du studera hur kroppsspråk, blickar och rumslig placering påverkar samarbetet, och vad som går förlorat i vanliga videomöten.
+
+**Ett nytt gränssnitt i en kontrollsal.** Operatörer byter från fysiska reglage till pekskärmar. Teorin får dig att fråga vilken kroppslig och social kunskap de fysiska reglagen bar på, t.ex. att kollegor kunde se vad man gjorde.
+
 ## Typiska forskningsfrågor
 
 - Hur skapar barn mening när de programmerar med fysiska klossar jämfört med på skärm?

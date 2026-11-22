@@ -109,6 +109,14 @@ TAM är en av de mest citerade teorierna i IS-fältet, men också en av de mest 
 
 **Fråga att fundera på:** När är TAM ett bra val för din uppsats, och när döljer det mer än det visar?
 
+## Exempel: så hjälper teorin dig att förstå
+
+**En ny lärplattform som studenterna undviker.** Universitetet byter lärplattform, men många studenter fortsätter att mejla läraren i stället för att använda forumet. TAM får dig att fråga om studenterna upplever att forumet är **användbart** (hjälper det dem att klara kursen?) och **lätt att använda**. Kanske är problemet inte motvilja mot tekniken, utan att forumet inte ger något mervärde jämfört med mejl.
+
+**Självscanning i mataffären.** En butikskedja inför självscanning, men äldre kunder väljer hellre kassan. Med TAM kan du mäta hur upplevd nytta och upplevd enkelhet skiljer sig mellan åldersgrupper och se vilken faktor som väger tyngst för avsikten att använda tjänsten.
+
+**Ett nytt tidrapporteringssystem.** Konsulter på en IT-firma rapporterar tid sent och slarvigt i ett nytt system. TAM hjälper dig att skilja på om systemet är krångligt (enkelhet) eller om konsulterna inte ser vad de själva vinner på att rapportera noggrant (nytta). Det ger olika åtgärder: bättre gränssnitt eller tydligare återkoppling.
+
 ## Typiska forskningsfrågor
 
 - Vilka faktorer påverkar sjuksköterskors avsikt att använda ett nytt journalsystem?

@@ -92,6 +92,14 @@ Sociomaterialitet hävdar i stället att det sociala och det materiella är **ko
 - **Metodisk utmaning:** Perspektivet kräver nära studier av praktik över tid. Intervjuer ensamma räcker sällan, eftersom de ger berättelser om praktik snarare än praktiken själv.
 - **Vetenskapssyn:** Relationell ontologi; tolkande och processinriktad.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Algoritmen som schemalägger personal.** Ett lager använder en algoritm som fördelar arbetspass. Sociomaterialitet hjälper dig att se att arbetet inte finns *före* tekniken. Schemat, algoritmen och personalens praktik är **sammanflätade**: vad som räknas som "ett pass" eller "effektivitet" formas i själva användningen.
+
+**Betygssättning via en lärplattform.** Lärare sätter betyg i en plattform med fasta bedömningsmallar. Med perspektivet kan du studera hur mallarna inte bara registrerar bedömningen utan förändrar vad bedömning *är* i praktiken.
+
+**Rekommendationer på en nyhetssajt.** En redaktion låter en algoritm sortera nyheterna på startsidan. Sociomaterialitet får dig att fråga hur journalistiska värderingar och algoritmens logik vävs ihop till en ny praktik, i stället för att fråga om tekniken "påverkar" journalistiken.
+
 ## Typiska forskningsfrågor
 
 - Hur förändras journalisters arbete när AI-verktyg blir en del av nyhetsproduktionen?

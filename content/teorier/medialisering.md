@@ -87,6 +87,14 @@ Medialisering handlar om **förändring över lång tid**, ungefär som globalis
 - **Förhållande till [[domesticering]]:** Domesticering tittar på hur hushåll tämjer medier, medialisering på hur medier förändrar samhället. De kan kombineras för att koppla mikro och makro.
 - **Nordisk forskning:** Begreppet har starka rötter i Norden (Hjarvard, Strömbäck, Asp), vilket gör det relevant för svenska uppsatser.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Kommunens kommunikation.** En kommun har gått från pressmeddelanden till korta videor i sociala medier. Medialisering hjälper dig att se hur kommunens arbete anpassas till **medielogik**: vad som är visuellt, kort och delbart får mer plats än det som är viktigt men svårt att visa.
+
+**Skolan och sociala medier.** Skolor lägger allt mer tid på att synas i sociala medier. Med perspektivet kan du studera hur skolans verksamhet och prioriteringar förändras över tid när synlighet blir viktig.
+
+**Familjeliv i gruppchatten.** En familj planerar sitt vardagsliv i en gruppchatt. Medialisering i den socialkonstruktivistiska varianten hjälper dig att se hur vardagens sociala verklighet byggs upp genom digitala medier.
+
 ## Typiska forskningsfrågor
 
 - Hur har sociala medier förändrat hur en kommun kommunicerar med invånarna?

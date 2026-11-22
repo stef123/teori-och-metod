@@ -109,6 +109,14 @@ Typiska tekniker är framtidsverkstäder, pappersprototyper, *mock-ups*, rollspe
 - **Forskning eller praktik?** Designansatser är ofta mer *metoder* och *förhållningssätt* än förklarande teorier (typ V, "design och handling", enligt Gregor). I en uppsats kombineras de gärna med [[designvetenskap]] eller [[aktionsforskning]].
 - **Arv:** Den skandinaviska traditionen har påverkat internationell CSCW och HCI starkt och är en del av informatikens identitet i Norden; se [Vad är informatik?](#/sida/vad-ar-informatik).
 
+## Exempel: så hjälper teorin dig att förstå
+
+**En app för hemtjänsten.** En kommun ska ta fram en app för hemtjänstpersonal. **Deltagande design** får dig att fråga vem som har inflytande: får personalen vara med och fatta beslut, eller bara testa färdiga skisser? Det påverkar både appens kvalitet och om den accepteras.
+
+**Automatiserade beslut om försörjningsstöd.** En kommun inför automatiserade beslut. **Värdekänslig design** hjälper dig att identifiera vilka värden som står på spel (rättssäkerhet, transparens, effektivitet) och för vilka intressenter, även de som inte använder systemet direkt.
+
+**En webbutik med hög andel avbrutna köp.** Många kunder lämnar kassan i en webbutik. **Användarcentrerad design** ger en väg framåt: studera användarna, testa prototyper och förbättra iterativt, med användbarhetsmått som grund för beslut.
+
 ## Typiska forskningsfrågor
 
 - Hur kan äldre personer involveras i designen av digitala vårdtjänster på ett meningsfullt sätt?

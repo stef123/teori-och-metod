@@ -78,6 +78,14 @@ Traditionen kommer från **Chicagoskolan** i sociologi. George Herbert Mead besk
 - **Teknikens roll:** Symbolisk interaktionism kan ge tekniken en passiv roll, som bara bärare av mening. [[ant]] och [[sociomaterialitet]] har kritiserat detta.
 - **Sociala medier:** Begrepp som "spegeljaget" (Cooley) och "den generaliserade andre" (Mead) har fått nytt liv i studier av likes, kommentarer och identitetsarbete.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Vad betyder det nya systemet?** Ledningen ser ett nytt uppföljningssystem som "stöd", medan personalen kallar det "övervakning". Symbolisk interaktionism hjälper dig att förstå att människor handlar utifrån den **mening** systemet har för dem. Meningen skapas i samtal på fikarasten och påverkar användningen mer än tekniken själv.
+
+**Emojis på jobbet.** En arbetsgrupp använder en tumme upp på olika sätt. Med perspektivet kan du studera hur symboler får gemensam mening i en grupp och hur missförstånd uppstår när personer från olika grupper möts i samma kanal.
+
+**Patienter och en vårdapp.** Vissa patienter ser vårdappen som en trygghet, andra som ett tecken på att vården drar sig undan. Teorin får dig att undersöka hur tolkningarna växer fram i möten med vårdpersonal och anhöriga, och hur de förändras över tid.
+
 ## Typiska forskningsfrågor
 
 - Hur förhandlas betydelsen av ett nytt digitalt verktyg i ett arbetslag, och hur påverkar det användningen?

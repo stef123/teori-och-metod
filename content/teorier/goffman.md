@@ -84,6 +84,14 @@ Goffman (1959) använde teatern som metafor, därför kallas perspektivet **dram
 - **Relation till [[symbolisk-interaktionism]]:** Goffman räknas ofta till denna tradition, även om han själv inte gjorde det. Båda betonar att mening och identitet skapas i interaktion.
 - **Senare verk:** *Frame analysis* (1974) och studier av stigma används också i informatik.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Lärare i sociala medier.** En lärare har elever, föräldrar och kollegor bland sina följare. Goffmans begrepp hjälper dig att se profilen som en **scen** och fråga vilka roller läraren spelar, vad som hålls i den bakre regionen och hur intryckshantering går till.
+
+**Kameran i videomöten.** Medarbetare suddar ut bakgrunden eller stänger av kameran. Med teorin kan du tolka det som gränsdragning mellan främre och bakre region: hemmet blir plötsligt en del av arbetsscenen.
+
+**Profiler på dejtingappar.** Användare väljer noga bilder och texter till sin profil. Goffman hjälper dig att förstå balansen mellan att vara ärlig och att presentera ett idealt jag, och hur appens funktioner påverkar framträdandet.
+
 ## Typiska forskningsfrågor
 
 - Hur hanterar lärare sin självpresentation när elever och kollegor finns på samma plattform?

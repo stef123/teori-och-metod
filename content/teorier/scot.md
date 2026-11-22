@@ -88,6 +88,14 @@ En stängning kan ske genom att problemet löses tekniskt, eller genom att det *
 - **SCOT och [[ant]]:** Båda kommer ur STS. SCOT börjar i sociala grupper och deras tolkningar, ANT behandlar människor och teknik symmetriskt som aktörer. SCOT har kritiserats för att vara "socialt deterministisk", som motsatsen till teknikdeterminism.
 - **Stängning är inte för evigt:** Digitala tekniker uppdateras hela tiden. Senare forskning betonar att stängning kan öppnas igen, och att användare fortsätter att omtolka teknik (jfr [[domesticering]]).
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Vad är en "digital lärplattform"?** Lärare, IT-avdelning, leverantörer och elever har olika bild av vad lärplattformen ska vara. SCOT hjälper dig att identifiera **relevanta sociala grupper** och deras tolkningar, och följa hur en av dem till slut vann. Det visar att plattformen kunde ha sett annorlunda ut.
+
+**Elsparkcyklar i staden.** Elsparkcyklar ses som smart mobilitet av vissa och som ett problem av andra. Med SCOT kan du följa tolkningsflexibiliteten och hur regler, parkeringszoner och designändringar ledde till en **stängning**.
+
+**Ett nytt journalsystem.** Läkare, administratörer och IT-avdelning har olika förväntningar på systemet. SCOT, tillsammans med begreppet teknologiska ramar, hjälper dig att förklara konflikterna vid införandet: grupperna förstår helt enkelt systemet på olika sätt.
+
 ## Typiska forskningsfrågor
 
 - Vilka grupper har format vad en "digital lärplattform" är i svensk skola, och hur skedde stängningen?

@@ -83,6 +83,14 @@ Terry Winograd och Fernando Flores (1986) förde in idéerna i datavetenskapen. 
 - **Transparens är inte alltid bra:** Kritiker påpekar att "osynlig" teknik kan dölja makt och data­insamling. Ibland vill vi att tekniken ska synas. Jämför [[postfenomenologi]], som är mer empirisk och mindre teknikpessimistisk än Heidegger.
 - **Heideggers person:** Heideggers koppling till nazismen diskuteras flitigt. Många forskare använder begreppen men tar avstånd från personen.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**När wifi slutar fungera.** Under ett nätverksavbrott upptäcker en skola hur mycket som är beroende av uppkoppling. Heideggers begrepp hjälper dig att se att tekniken var **redo-till-hands**, osynlig i vardagen. Sammanbrottet gör den synlig och avslöjar dolda beroenden och arbetssätt.
+
+**Systembyte i en verksamhet.** Ekonomer byter affärssystem och känner sig plötsligt klumpiga. Med teorin kan du förstå att det gamla systemet var en del av deras skicklighet. Det nya är **förhanden**: något de måste tänka på i stället för att arbeta genom.
+
+**Design för reflektion.** Designers vill få användare att tänka på hur mycket data en app samlar in. Begreppet sammanbrott kan användas medvetet: genom att bryta det självklara flödet blir användaren uppmärksam på tekniken.
+
 ## Typiska forskningsfrågor
 
 - När och varför "bryter" ett nytt journalsystem samman i sjuksköterskors arbete, och vad lär de sig av det?

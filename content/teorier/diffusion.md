@@ -80,6 +80,14 @@ Sociologen Everett Rogers beskrev spridning (diffusion) som en process där en *
 - **Tekniken som färdig:** Innovationen behandlas ofta som stabil, medan IS-forskning visar att teknik formas och förändras under införandet. Här ger [[ant]] och [[strukturation]] andra perspektiv.
 - **Komplexa tekniker i organisationer:** IS-forskare har visat att teorin fungerar sämre för tekniker som kräver mycket kunskap och infrastruktur, där nätverkseffekter och organisatoriskt lärande spelar större roll.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Varför sprids en app på vissa skolor men inte andra?** En gratis matteapp blir populär på några skolor men inte på andra i samma kommun. Diffusionsteorin får dig att titta på appens egenskaper (relativ fördel, kompatibilitet med undervisningen, möjlighet att testa) och på vem som började: finns det entusiastiska **tidiga användare** som påverkar kollegorna?
+
+**E-legitimation i Sverige.** BankID spreds snabbt till nästan hela befolkningen. Med teorin kan du förklara spridningen genom S-kurvan, nätverkseffekter och att tjänsten var kompatibel med vanor (bankärenden). Du ser också vilka grupper som blev **eftersläntrare** och varför.
+
+**Ett nytt projektverktyg i en organisation.** En avdelning börjar använda ett projektverktyg, och andra avdelningar följer efter eller låter bli. Diffusionsteorin hjälper dig att kartlägga kommunikationskanaler och opinionsledare, och att se att spridning är en social process, inte bara ett beslut uppifrån.
+
 ## Typiska forskningsfrågor
 
 - Hur har videobesök spridits bland vårdcentraler i regionen, och varför i olika takt?

@@ -96,6 +96,14 @@ Vanliga typer av behov:
 - **Makt och struktur saknas:** Fokus på individuella behov gör att teorin säger lite om plattformars affärsmodeller och algoritmer. Här kompletterar [[plattformisering]].
 - **Vetenskapssyn:** Mest positivistisk och funktionalistisk, även om kvalitativa varianter finns.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Varför studenter lyssnar på poddar.** Studenter lyssnar på poddar om kursinnehåll. U&G får dig att fråga vilka **behov** poddarna fyller: kunskap, sällskap, avkoppling eller att kunna plugga på bussen. Det hjälper dig att förstå varför vissa format fungerar bättre än andra.
+
+**Byte från en plattform till en annan.** Unga lämnar en plattform för en annan. Med teorin kan du jämföra den tillfredsställelse användare söker med den de faktiskt får, och se när skillnaden blir så stor att de byter.
+
+**Träningsappar.** Användare slutar använda en träningsapp efter några veckor. U&G hjälper dig att se att motiven kanske var sociala eller underhållande snarare än nyttoinriktade, och att appen inte längre tillfredsställer dem.
+
 ## Typiska forskningsfrågor
 
 - Vilka motiv driver unga vuxnas användning av TikTok, och hur skiljer de sig från Instagram?

@@ -94,6 +94,14 @@ Analysenheten är alltså **hela systemet**, inte individen.
 - **Aktuell relevans:** Med AI-assistenter blir frågan om hur kognitiva uppgifter fördelas mellan människor och maskiner särskilt aktuell, till exempel vad som händer med förståelse och ansvar när en del av tänkandet görs av ett system.
 - **Metodkrav:** Teorin bygger på detaljerade etnografiska observationer; intervjuer räcker sällan.
 
+## Exempel: så hjälper teorin dig att förstå
+
+**Koordinering på en akutmottagning.** Personal på en akutmottagning använder whiteboard, journalsystem och samtal för att hålla koll på patienter. Distribuerad kognition hjälper dig att se att "tänkandet" sker i hela systemet. Whiteboarden är en del av minnet. Om den ersätts av en skärm måste du förstå vilken kognitiv funktion den hade.
+
+**Pilotens cockpit eller en kontrollcentral.** En kontrollcentral för kollektivtrafik byter till ett nytt övervakningssystem. Med teorin kan du följa hur information flyttas mellan människor och artefakter och upptäcka var nya system kan skapa luckor i den gemensamma lägesbilden.
+
+**Programmering i par med AI.** Utvecklare arbetar tillsammans med en AI-assistent. Distribuerad kognition får dig att analysera hur kunskap och minne fördelas mellan utvecklaren, AI:n, koden och dokumentationen, och vad som händer när en del av systemet gör fel.
+
 ## Typiska forskningsfrågor
 
 - Hur fördelas information mellan personal och system vid överrapportering på en vårdavdelning?
