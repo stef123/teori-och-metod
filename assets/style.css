@@ -208,3 +208,9 @@ main:focus, main:focus-visible { outline: none; }
 .g-forslag b { font-family: var(--rubrik); font-size: 1.1rem; }
 .g-forslag > span:last-child { color: var(--dampad); font-size: .85rem; }
 .g-etikett { font-size: .7rem; text-transform: uppercase; letter-spacing: .07em; font-weight: 700; color: var(--accent); }
+.guide-wrap { background: var(--yta); border: 1px solid var(--linje); border-radius: 14px; padding: 6px 20px 18px; margin: 16px 0 28px; box-shadow: var(--skugga); scroll-margin-top: 80px; }
+.guide-wrap > h2 { margin-top: .2em; }
+.guide-wrap .g-knapp { background: var(--bg); }
+.guide-wrap .g-resultat { border: 0; padding: 0; background: none; }
+.guide-wrap .g-resultat h4 { font-family: var(--rubrik); font-size: 1.1rem; margin: 1.3em 0 .4em; }
+.guide-wrap .g-tidigare li { background: var(--bg); }

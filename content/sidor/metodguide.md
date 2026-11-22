@@ -1,7 +1,7 @@
 ---
 id: metodguide
 namn: Så genomför du en bra undersökning
-sammanfattning: Från problem till slutsats i åtta steg, med de frågor du behöver kunna svara på i varje steg.
+sammanfattning: Börja med studieguiden för att hitta teori och metod, och följ sedan den röda tråden från problem till slutsats i åtta steg.
 referenser:
   - forfattare: Vetenskapsrådet
     ar: 2017
@@ -27,8 +27,6 @@ referenser:
 ---
 
 ## Den röda tråden
-
-> **Osäker på var du ska börja?** Gör [studieguiden](#/guide): svara på några frågor och få förslag på teorier, metoder och en plan.
 
 En bra undersökning hänger ihop. Varje steg ska gå att motivera utifrån det föregående:
 
