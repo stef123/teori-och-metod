@@ -1,7 +1,8 @@
 ---
 id: delone-mclean
-namn: DeLone & McLeans modell för IS-framgång
+namn: DeLone and McLean IS Success Model
 kortnamn: D&M IS Success
+svnamn: DeLone & McLeans modell för IS-framgång
 upphov: DeLone & McLean (1992, 2003)
 ar: 1992
 paradigm: [Positivistisk]

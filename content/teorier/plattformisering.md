@@ -1,7 +1,8 @@
 ---
 id: plattformisering
-namn: Plattformisering
-kortnamn: Plattformisering
+namn: Platformization
+kortnamn: Platformization
+svnamn: Plattformisering
 upphov: Helmond (2015); Poell, Nieborg & van Dijck (2019)
 ar: 2015
 paradigm: [Kritisk, Tolkande]

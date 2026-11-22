@@ -1,7 +1,8 @@
 ---
 id: affordanser
-namn: Affordanser
-kortnamn: Affordanser
+namn: Affordance Theory
+kortnamn: Affordances
+svnamn: Affordanser
 upphov: Gibson (1979); Norman (1988)
 ar: 1979
 paradigm: [Tolkande, Positivistisk]

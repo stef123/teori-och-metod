@@ -1,7 +1,8 @@
 ---
 id: aktivitetsteori
-namn: Aktivitetsteori
-kortnamn: Aktivitetsteori
+namn: Activity Theory
+kortnamn: Activity Theory
+svnamn: Aktivitetsteori
 upphov: Vygotskij, Leontiev; Engeström (1987)
 ar: 1987
 paradigm: [Tolkande, Kritisk]

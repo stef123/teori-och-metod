@@ -2,6 +2,7 @@
 id: utaut
 namn: Unified Theory of Acceptance and Use of Technology
 kortnamn: UTAUT
+svnamn: Enhetlig teori om acceptans och användning av teknik
 upphov: Venkatesh, Morris, Davis & Davis (2003)
 ar: 2003
 paradigm: [Positivistisk]

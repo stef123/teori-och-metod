@@ -1,7 +1,8 @@
 ---
 id: uses-and-gratifications
-namn: Uses and gratifications
+namn: Uses and Gratifications Theory
 kortnamn: U&G
+svnamn: Användning och tillfredsställelse
 upphov: Katz, Blumler & Gurevitch (1973)
 ar: 1973
 paradigm: [Positivistisk]

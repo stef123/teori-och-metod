@@ -1,7 +1,8 @@
 ---
 id: domesticering
-namn: Domesticeringsteori
-kortnamn: Domesticering
+namn: Domestication Theory
+kortnamn: Domestication
+svnamn: Domesticeringsteori
 upphov: Silverstone, Hirsch & Morley (1992)
 ar: 1992
 paradigm: [Tolkande]

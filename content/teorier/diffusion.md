@@ -1,7 +1,8 @@
 ---
 id: diffusion
 namn: Diffusion of Innovations
-kortnamn: Diffusionsteori
+kortnamn: Diffusion of Innovations
+svnamn: Diffusionsteori
 upphov: Rogers (1962, 5:e uppl. 2003)
 ar: 1962
 paradigm: [Positivistisk]

@@ -1,7 +1,8 @@
 ---
 id: sociomaterialitet
-namn: Sociomaterialitet
-kortnamn: Sociomaterialitet
+namn: Sociomateriality
+kortnamn: Sociomateriality
+svnamn: Sociomaterialitet
 upphov: Orlikowski (2007); Orlikowski & Scott (2008)
 ar: 2007
 paradigm: [Tolkande]

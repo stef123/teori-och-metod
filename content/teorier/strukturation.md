@@ -1,7 +1,8 @@
 ---
 id: strukturation
-namn: Strukturationsteori
-kortnamn: Strukturation
+namn: Structuration Theory
+kortnamn: Structuration Theory
+svnamn: Strukturationsteori
 upphov: Giddens (1984); i IS bl.a. Orlikowski (1992, 2000)
 ar: 1984
 paradigm: [Tolkande]

@@ -1,7 +1,8 @@
 ---
 id: distribuerad-kognition
-namn: Distribuerad kognition
-kortnamn: Distribuerad kognition
+namn: Distributed Cognition
+kortnamn: Distributed Cognition
+svnamn: Distribuerad kognition
 upphov: Hutchins (1995)
 ar: 1995
 paradigm: [Tolkande]

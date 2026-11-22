@@ -1,7 +1,8 @@
 ---
 id: designansatser
-namn: Designansatser – deltagande design, användarcentrerad design och värdekänslig design
-kortnamn: Designansatser
+namn: Design Approaches: Participatory, User-Centred and Value Sensitive Design
+kortnamn: Design Approaches
+svnamn: Designansatser: deltagande, användarcentrerad och värdekänslig design
 upphov: Skandinavisk tradition (1970-talet); Norman & Draper (1986); Friedman (1996)
 ar: 1970-talet
 paradigm: [Kritisk, Tolkande]

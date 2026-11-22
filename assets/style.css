@@ -247,3 +247,7 @@ details.embed input, details.embed textarea { font-size: .8rem; }
 .g-forslag b { font-family: var(--rubrik); font-size: 1.12rem; overflow-wrap: break-word; hyphens: auto; }
 .g-forslag > span:last-child { color: var(--dampad); font-size: .86rem; line-height: 1.45; }
 .g-etikett { color: var(--accent); font-size: .62rem; }
+.kort-sv { font-size: .85rem; color: var(--dampad); margin: 2px 0 6px; line-height: 1.35; }
+.kort-sv span, .svnamn span { font-family: var(--ui); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; margin-right: 4px; }
+.svnamn { margin: -.2em 0 .6em; color: var(--dampad); font-style: italic; font-size: 1.05rem; }
+.svnamn span { font-style: normal; }

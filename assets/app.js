@@ -220,6 +220,7 @@
     return `<a class="kort" href="#/${it.typ}/${it.id}">
       <div class="kort-topp"><span class="kort-kort">${esc(it.kortnamn || it.namn)}</span>${it.ar ? `<span class="kort-ar">${esc(it.ar)}</span>` : ''}</div>
       ${it.namn !== it.kortnamn ? `<div class="kort-namn">${esc(it.namn)}</div>` : ''}
+      ${it.svnamn && it.svnamn !== it.kortnamn ? `<div class="kort-sv"><span>sv.</span> ${esc(it.svnamn)}</div>` : ''}
       <p>${esc(it.sammanfattning || '')}</p>
       <div class="chips">${lista(it.paradigm).map((p) => chip(p, null, 'p')).join('')}${it.ansats ? chip(it.ansats, null, 'p') : ''}${it.analysniva ? chip(it.analysniva, null) : ''}</div>
     </a>`;
@@ -274,7 +275,7 @@
     const sok = document.getElementById('f-sok'), omr = document.getElementById('f-omr');
     const rita = () => {
       const s = sok.value.trim().toLowerCase(), o = omr.value;
-      const tr = alla.filter((x) => (!o || lista(x.omraden).includes(o)) && (!s || [x.namn, x.kortnamn, x.sammanfattning, ...lista(x.nyckelord), ...lista(x.omraden)].join(' ').toLowerCase().includes(s)));
+      const tr = alla.filter((x) => (!o || lista(x.omraden).includes(o)) && (!s || [x.namn, x.kortnamn, x.svnamn, x.sammanfattning, ...lista(x.nyckelord), ...lista(x.omraden)].join(' ').toLowerCase().includes(s)));
       document.getElementById('lista').innerHTML = tr.map(kort).join('');
       document.getElementById('tom').hidden = tr.length > 0;
     };
@@ -294,7 +295,7 @@
       ${embedKnapp(`#/${it.typ}/${it.id}`)}
     </aside>`;
     return `<nav class="brod"><a href="#/">Start</a> / <a href="#/${it.typ === 'teori' ? 'teorier' : 'metoder'}">${it.typ === 'teori' ? 'Teorier' : 'Metoder'}</a> / ${esc(it.kortnamn || it.namn)}</nav>
-      <header class="dethuvud"><p class="overrubrik">${it.typ === 'teori' ? 'Teori' : 'Metod'}${it.upphov ? ' · ' + esc(it.upphov) : ''}</p><h1>${esc(it.namn)}</h1><p class="ingress">${esc(it.sammanfattning || '')}</p></header>
+      <header class="dethuvud"><p class="overrubrik">${it.typ === 'teori' ? 'Teori' : 'Metod'}${it.upphov ? ' · ' + esc(it.upphov) : ''}</p><h1 lang="${it.svnamn ? 'en' : 'sv'}">${esc(it.namn)}</h1>${it.svnamn ? `<p class="svnamn"><span>På svenska:</span> ${esc(it.svnamn)}</p>` : ''}<p class="ingress">${esc(it.sammanfattning || '')}</p></header>
       <div class="detalj">
         <div class="huvudkol">
           <div class="niva-wrap">${nivaReglage()}</div>

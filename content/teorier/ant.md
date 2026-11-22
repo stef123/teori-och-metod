@@ -1,7 +1,8 @@
 ---
 id: ant
-namn: Aktör-nätverksteori
+namn: Actor-Network Theory
 kortnamn: ANT
+svnamn: Aktör-nätverksteori
 upphov: Callon, Latour, Law (1980-talet)
 ar: 1986
 paradigm: [Tolkande]

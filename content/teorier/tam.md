@@ -2,6 +2,7 @@
 id: tam
 namn: Technology Acceptance Model
 kortnamn: TAM
+svnamn: Teknikacceptansmodellen
 upphov: Davis (1989)
 ar: 1989
 paradigm: [Positivistisk]

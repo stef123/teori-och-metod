@@ -25,7 +25,7 @@ tools/bygg-index.mjs
 ## Lägga till en teori eller metod
 
 1. Kopiera en befintlig fil, t.ex. `content/teorier/tam.md`, och ge den ett nytt namn.
-2. Uppdatera huvudet (mellan `---`): `id`, `namn`, `kortnamn`, `sammanfattning`, `omraden`, `metoder`, `relaterade` och `referenser`.
+2. Uppdatera huvudet (mellan `---`): `id`, `namn` (originalnamn, oftast engelska), `kortnamn`, `svnamn` (svenskt namn, valfritt), `sammanfattning`, `omraden`, `metoder`, `relaterade` och `referenser`.
 3. Skriv texten under `## Nivå 1` … `## Nivå 4`. Övriga `##`-rubriker (t.ex. `## Typiska forskningsfrågor`) visas under nivåerna.
 4. Kör `node tools/bygg-index.mjs` (eller låt GitHub göra det).
 
