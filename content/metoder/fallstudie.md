@@ -8,8 +8,8 @@ data: Intervjuer, dokument, observationer
 passar: Du vill förstå ett fenomen på djupet i sitt verkliga sammanhang
 sammanfattning: En djupgående undersökning av ett eller några få fall i sin verkliga miljö, med flera datakällor.
 nyckelord: [fall, kontext, Yin, Eisenhardt, tolkande, positivistisk, flerfallsstudie]
-omraden: [Systemimplementering, Organisationsförändring, Digital förvaltning, E-hälsa, Digital transformation, Utvärdering av IS]
-teorier: [strukturation, ant, aktivitetsteori, delone-mclean, diffusion]
+omraden: [Systemimplementering, Organisationsförändring, Digital förvaltning, E-hälsa, Digital transformation, Utvärdering av IS, Sociala medier och plattformar]
+teorier: [strukturation, ant, aktivitetsteori, delone-mclean, diffusion, plattformisering, distribuerad-kognition]
 relaterade: [intervju, etnografi]
 referenser:
   - forfattare: Yin, R. K.

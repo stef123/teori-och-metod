@@ -1,12 +1,18 @@
 {
   "teorier": [
+    "affordanser.md",
     "aktivitetsteori.md",
     "ant.md",
     "delone-mclean.md",
+    "designansatser.md",
     "diffusion.md",
+    "distribuerad-kognition.md",
+    "domesticering.md",
+    "plattformisering.md",
     "sociomaterialitet.md",
     "strukturation.md",
     "tam.md",
+    "uses-and-gratifications.md",
     "utaut.md"
   ],
   "metoder": [

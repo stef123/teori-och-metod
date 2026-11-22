@@ -179,3 +179,5 @@ details.embed input, details.embed textarea { font-size: .8rem; width: 100%; }
 .laddar { color: var(--dampad); }
 main:focus, main:focus-visible { outline: none; }
 .rutnat.omr { align-items: start; }
+.matris tbody th, .matris thead th:first-child { position: sticky; left: 0; z-index: 1; background: var(--yta); }
+.matris thead th:first-child { background: var(--yta2); }

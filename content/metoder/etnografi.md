@@ -7,8 +7,8 @@ data: Deltagande observation, fältanteckningar, informella samtal, dokument
 passar: Du vill förstå vardagliga praktiker och kultur inifrån, under en längre tid
 sammanfattning: Forskaren vistas under en längre tid i en miljö och observerar och deltar för att förstå människors praktiker och perspektiv inifrån.
 nyckelord: [etnografi, deltagande observation, fältarbete, fältanteckningar, praktik, kultur, netnografi]
-omraden: [Samarbete och CSCW, Människa–datorinteraktion, Organisationsförändring, Systemutveckling, E-hälsa]
-teorier: [sociomaterialitet, ant, aktivitetsteori, strukturation]
+omraden: [Samarbete och CSCW, Människa–datorinteraktion, Organisationsförändring, Systemutveckling, E-hälsa, Medier och vardagsliv, Sociala medier och plattformar]
+teorier: [sociomaterialitet, ant, aktivitetsteori, strukturation, domesticering, distribuerad-kognition, plattformisering, affordanser]
 relaterade: [fallstudie, intervju]
 referenser:
   - forfattare: Myers, M. D.
