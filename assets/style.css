@@ -284,3 +284,8 @@ p.nivastyrd > .nivamarke, span.nivastyrd > .nivamarke { display: table; }
   .pilot-info { max-width: 240px; }
 }
 @media print { #nivapilot { display: none; } }
+.niva-nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin: 4px 0 18px; }
+.niva-nav .hoj { width: auto; flex: 1 1 260px; max-width: 460px; margin: 0 0 0 auto; }
+.niva-nav .lank { font: 600 .92rem var(--ui); }
+.niva-nav .klar { margin: 0 0 0 auto; }
+.nivablock { scroll-margin-top: 120px; }

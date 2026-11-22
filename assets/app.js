@@ -178,25 +178,21 @@
 
   // ---------- Komponenter ----------
   function nivaInnehall(it) {
-    const delar = [];
-    for (const x of NIVAER) {
-      if (x.n > state.niva) break;
-      const blk = it.nivaer[x.n];
-      if (!blk) continue;
-      delar.push(`<section class="nivablock n${x.n}${x.n === state.niva ? ' ny' : ''}" id="niva-${x.n}">
-        <div class="nivabadge">Nivå ${x.r} · ${esc(x.namn)}</div>${markdown(blk.text.join('\n'))}</section>`);
-    }
-    const nasta = NIVAER.find((x) => x.n > state.niva && it.nivaer[x.n]);
-    if (nasta) delar.push(`<button type="button" class="hoj" data-niva="${nasta.n}">Gå djupare: nivå ${nasta.r} · ${esc(nasta.namn)} <span aria-hidden="true">↓</span></button>`);
-    else delar.push(`<p class="klar">Du har nått högsta nivån. <button type="button" class="lank" data-niva="1">Börja om från nivå 1</button></p>`);
+    const finns = NIVAER.filter((x) => it.nivaer[x.n]);
+    const x = [...finns].reverse().find((y) => y.n <= state.niva) || finns[0];
+    if (!x) return '';
+    const delar = [`<section class="nivablock n${x.n} ny" id="niva-${x.n}">
+        <div class="nivabadge">Nivå ${x.r} · ${esc(x.namn)}</div>${markdown(it.nivaer[x.n].text.join('\n'))}</section>`];
+    const fore = [...finns].reverse().find((y) => y.n < x.n), nasta = finns.find((y) => y.n > x.n);
+    delar.push(`<div class="niva-nav">${fore ? `<button type="button" class="lank" data-niva="${fore.n}">← Enklare: nivå ${fore.r}</button>` : '<span></span>'}${nasta ? `<button type="button" class="hoj" data-niva="${nasta.n}">Gå djupare: nivå ${nasta.r} · ${esc(nasta.namn)} <span aria-hidden="true">→</span></button>` : '<p class="klar">Du är på högsta nivån.</p>'}</div>`);
     return delar.join('');
   }
   function kopplaNiva(rot, it) {
     const satt = (n, rulla) => {
       settNiva(n);
-      if (rulla) { const el = rot.querySelector(`#niva-${n}`); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      if (rulla) { const el = rot.querySelector(`#niva-${n}`); if (el) el.scrollIntoView({ block: 'start' }); }
     };
-    rot.querySelectorAll('[data-niva]').forEach((b) => b.addEventListener('click', () => satt(+b.dataset.niva, b.classList.contains('hoj'))));
+    rot.querySelectorAll('[data-niva]').forEach((b) => b.addEventListener('click', () => satt(+b.dataset.niva, !!b.closest('.niva-nav'))));
   }
   // Text i kort och förslag som följer förklaringsnivån
   function ren(t) {
