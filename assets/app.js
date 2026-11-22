@@ -6,10 +6,10 @@
   'use strict';
 
   const NIVAER = [
-    { n: 1, r: 'I', namn: 'Enkelt förklarat', kort: 'ELI5', hjalp: 'Som om du vore tio år. Inga facktermer.' },
-    { n: 2, r: 'II', namn: 'Grunderna', kort: 'Grund', hjalp: 'De viktigaste begreppen och hur de hänger ihop.' },
-    { n: 3, r: 'III', namn: 'Fördjupning', kort: 'Fördjupning', hjalp: 'Antaganden, varianter och hur teorin används i studier.' },
-    { n: 4, r: 'IV', namn: 'Forskarnivå', kort: 'Forskare', hjalp: 'Kritik, debatter och vetenskapsteoretiska frågor.' },
+    { n: 1, r: '1', namn: 'Enkelt förklarat', kort: 'ELI5', hjalp: 'Som om du vore tio år. Inga facktermer.' },
+    { n: 2, r: '2', namn: 'Grunderna', kort: 'Grund', hjalp: 'De viktigaste begreppen och hur de hänger ihop.' },
+    { n: 3, r: '3', namn: 'Fördjupning', kort: 'Fördjupning', hjalp: 'Antaganden, varianter och hur teorin används i studier.' },
+    { n: 4, r: '4', namn: 'Forskarnivå', kort: 'Forskare', hjalp: 'Kritik, debatter och vetenskapsteoretiska frågor.' },
   ];
   const REF_ROLLER = {
     grund: 'Grundtexter',
@@ -177,14 +177,6 @@
   }
 
   // ---------- Komponenter ----------
-  function nivaReglage() {
-    const nv = NIVAER[state.niva - 1];
-    return `<div class="niva nivastyrd" role="group" aria-label="Förklaringsnivå">
-      <div class="niva-topp"><span class="niva-etikett">Förklaringsnivå</span><span class="niva-hjalp" id="niva-hjalp">${esc(nv.hjalp)}</span></div>
-      <input type="range" min="1" max="4" step="1" value="${state.niva}" id="niva-range" aria-valuetext="Nivå ${state.niva}: ${esc(nv.namn)}">
-      <div class="niva-steg">${NIVAER.map((x) => `<button type="button" data-niva="${x.n}" class="${x.n <= state.niva ? 'aktiv' : ''}${x.n === state.niva ? ' vald' : ''}"><b>${x.r}</b><span>${esc(x.namn)}</span></button>`).join('')}</div>
-    </div>`;
-  }
   function nivaInnehall(it) {
     const delar = [];
     for (const x of NIVAER) {
@@ -205,8 +197,6 @@
       if (rulla) { const el = rot.querySelector(`#niva-${n}`); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     };
     rot.querySelectorAll('[data-niva]').forEach((b) => b.addEventListener('click', () => satt(+b.dataset.niva, b.classList.contains('hoj'))));
-    const rng = rot.querySelector('#niva-range');
-    if (rng) rng.addEventListener('change', () => satt(+rng.value, false));
   }
   // Text i kort och förslag som följer förklaringsnivån
   function ren(t) {
@@ -235,7 +225,7 @@
     const deb = stycken(it.nivaer?.[4]).map((x) => (x.match(/^[-*] \*\*([^*]+)\*\*/) || [])[1]).filter(Boolean).slice(0, 3).map((x) => ren(x).replace(/^Kritik: /, '').replace(/[:.]$/, ''));
     return sam + (deb.length ? ` Forskningsdebatter: ${deb.join(' · ')}.`.replace('?.', '?') : '');
   }
-  const nivaMarke = () => `<span class="nivamarke" title="Följer förklaringsnivån (nivå ${NIVAER[state.niva - 1].r})" aria-hidden="true">${NIVAER[state.niva - 1].r}</span>`;
+  const nivaMarke = () => `<span class="nivamarke" title="Texten följer nivåvalet uppe till höger">Nivå ${state.niva}</span>`;
   const chip = (t, href, kl = '') => href ? `<a class="chip ${kl}" href="${href}">${esc(t)}</a>` : `<span class="chip ${kl}">${esc(t)}</span>`;
   function referens(r) {
     const doi = r.doi ? `<a class="doi" href="https://doi.org/${esc(r.doi)}" target="_blank" rel="noopener">doi:${esc(r.doi)}</a>` : '';
@@ -251,7 +241,7 @@
     }).join('')}</section>`;
   }
   function kort(it) {
-    return `<a class="kort" href="#/${it.typ}/${it.id}">
+    return `<a class="kort nivakort" href="#/${it.typ}/${it.id}">
       <div class="kort-topp"><span class="kort-kort">${esc(it.kortnamn || it.namn)}</span>${it.ar ? `<span class="kort-ar">${esc(it.ar)}</span>` : ''}</div>
       ${it.namn !== it.kortnamn ? `<div class="kort-namn">${esc(it.namn)}</div>` : ''}
       ${it.svnamn && it.svnamn !== it.kortnamn ? `<div class="kort-sv"><span>sv.</span> ${esc(it.svnamn)}</div>` : ''}
@@ -337,7 +327,6 @@
       <header class="dethuvud"><p class="overrubrik">${it.typ === 'teori' ? 'Teori' : 'Metod'}${it.upphov ? ' · ' + esc(it.upphov) : ''}</p><h1 lang="${it.svnamn ? 'en' : 'sv'}">${esc(it.namn)}</h1>${it.svnamn ? `<p class="svnamn"><span>På svenska:</span> ${esc(it.svnamn)}</p>` : ''}<p class="ingress">${esc(it.sammanfattning || '')}</p></header>
       <div class="detalj">
         <div class="huvudkol">
-          <div class="niva-wrap">${nivaReglage()}</div>
           <div class="nivainnehall nivastyrd">${nivaInnehall(it)}</div>
           ${it.sektioner.map((s) => `<section class="sektion"><h2>${esc(s.titel)}</h2>${markdown(s.text.join('\n'))}</section>`).join('')}
           ${referenser(it)}
@@ -349,7 +338,7 @@
     return `<nav class="brod"><a href="#/">Start</a> / ${esc(sd.namn)}</nav>
       <header class="dethuvud"><h1>${esc(sd.namn)}</h1>${sd.sammanfattning ? `<p class="ingress">${esc(sd.sammanfattning)}</p>` : ''}</header>
       <div class="smal">
-      ${harNivaer ? `<div class="niva-wrap">${nivaReglage()}</div><div class="nivainnehall nivastyrd">${nivaInnehall(sd)}</div>` : ''}
+      ${harNivaer ? `<div class="nivainnehall nivastyrd">${nivaInnehall(sd)}</div>` : ''}
       ${sd.id === 'metodguide' ? guideSektion(q) : ''}
       ${sd.sektioner.map((s) => `<section class="sektion" id="${slug(s.titel)}"><h2>${esc(s.titel)}</h2>${markdown(s.text.join('\n'))}</section>`).join('')}
       ${referenser(sd)}
@@ -410,7 +399,7 @@
     const huvud = Object.entries(paradigm).sort((x, y) => y[1] - x[1])[0];
     const forslag = (lst, typ) => lst.map(([id], i) => {
       const it = state.items[id];
-      return `<a class="g-forslag${i === 0 ? ' forst' : ''}" href="#/${typ}/${id}"><span class="g-etikett">${i === 0 ? 'Bäst match' : 'Passar också'}</span><b>${esc(it.kortnamn || it.namn)}</b><span class="nivastyrd">${nivaMarke()}${esc(nivaText(it))}</span></a>`;
+      return `<a class="g-forslag nivakort${i === 0 ? ' forst' : ''}" href="#/${typ}/${id}"><span class="g-etikett">${i === 0 ? 'Bäst match' : 'Passar också'}</span><b>${esc(it.kortnamn || it.namn)}</b><span class="nivastyrd">${nivaMarke()}${esc(nivaText(it))}</span></a>`;
     }).join('');
     return `<section class="g-resultat"><p class="overrubrik">Ditt förslag</p><h3>Din studie i en mening</h3>
       <p class="g-mening">${esc(mening)}</p>
@@ -451,13 +440,15 @@
   function pilotHtml() {
     const nv = NIVAER[state.niva - 1];
     return `<div class="pilot-rad"><span class="pilot-etikett">Nivå</span>${NIVAER.map((x) => `<button type="button" data-gniva="${x.n}" class="${x.n === state.niva ? 'vald' : ''}" aria-pressed="${x.n === state.niva}" title="Nivå ${x.r}: ${esc(x.namn)}">${x.r}</button>`).join('')}</div>
-      <div class="pilot-info"><b>${nv.r} · ${esc(nv.namn)}</b><span>${esc(nv.hjalp)}</span><span class="pilot-tips">Gäller hela sajten. Delar märkta <span class="nivamarke">${nv.r}</span> eller med en ram följer nivån.</span></div>`;
+      <div class="pilot-info"><b>${nv.r} · ${esc(nv.namn)}</b><span>${esc(nv.hjalp)}</span><span class="pilot-tips">Gäller hela sajten. Kort i guldton, märkta <span class="nivamarke">Nivå ${nv.n}</span>, och texterna på teori- och metodsidorna följer valet.</span></div>`;
   }
   function byggPilot() {
     const el = document.createElement('div');
     el.id = 'nivapilot'; el.setAttribute('role', 'group'); el.setAttribute('aria-label', 'Förklaringsnivå för hela sajten');
     el.innerHTML = pilotHtml();
     document.body.appendChild(el);
+    const hojd = () => { const h = document.querySelector('.sidhuvud'); const nere = h && h.offsetParent !== null ? Math.max(0, h.getBoundingClientRect().bottom) : 0; el.style.top = Math.max(8, nere + 10) + 'px'; };
+    hojd(); window.addEventListener('resize', hojd); window.addEventListener('scroll', hojd, { passive: true });
     el.addEventListener('click', (e) => { const b = e.target.closest('[data-gniva]'); if (b) settNiva(+b.dataset.gniva); });
     const visa = (on) => document.documentElement.classList.toggle('visa-niva', on);
     el.addEventListener('mouseenter', () => visa(true)); el.addEventListener('mouseleave', () => visa(false));

@@ -254,28 +254,33 @@ details.embed input, details.embed textarea { font-size: .8rem; }
 .svnamn span { font-style: normal; }
 
 /* ---------- Global förklaringsnivå ---------- */
-.nivamarke { display: inline-flex; align-items: center; justify-content: center; min-width: 1.7em; height: 1.7em; padding: 0 .35em; margin-right: .45em; border: 1px solid var(--accent); border-radius: 999px; font-family: var(--rubrik); font-size: .72rem; font-weight: 700; color: var(--accent); background: var(--yta); vertical-align: .1em; line-height: 1; }
+:root { --niva-yta: #f5eedb; --niva-kant: #c9b06a; --niva-etikett: #6e5716; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --niva-yta: #25211a; --niva-kant: #7d6a36; --niva-etikett: #e3c983; } }
+:root[data-theme="dark"] { --niva-yta: #25211a; --niva-kant: #7d6a36; --niva-etikett: #e3c983; }
+.kort.nivakort, .g-forslag.nivakort { background: var(--niva-yta); border-color: var(--niva-kant); }
+.kort.nivakort { border-top-color: var(--black); }
+a.kort.nivakort:hover { border-top-color: var(--accent); }
+.g-forslag.nivakort.forst { border-color: var(--accent); }
+.nivamarke { display: inline-block; width: fit-content; margin: 0 0 6px; padding: 2px 9px; border-radius: 999px; background: var(--niva-etikett); color: var(--niva-yta); font-family: var(--ui); font-size: .72rem; font-weight: 700; letter-spacing: .04em; line-height: 1.5; white-space: nowrap; }
+p.nivastyrd > .nivamarke, span.nivastyrd > .nivamarke { display: table; }
 .nivastyrd { transition: box-shadow .25s, background-color .25s; border-radius: 4px; }
-.visa-niva .nivastyrd, .niva-blink .nivastyrd { box-shadow: 0 0 0 2px var(--yta), 0 0 0 4px var(--accent); }
-.niva-blink .nivastyrd { background-color: var(--accent-ljus); }
-#nivapilot { position: fixed; right: 16px; bottom: 16px; z-index: 20; background: var(--yta); border: 1px solid var(--linje-stark); border-radius: 12px; box-shadow: 0 6px 24px rgba(20, 24, 34, .18); font-family: var(--ui); max-width: calc(100vw - 32px); }
+.visa-niva .nivakort, .niva-blink .nivakort, .visa-niva .nivainnehall, .niva-blink .nivainnehall { box-shadow: 0 0 0 2px var(--papper), 0 0 0 4px var(--niva-kant); }
+#nivapilot { position: fixed; right: 16px; top: 12px; z-index: 20; background: var(--yta); border: 1px solid var(--niva-kant); border-radius: 12px; box-shadow: 0 6px 24px rgba(20, 24, 34, .18); font-family: var(--ui); max-width: calc(100vw - 32px); }
 .pilot-rad { display: flex; align-items: center; gap: 4px; padding: 6px; }
-.pilot-etikett { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--dampad); padding: 0 6px 0 4px; }
-#nivapilot button { min-width: 40px; height: 36px; border: 1px solid var(--linje); background: var(--papper); color: var(--black); border-radius: 8px; font-family: var(--rubrik); font-weight: 700; font-size: .95rem; cursor: pointer; }
-#nivapilot button:hover { border-color: var(--accent); color: var(--accent); }
-#nivapilot button.vald { background: var(--black); border-color: var(--black); color: var(--knapptext); }
+.pilot-etikett { font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--niva-etikett); padding: 0 6px 0 4px; }
+#nivapilot button { min-width: 38px; height: 36px; border: 1px solid var(--linje); background: var(--papper); color: var(--black); border-radius: 8px; font-family: var(--ui); font-weight: 700; font-size: 1rem; cursor: pointer; }
+#nivapilot button:hover { border-color: var(--niva-kant); color: var(--niva-etikett); }
+#nivapilot button.vald { background: var(--niva-etikett); border-color: var(--niva-etikett); color: var(--niva-yta); }
 #nivapilot button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .pilot-info { display: none; padding: 0 12px 10px; max-width: 280px; font-size: .82rem; line-height: 1.4; color: var(--dampad); }
 .pilot-info b { display: block; color: var(--black); font-family: var(--rubrik); font-size: .95rem; margin-bottom: 2px; }
 .pilot-info span { display: block; }
 .pilot-tips { margin-top: 6px; font-size: .76rem; }
-.pilot-tips .nivamarke { display: inline-flex; margin: 0 .1em; font-size: .62rem; }
+.pilot-tips .nivamarke { display: inline-block; margin: 0 .15em; font-size: .66rem; padding: 0 6px; }
 #nivapilot:hover .pilot-info, #nivapilot:focus-within .pilot-info { display: block; }
-.sidfot { padding-bottom: 88px; }
-.embed main { padding-bottom: 72px; }
 @media (max-width: 600px) {
-  #nivapilot { right: 12px; bottom: 12px; }
-  #nivapilot button { min-width: 36px; height: 34px; }
+  #nivapilot { right: 12px; }
+  #nivapilot button { min-width: 34px; height: 32px; }
   .pilot-info { max-width: 240px; }
 }
 @media print { #nivapilot { display: none; } }
