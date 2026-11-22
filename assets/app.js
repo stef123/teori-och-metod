@@ -240,14 +240,15 @@
       <p class="overrubrik">Studiestöd i informatik</p>
       <h1>Förstå teorierna. Välj rätt metod.</h1>
       <p class="ingress">Här kan du utforska vanliga teorier och forskningsmetoder inom informatik och informationssystem. Varje förklaring börjar på enklaste nivå, och du bestämmer själv när det är dags att gå djupare.</p>
-      <div class="hero-knappar"><a class="knapp" href="#/sida/vad-ar-en-teori">Vad är en teori? Börja här</a><a class="knapp sek" href="#/sida/metodguide">Så gör du en bra undersökning</a></div>
+      <div class="hero-knappar"><a class="knapp" href="#/sida/vad-ar-informatik">Börja här: vad är informatik?</a><a class="knapp sek" href="#/sida/vad-ar-en-teori">Vad är en teori?</a><a class="knapp sek" href="#/sida/metodguide">Så gör du en bra undersökning</a></div>
     </section>
     <section class="stig">
       <ol>
-        <li><a href="#/sida/vad-ar-en-teori"><b>1. Förstå vad en teori är</b><span>Begrepp, samband och varför teorier behövs.</span></a></li>
-        <li><a href="#/teorier"><b>2. Utforska teorier</b><span>${t.length} teorier, från enkel till forskarnivå.</span></a></li>
-        <li><a href="#/omraden"><b>3. Hitta ditt område</b><span>Vilka teorier och metoder passar ditt ämne?</span></a></li>
-        <li><a href="#/metoder"><b>4. Välj metod</b><span>${m.length} metoder med steg, fallgropar och kvalitetskriterier.</span></a></li>
+        <li><a href="#/sida/vad-ar-informatik"><b>1. Vad är informatik?</b><span>Ämnet, informationssystem och hur det skiljer sig från datavetenskap.</span></a></li>
+        <li><a href="#/sida/vad-ar-en-teori"><b>2. Förstå vad en teori är</b><span>Begrepp, samband och varför teorier behövs.</span></a></li>
+        <li><a href="#/teorier"><b>3. Utforska teorier</b><span>${t.length} teorier, från enkel till forskarnivå.</span></a></li>
+        <li><a href="#/omraden"><b>4. Hitta ditt område</b><span>Vilka teorier och metoder passar ditt ämne?</span></a></li>
+        <li><a href="#/metoder"><b>5. Välj metod</b><span>${m.length} metoder med steg, fallgropar och kvalitetskriterier.</span></a></li>
       </ol>
     </section>
     <h2 class="sekt">Teorier</h2><div class="rutnat">${t.map(kort).join('')}</div>
