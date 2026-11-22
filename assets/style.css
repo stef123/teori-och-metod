@@ -249,5 +249,6 @@ details.embed input, details.embed textarea { font-size: .8rem; }
 .g-etikett { color: var(--accent); font-size: .62rem; }
 .kort-sv { font-size: .85rem; color: var(--dampad); margin: 2px 0 6px; line-height: 1.35; }
 .kort-sv span, .svnamn span { font-family: var(--ui); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; margin-right: 4px; }
+.kort-trad { font-family: var(--ui); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 2px 0 6px; line-height: 1.45; overflow-wrap: anywhere; }
 .svnamn { margin: -.2em 0 .6em; color: var(--dampad); font-style: italic; font-size: 1.05rem; }
 .svnamn span { font-style: normal; }

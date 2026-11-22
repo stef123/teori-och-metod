@@ -6,13 +6,14 @@ svnamn: Domesticeringsteori
 upphov: Silverstone, Hirsch & Morley (1992)
 ar: 1992
 paradigm: [Tolkande]
+tradition: [Medie- och kommunikationsvetenskap, STS]
 analysniva: Hushåll, vardagsliv
 disciplin: Medie- och kommunikationsvetenskap, STS
 sammanfattning: Beskriver hur ny teknik och nya medier "tämjs" när de tas in i hem och vardagsliv, och hur både tekniken och människornas vanor förändras på vägen.
 nyckelord: [domesticering, tämjning, vardagsliv, hushåll, appropriering, inkorporering, medieanvändning]
 omraden: [Medier och vardagsliv, Sociala medier och plattformar, E-hälsa, Teknikacceptans, Utbildning och lärplattformar]
 metoder: [intervju, etnografi, fallstudie]
-relaterade: [diffusion, tam, uses-and-gratifications, sociomaterialitet]
+relaterade: [diffusion, tam, uses-and-gratifications, sociomaterialitet, medialisering, scot]
 referenser:
   - forfattare: Silverstone, R. & Hirsch, E. (red.)
     ar: 1992

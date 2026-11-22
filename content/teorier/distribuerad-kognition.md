@@ -6,13 +6,14 @@ svnamn: Distribuerad kognition
 upphov: Hutchins (1995)
 ar: 1995
 paradigm: [Tolkande]
+tradition: [Psykologi och socialpsykologi, Design och HCI]
 analysniva: Funktionellt system (människor och artefakter)
 disciplin: Kognitionsvetenskap, antropologi
 sammanfattning: Ser tänkande och problemlösning som något som sker i hela system av människor, verktyg och representationer, inte bara inuti enskilda huvuden.
 nyckelord: [kognition, representationer, artefakter, samarbete, Hutchins, cockpit, DiCoT]
 omraden: [Människa–datorinteraktion, Samarbete och CSCW, E-hälsa, Systemutveckling, AI och automatisering]
 metoder: [etnografi, fallstudie, intervju]
-relaterade: [aktivitetsteori, affordanser, ant]
+relaterade: [aktivitetsteori, affordanser, ant, embodied-interaction]
 referenser:
   - forfattare: Hutchins, E.
     ar: 1995

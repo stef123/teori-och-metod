@@ -6,13 +6,14 @@ svnamn: Strukturationsteori
 upphov: Giddens (1984); i IS bl.a. Orlikowski (1992, 2000)
 ar: 1984
 paradigm: [Tolkande]
+tradition: [Sociologi, IS och management]
 analysniva: Praktik, organisation
 disciplin: Sociologi
 sammanfattning: Förklarar hur människors handlingar både formas av och återskapar sociala strukturer, och i IS hur teknik får betydelse genom hur den används i praktiken.
 nyckelord: [struktur, aktör, dualitet, praktik, technology-in-practice, AST]
 omraden: [Organisationsförändring, Systemimplementering, Samarbete och CSCW, Digital transformation]
 metoder: [fallstudie, intervju, etnografi]
-relaterade: [sociomaterialitet, aktivitetsteori, ant]
+relaterade: [sociomaterialitet, aktivitetsteori, ant, bourdieu, symbolisk-interaktionism]
 referenser:
   - forfattare: Giddens, A.
     ar: 1984

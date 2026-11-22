@@ -6,6 +6,7 @@ svnamn: Plattformisering
 upphov: Helmond (2015); Poell, Nieborg & van Dijck (2019)
 ar: 2015
 paradigm: [Kritisk, Tolkande]
+tradition: [Medie- och kommunikationsvetenskap, IS och management]
 analysniva: Plattformar, marknader och samhälle
 disciplin: Medievetenskap, IS, ekonomi
 sammanfattning: Beskriver hur digitala plattformar som Google, Meta, Apple och Amazon tränger in i allt fler delar av samhället och förändrar hur marknader, kultur och offentliga tjänster organiseras.

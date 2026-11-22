@@ -7,9 +7,9 @@ data: Samtal med ett mindre antal personer, inspelade och transkriberade
 passar: Du vill förstå människors erfarenheter, tolkningar och resonemang
 sammanfattning: Samtal där forskaren genom öppna frågor försöker förstå hur människor upplever och tolkar något, ofta analyserade med tematisk analys.
 nyckelord: [intervju, semistrukturerad, intervjuguide, tematisk analys, kodning, transkribering]
-omraden: [Systemimplementering, E-hälsa, Organisationsförändring, Människa–datorinteraktion, Utbildning och lärplattformar, Digital förvaltning, Medier och vardagsliv, Sociala medier och plattformar]
-teorier: [strukturation, aktivitetsteori, ant, sociomaterialitet, diffusion, domesticering, uses-and-gratifications, plattformisering, designansatser, affordanser]
-relaterade: [fallstudie, etnografi]
+omraden: [Systemimplementering, E-hälsa, Organisationsförändring, Människa–datorinteraktion, Utbildning och lärplattformar, Digital förvaltning, Medier och vardagsliv, Sociala medier och plattformar, Digital ojämlikhet]
+teorier: [strukturation, aktivitetsteori, ant, sociomaterialitet, diffusion, domesticering, uses-and-gratifications, plattformisering, designansatser, affordanser, postfenomenologi, embodied-interaction, heidegger, goffman, symbolisk-interaktionism, scot, bourdieu, medialisering, social-presence, parasocial-interaction, context-collapse]
+relaterade: [fallstudie, etnografi, fenomenologisk-metod, ipa]
 referenser:
   - forfattare: Myers, M. D. & Newman, M.
     ar: 2007

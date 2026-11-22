@@ -6,13 +6,14 @@ svnamn: Sociomaterialitet
 upphov: Orlikowski (2007); Orlikowski & Scott (2008)
 ar: 2007
 paradigm: [Tolkande]
+tradition: [STS, IS och management]
 analysniva: Praktik
 disciplin: Organisationsforskning, IS, STS
 sammanfattning: Ett perspektiv som ser det sociala och det materiella (t.ex. teknik) som sammanflätat i praktiken, snarare än som två separata saker som påverkar varandra.
 nyckelord: [sammanflätning, materialitet, praktik, performativitet, imbrication, agentiell realism]
 omraden: [Organisationsförändring, Digital transformation, AI och automatisering, Samarbete och CSCW]
 metoder: [etnografi, fallstudie, intervju]
-relaterade: [strukturation, ant]
+relaterade: [strukturation, ant, heidegger]
 referenser:
   - forfattare: Orlikowski, W. J.
     ar: 2007

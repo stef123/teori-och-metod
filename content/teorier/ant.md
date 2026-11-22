@@ -6,13 +6,14 @@ svnamn: Aktör-nätverksteori
 upphov: Callon, Latour, Law (1980-talet)
 ar: 1986
 paradigm: [Tolkande]
+tradition: [STS, Sociologi]
 analysniva: Heterogena nätverk
 disciplin: Teknik- och vetenskapsstudier (STS)
 sammanfattning: Ser samhälle och teknik som nätverk av mänskliga och icke-mänskliga aktörer, och studerar hur sådana nätverk byggs, hålls ihop och faller isär.
 nyckelord: [aktant, översättning, inskription, nätverk, symmetri, svart låda, Latour, Callon]
 omraden: [Informationsinfrastrukturer, Systemimplementering, Digital förvaltning, E-hälsa, Digital transformation]
 metoder: [fallstudie, etnografi, intervju]
-relaterade: [sociomaterialitet, strukturation, aktivitetsteori]
+relaterade: [sociomaterialitet, strukturation, aktivitetsteori, scot]
 referenser:
   - forfattare: Callon, M.
     ar: 1984

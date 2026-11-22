@@ -167,6 +167,15 @@
     return [...set.values()].sort((a, b) => a.namn.localeCompare(b.namn, 'sv'));
   }
 
+  function traditioner() {
+    const set = new Map();
+    for (const it of allaAv('teori')) for (const o of lista(it.tradition)) {
+      if (!set.has(o)) set.set(o, { namn: o, teori: [] });
+      set.get(o).teori.push(it);
+    }
+    return [...set.values()].sort((a, b) => a.namn.localeCompare(b.namn, 'sv'));
+  }
+
   // ---------- Komponenter ----------
   function nivaReglage() {
     const nv = NIVAER[state.niva - 1];
@@ -221,6 +230,7 @@
       <div class="kort-topp"><span class="kort-kort">${esc(it.kortnamn || it.namn)}</span>${it.ar ? `<span class="kort-ar">${esc(it.ar)}</span>` : ''}</div>
       ${it.namn !== it.kortnamn ? `<div class="kort-namn">${esc(it.namn)}</div>` : ''}
       ${it.svnamn && it.svnamn !== it.kortnamn ? `<div class="kort-sv"><span>sv.</span> ${esc(it.svnamn)}</div>` : ''}
+      ${lista(it.tradition).length ? `<div class="kort-trad">${lista(it.tradition).map(esc).join(' · ')}</div>` : ''}
       <p>${esc(it.sammanfattning || '')}</p>
       <div class="chips">${lista(it.paradigm).map((p) => chip(p, null, 'p')).join('')}${it.ansats ? chip(it.ansats, null, 'p') : ''}${it.analysniva ? chip(it.analysniva, null) : ''}</div>
     </a>`;
@@ -259,27 +269,29 @@
   function sidLista(typ, q) {
     const alla = allaAv(typ);
     const omr = [...new Set(alla.flatMap((x) => lista(x.omraden)))].sort((a, b) => a.localeCompare(b, 'sv'));
+    const trad = traditioner();
     const titel = typ === 'teori' ? 'Teorier' : 'Metoder';
     const ingress = typ === 'teori'
-      ? 'Teorier är verktyg för att förstå, förklara eller förutsäga något. Välj en teori för att läsa om den, från enkel förklaring till forskarnivå.'
+      ? 'Teorier är verktyg för att förstå, förklara eller förutsäga något. Välj en teori för att läsa om den, från enkel förklaring till forskarnivå. Teorierna kommer från olika <a href="#/sida/vad-ar-en-teori?till=teoritraditioner">teoritraditioner</a>, som du kan filtrera på.'
       : 'Metoden är hur du tar reda på något. Varje metod beskrivs med syfte, steg för steg, vanliga fallgropar och hur kvaliteten bedöms.';
-    return `<h1>${titel}</h1><p class="ingress">${ingress}</p>
+    return `<h1>${titel}</h1><p class="ingress">${typ === 'teori' ? ingress : esc(ingress)}</p>
       <div class="filter">
         <label class="sok"><span>Sök</span><input type="search" id="f-sok" placeholder="t.ex. acceptans, praktik, aktör" value="${esc(q.get('q') || '')}"></label>
+        ${typ === 'teori' ? `<label><span>Teoritradition</span><select id="f-trad"><option value="">Alla traditioner</option>${trad.map((o) => `<option ${q.get('tradition') === o.namn ? 'selected' : ''}>${esc(o.namn)}</option>`).join('')}</select></label>` : ''}
         <label><span>Användningsområde</span><select id="f-omr"><option value="">Alla områden</option>${omr.map((o) => `<option ${q.get('omrade') === o ? 'selected' : ''}>${esc(o)}</option>`).join('')}</select></label>
       </div>
       <div class="rutnat" id="lista"></div><p id="tom" class="tom" hidden>Inga träffar. Prova ett annat ord eller område.</p>`;
   }
   function kopplaLista(typ) {
     const alla = allaAv(typ);
-    const sok = document.getElementById('f-sok'), omr = document.getElementById('f-omr');
+    const sok = document.getElementById('f-sok'), omr = document.getElementById('f-omr'), trad = document.getElementById('f-trad');
     const rita = () => {
-      const s = sok.value.trim().toLowerCase(), o = omr.value;
-      const tr = alla.filter((x) => (!o || lista(x.omraden).includes(o)) && (!s || [x.namn, x.kortnamn, x.svnamn, x.sammanfattning, ...lista(x.nyckelord), ...lista(x.omraden)].join(' ').toLowerCase().includes(s)));
+      const s = sok.value.trim().toLowerCase(), o = omr.value, t = trad ? trad.value : '';
+      const tr = alla.filter((x) => (!o || lista(x.omraden).includes(o)) && (!t || lista(x.tradition).includes(t)) && (!s || [x.namn, x.kortnamn, x.svnamn, x.sammanfattning, ...lista(x.nyckelord), ...lista(x.omraden), ...lista(x.tradition)].join(' ').toLowerCase().includes(s)));
       document.getElementById('lista').innerHTML = tr.map(kort).join('');
       document.getElementById('tom').hidden = tr.length > 0;
     };
-    sok.addEventListener('input', rita); omr.addEventListener('change', rita); rita();
+    sok.addEventListener('input', rita); omr.addEventListener('change', rita); if (trad) trad.addEventListener('change', rita); rita();
   }
   function sidDetalj(it) {
     const rel = (ids) => lista(ids).map((id) => state.items[id]).filter(Boolean);
@@ -288,6 +300,7 @@
       : [['Ansats', it.ansats], ['Typisk data', it.data], ['Passar när', it.passar]];
     const sido = `<aside class="sidopanel">
       <dl>${fakta.filter((f) => f[1]).map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
+      ${lista(it.tradition).length ? `<h3>Teoritradition</h3><div class="chips">${lista(it.tradition).map((o) => chip(o, `#/teorier?tradition=${encodeURIComponent(o)}`, 'p')).join('')}</div>` : ''}
       ${lista(it.omraden).length ? `<h3>Användningsområden</h3><div class="chips">${lista(it.omraden).map((o) => chip(o, `#/${it.typ === 'teori' ? 'teorier' : 'metoder'}?omrade=${encodeURIComponent(o)}`)).join('')}</div>` : ''}
       ${rel(it.metoder).length ? `<h3>Vanliga metoder</h3><div class="chips">${rel(it.metoder).map((x) => chip(x.kortnamn || x.namn, `#/metod/${x.id}`, 'm')).join('')}</div>` : ''}
       ${rel(it.teorier).length ? `<h3>Teorier som ofta används</h3><div class="chips">${rel(it.teorier).map((x) => chip(x.kortnamn || x.namn, `#/teori/${x.id}`, 't')).join('')}</div>` : ''}
@@ -312,7 +325,7 @@
       <div class="smal">
       ${harNivaer ? `<div class="niva-wrap">${nivaReglage()}</div><div class="nivainnehall">${nivaInnehall(sd)}</div>` : ''}
       ${sd.id === 'metodguide' ? guideSektion(q) : ''}
-      ${sd.sektioner.map((s) => `<section class="sektion"><h2>${esc(s.titel)}</h2>${markdown(s.text.join('\n'))}</section>`).join('')}
+      ${sd.sektioner.map((s) => `<section class="sektion" id="${slug(s.titel)}"><h2>${esc(s.titel)}</h2>${markdown(s.text.join('\n'))}</section>`).join('')}
       ${referenser(sd)}
       ${embedKnapp(`#/sida/${sd.id}`)}
       </div>`;
@@ -394,6 +407,10 @@
       <div class="rutnat omr">${omr.map((o) => `<article class="kort statisk" id="omr-${slug(o.namn)}"><div class="kort-namn">${esc(o.namn)}</div>
         ${o.teori.length ? `<div class="omr-rad"><span>Teorier</span><div class="chips">${o.teori.map((x) => chip(x.kortnamn, `#/teori/${x.id}`, 't')).join('')}</div></div>` : ''}
         ${o.metod.length ? `<div class="omr-rad"><span>Metoder</span><div class="chips">${o.metod.map((x) => chip(x.kortnamn, `#/metod/${x.id}`, 'm')).join('')}</div></div>` : ''}</article>`).join('')}</div>
+      <h2 class="sekt" id="traditioner">Teoritraditioner</h2>
+      <p>Teorierna kommer från olika forskningstraditioner med egna frågor och begrepp. Många teorier hör hemma i flera. Läs mer under <a href="#/sida/vad-ar-en-teori?till=teoritraditioner">Vad är en teori?</a></p>
+      <div class="rutnat omr">${traditioner().map((o) => `<article class="kort statisk"><div class="kort-namn"><a href="#/teorier?tradition=${encodeURIComponent(o.namn)}">${esc(o.namn)}</a></div>
+        <div class="omr-rad"><span>Teorier</span><div class="chips">${o.teori.map((x) => chip(x.kortnamn, `#/teori/${x.id}`, 't')).join('')}</div></div></article>`).join('')}</div>
       <h2 class="sekt">Matris: teorier × områden</h2>
       <div class="tabell matris"><table><thead><tr><th>Område</th>${t.map((x) => `<th><a href="#/teori/${x.id}">${esc(x.kortnamn)}</a></th>`).join('')}</tr></thead>
       <tbody>${omr.filter((o) => o.teori.length).map((o) => `<tr><th scope="row">${esc(o.namn)}</th>${t.map((x) => cell(x, o)).join('')}</tr>`).join('')}</tbody></table></div>
@@ -423,7 +440,8 @@
     const sekt = { teori: 'teori', teorier: 'teori', metod: 'metod', metoder: 'metod', omraden: 'omraden', guide: 'metodguide' }[d[0]] || (d[0] === 'sida' ? d[1] : '');
     document.querySelectorAll('.huvudnav a').forEach((a) => a.classList.toggle('aktiv', a.dataset.sektion === sekt));
     const guideEl = q.has('val') && document.getElementById('guide');
-    if (guideEl) guideEl.scrollIntoView({ block: 'start' }); else window.scrollTo(0, 0);
+    const tillEl = q.has('till') && document.getElementById(q.get('till'));
+    if (guideEl) guideEl.scrollIntoView({ block: 'start' }); else if (tillEl) tillEl.scrollIntoView({ block: 'start' }); else window.scrollTo(0, 0);
     app.focus({ preventScroll: true });
   }
 

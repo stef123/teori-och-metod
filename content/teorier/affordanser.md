@@ -6,13 +6,14 @@ svnamn: Affordanser
 upphov: Gibson (1979); Norman (1988)
 ar: 1979
 paradigm: [Tolkande, Positivistisk]
+tradition: [Psykologi och socialpsykologi, Design och HCI]
 analysniva: Relation människa–teknik
 disciplin: Ekologisk psykologi, HCI, kommunikationsvetenskap
 sammanfattning: Beskriver vilka handlingsmöjligheter en teknik erbjuder en viss användare, varken bara i tekniken eller bara i människan, utan i relationen mellan dem.
 nyckelord: [affordans, handlingsmöjlighet, design, signifier, sociala medier, synlighet, Gibson, Norman]
 omraden: [Människa–datorinteraktion, Sociala medier och plattformar, Samarbete och CSCW, Systemutveckling, Medier och vardagsliv]
 metoder: [intervju, enkat, etnografi, designvetenskap]
-relaterade: [sociomaterialitet, strukturation, distribuerad-kognition, designansatser]
+relaterade: [sociomaterialitet, strukturation, distribuerad-kognition, designansatser, goffman, context-collapse]
 referenser:
   - forfattare: Gibson, J. J.
     ar: 1979

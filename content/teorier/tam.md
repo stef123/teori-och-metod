@@ -6,13 +6,14 @@ svnamn: Teknikacceptansmodellen
 upphov: Davis (1989)
 ar: 1989
 paradigm: [Positivistisk]
+tradition: [IS och management, Psykologi och socialpsykologi]
 analysniva: Individ
 disciplin: Socialpsykologi, IS
 sammanfattning: Förklarar varför människor väljer att använda en ny teknik, utifrån hur användbar och hur lätt att använda de upplever att den är.
 nyckelord: [acceptans, användning, avsikt, nytta, enkelhet, adoption]
 omraden: [Teknikacceptans, E-hälsa, Utbildning och lärplattformar, E-handel och digitala tjänster, AI och automatisering]
 metoder: [enkat]
-relaterade: [utaut, diffusion]
+relaterade: [utaut, diffusion, social-presence]
 referenser:
   - forfattare: Davis, F. D.
     ar: 1989

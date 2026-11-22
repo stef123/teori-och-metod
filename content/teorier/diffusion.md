@@ -6,6 +6,7 @@ svnamn: Diffusionsteori
 upphov: Rogers (1962, 5:e uppl. 2003)
 ar: 1962
 paradigm: [Positivistisk]
+tradition: [Sociologi, Medie- och kommunikationsvetenskap]
 analysniva: Individ, organisation och samhälle
 disciplin: Sociologi, kommunikationsvetenskap
 sammanfattning: Förklarar hur, varför och i vilken takt nya idéer och tekniker sprids i ett socialt system.

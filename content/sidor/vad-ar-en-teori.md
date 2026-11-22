@@ -99,6 +99,22 @@ De flesta teorier har fyra byggstenar (Whetten, 1989):
 
 **Teoretiskt bidrag.** I en uppsats är målet sällan att skapa en helt ny teori. Ett rimligt bidrag kan vara att visa hur en teori fungerar i ett nytt sammanhang, att lägga till ett begrepp, att visa var en teori inte räcker till, eller att jämföra hur två teorier belyser samma fenomen.
 
+## Teoritraditioner
+
+Teorier växer fram i olika forskningstraditioner. Varje tradition har sina typiska frågor, begrepp och syn på vad kunskap är. Informatiken lånar från många av dem, och samma fenomen, t.ex. en ny app, kan studeras på helt olika sätt beroende på tradition. På sajten är varje teori märkt med en eller flera traditioner, och du kan [filtrera teorierna](#/teorier) på dem.
+
+| Tradition | Typisk fråga | Exempel på teorier |
+|---|---|---|
+| **Fenomenologi** | Hur *upplevs* tekniken, och hur formar den vår erfarenhet? | [[postfenomenologi]], [[embodied-interaction]], [[heidegger]] |
+| **Sociologi** | Hur hänger teknik ihop med sociala strukturer, grupper, makt och identitet? | [[goffman]], [[bourdieu]], [[strukturation]], [[symbolisk-interaktionism]] |
+| **Psykologi och socialpsykologi** | Hur tänker, känner och beter sig individer i mötet med teknik? | [[tam]], [[social-presence]], [[parasocial-interaction]], [[distribuerad-kognition]] |
+| **STS** (vetenskaps- och teknikstudier) | Hur formas teknik och samhälle tillsammans? | [[ant]], [[scot]], [[sociomaterialitet]] |
+| **Design och HCI** | Hur kan vi förstå och forma interaktionen mellan människor och teknik? | [[designansatser]], [[affordanser]], [[aktivitetsteori]] |
+| **IS och management** | Hur skapar informationssystem nytta och förändring i organisationer? | [[delone-mclean]], [[utaut]], [[plattformisering]] |
+| **Medie- och kommunikationsvetenskap** | Hur använder vi medier, och hur förändrar medier samhället? | [[uses-and-gratifications]], [[medialisering]], [[domesticering]], [[context-collapse]] |
+
+**Varför spelar det roll?** Traditionen avgör ofta vilka metoder som passar. Fenomenologiska teorier kombineras med [[fenomenologisk-metod]] eller [[ipa]], psykologiska modeller ofta med [[enkat]], och sociologiska och STS-teorier med [[intervju]], [[etnografi]] och [[fallstudie]]. Att veta var en teori kommer ifrån hjälper dig också att förstå kritiken mot den: den kommer ofta från en annan tradition.
+
 ## Checklista: har jag använt teori på ett bra sätt?
 
 - Kan jag förklara med egna ord varför jag valde just den här teorin?

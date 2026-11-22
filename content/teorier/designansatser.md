@@ -6,13 +6,14 @@ svnamn: Designansatser: deltagande, användarcentrerad och värdekänslig design
 upphov: Skandinavisk tradition (1970-talet); Norman & Draper (1986); Friedman (1996)
 ar: 1970-talet
 paradigm: [Kritisk, Tolkande]
+tradition: [Design och HCI]
 analysniva: Designprocess, användare och verksamhet
 disciplin: Informatik, HCI, design
 sammanfattning: Olika synsätt på vem som ska vara med och forma tekniken och varför, från den skandinaviska deltagande designen till användarcentrerad och värdekänslig design.
 nyckelord: [participatory design, deltagande design, UTOPIA, användarcentrerad design, UCD, värdekänslig design, VSD, användbarhet, demokrati]
 omraden: [Systemutveckling, Människa–datorinteraktion, E-hälsa, Digital förvaltning, AI och automatisering, Organisationsförändring]
 metoder: [designvetenskap, aktionsforskning, intervju, etnografi]
-relaterade: [affordanser, aktivitetsteori, distribuerad-kognition]
+relaterade: [affordanser, aktivitetsteori, distribuerad-kognition, postfenomenologi, embodied-interaction]
 referenser:
   - forfattare: Ehn, P.
     ar: 1988

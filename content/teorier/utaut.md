@@ -6,6 +6,7 @@ svnamn: Enhetlig teori om acceptans och användning av teknik
 upphov: Venkatesh, Morris, Davis & Davis (2003)
 ar: 2003
 paradigm: [Positivistisk]
+tradition: [IS och management, Psykologi och socialpsykologi]
 analysniva: Individ
 disciplin: IS
 sammanfattning: En sammanslagning av åtta acceptansmodeller som förklarar avsikt och användning med fyra huvudfaktorer och fyra modererande variabler.

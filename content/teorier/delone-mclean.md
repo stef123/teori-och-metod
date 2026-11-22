@@ -6,6 +6,7 @@ svnamn: DeLone & McLeans modell för IS-framgång
 upphov: DeLone & McLean (1992, 2003)
 ar: 1992
 paradigm: [Positivistisk]
+tradition: [IS och management]
 analysniva: System, individ och organisation
 disciplin: IS
 sammanfattning: En modell för att bedöma om ett informationssystem är framgångsrikt, uppdelad i kvalitet, användning, nöjdhet och nettonytta.

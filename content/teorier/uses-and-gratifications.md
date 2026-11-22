@@ -6,13 +6,14 @@ svnamn: Användning och tillfredsställelse
 upphov: Katz, Blumler & Gurevitch (1973)
 ar: 1973
 paradigm: [Positivistisk]
+tradition: [Medie- och kommunikationsvetenskap, Psykologi och socialpsykologi]
 analysniva: Individ
 disciplin: Medie- och kommunikationsvetenskap
 sammanfattning: Utgår från att människor aktivt väljer medier för att tillfredsställa egna behov, och frågar vad människor gör med medierna snarare än vad medierna gör med människorna.
 nyckelord: [behov, motiv, tillfredsställelse, medieval, sociala medier, aktiv publik]
 omraden: [Medier och vardagsliv, Sociala medier och plattformar, E-handel och digitala tjänster, Teknikacceptans, Utbildning och lärplattformar]
 metoder: [enkat, intervju]
-relaterade: [tam, utaut, domesticering]
+relaterade: [tam, utaut, domesticering, parasocial-interaction, social-presence]
 referenser:
   - forfattare: Katz, E., Blumler, J. G. & Gurevitch, M.
     ar: 1973
