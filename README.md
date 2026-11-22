@@ -14,7 +14,7 @@ index.html
 assets/        app.js, style.css
 content/
   index.json         lista över innehållsfiler (genereras)
-  metodvaljare.json  frågorna i metodväljaren
+  studieguide.json   frågor, val och poäng i studieguiden
   teorier/*.md       en fil per teori
   metoder/*.md       en fil per metod
   sidor/*.md         "Vad är en teori?", metodguide, om sajten
@@ -32,6 +32,10 @@ tools/bygg-index.mjs
 Länka till andra teorier/metoder med `[[id]]`, t.ex. `[[utaut]]`. Referenser har fälten `forfattare`, `ar`, `titel`, `kalla`, `doi`, `typ: bok` (om bok), `roll` (`grund`, `tillampning` eller `oversikt`) och `kommentar`.
 
 **Användningsområden** är fria etiketter i `omraden`. Använd samma stavning som befintliga, så hamnar de rätt i översikten.
+
+## Ändra studieguiden
+
+`content/studieguide.json` innehåller guidens steg. Varje alternativ har `teorier` och `metoder` med poäng (id: poäng), och kan ha `paradigm`, `gregor`, `fragemall` och `plan`. `visaOm` gör ett steg villkorat av ett tidigare val. Resultatet visar de teorier och metoder som fått flest poäng och länkar till deras sidor.
 
 ## Köra lokalt
 

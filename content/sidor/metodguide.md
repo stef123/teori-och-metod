@@ -28,6 +28,8 @@ referenser:
 
 ## Den röda tråden
 
+> **Osäker på var du ska börja?** Gör [studieguiden](#/guide): svara på några frågor och få förslag på teorier, metoder och en plan.
+
 En bra undersökning hänger ihop. Varje steg ska gå att motivera utifrån det föregående:
 
 **Problem → Syfte → Forskningsfråga → Teori → Metod → Data → Analys → Slutsats**

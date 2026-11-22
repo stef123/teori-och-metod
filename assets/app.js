@@ -18,7 +18,7 @@
   };
 
   const app = document.getElementById('app');
-  const state = { manifest: null, items: {}, sidor: {}, valjare: null, niva: lasNiva() };
+  const state = { manifest: null, items: {}, sidor: {}, guide: null, niva: lasNiva() };
 
   // ---------- Hjälpfunktioner ----------
   function lasNiva() {
@@ -154,7 +154,7 @@
         }));
       }
     }
-    jobb.push(hamta('content/metodvaljare.json').then((r) => r.json()).then((j) => (state.valjare = j)).catch(() => null));
+    jobb.push(hamta('content/studieguide.json').then((r) => r.json()).then((j) => (state.guide = j)).catch((e) => console.error('Studieguiden kunde inte läsas', e)));
     await Promise.all(jobb);
   }
   const allaAv = (typ) => Object.values(state.items).filter((x) => x.typ === typ).sort((a, b) => (a.kortnamn || a.namn).localeCompare(b.kortnamn || b.namn, 'sv'));
@@ -240,7 +240,7 @@
       <p class="overrubrik">Studiestöd i informatik</p>
       <h1>Förstå teorierna. Välj rätt metod.</h1>
       <p class="ingress">Här kan du utforska vanliga teorier och forskningsmetoder inom informatik och informationssystem. Varje förklaring börjar på enklaste nivå, och du bestämmer själv när det är dags att gå djupare.</p>
-      <div class="hero-knappar"><a class="knapp" href="#/sida/vad-ar-informatik">Börja här: vad är informatik?</a><a class="knapp sek" href="#/sida/vad-ar-en-teori">Vad är en teori?</a><a class="knapp sek" href="#/sida/metodguide">Så gör du en bra undersökning</a></div>
+      <div class="hero-knappar"><a class="knapp" href="#/sida/vad-ar-informatik">Börja här: vad är informatik?</a><a class="knapp sek" href="#/sida/vad-ar-en-teori">Vad är en teori?</a><a class="knapp sek" href="#/guide">Hitta teori och metod för din studie</a></div>
     </section>
     <section class="stig">
       <ol>
@@ -310,26 +310,80 @@
       <div class="smal">
       ${harNivaer ? `<div class="niva-wrap">${nivaReglage()}</div><div class="nivainnehall">${nivaInnehall(sd)}</div>` : ''}
       ${sd.sektioner.map((s) => `<section class="sektion"><h2>${esc(s.titel)}</h2>${markdown(s.text.join('\n'))}</section>`).join('')}
-      ${sd.id === 'metodguide' ? metodValjare() : ''}
       ${referenser(sd)}
       ${embedKnapp(`#/sida/${sd.id}`)}
       </div>`;
   }
-  function metodValjare() {
-    const v = state.valjare;
-    if (!v) return '';
-    return `<section class="valjare" id="valjare"><h2>${esc(v.rubrik)}</h2><p>${esc(v.fraga)}</p>
-      <div class="val">${v.alternativ.map((a, i) => `<button type="button" data-val="${i}">${esc(a.text)}</button>`).join('')}</div>
-      <div class="valsvar" aria-live="polite"></div></section>`;
+  // ---------- Studieguide (frågor och poäng i content/studieguide.json) ----------
+  function guideVal(q) {
+    const val = {};
+    (q.get('val') || '').split(',').filter(Boolean).forEach((x) => { const [k, v] = x.split(':'); if (k && v) val[k] = v; });
+    return val;
   }
-  function kopplaValjare() {
-    const rot = document.getElementById('valjare');
-    if (!rot) return;
-    rot.querySelectorAll('[data-val]').forEach((b) => b.addEventListener('click', () => {
-      rot.querySelectorAll('[data-val]').forEach((x) => x.classList.toggle('vald', x === b));
-      const a = state.valjare.alternativ[+b.dataset.val];
-      rot.querySelector('.valsvar').innerHTML = `<p>${inline(a.svar)}</p><div class="chips">${lista(a.metoder).map((id) => state.items[id]).filter(Boolean).map((x) => chip(x.namn, `#/metod/${x.id}`, 'm')).join('')}</div>`;
-    }));
+  const guideHash = (val) => '#/guide' + (Object.keys(val).length ? '?val=' + Object.entries(val).map(([k, v]) => `${k}:${v}`).join(',') : '');
+  function guideSteg(val) {
+    // Synliga steg givet valen hittills; ett steg visas om alla villkor i visaOm stämmer.
+    return state.guide.steg.filter((st) => Object.entries(st.visaOm || {}).every(([k, v]) => val[k] === v));
+  }
+  function sidGuide(q) {
+    const g = state.guide;
+    if (!g) return sid404();
+    const val = guideVal(q);
+    const steg = guideSteg(val);
+    const valda = []; let aktuellt = null;
+    for (const st of steg) {
+      const a = st.alternativ.find((x) => x.id === val[st.id]);
+      if (a) valda.push({ st, a }); else { aktuellt = st; break; }
+    }
+    const tidigare = valda.map(({ st, a }, i) => {
+      const bakat = {}; valda.slice(0, i).forEach((x) => (bakat[x.st.id] = x.a.id));
+      return `<li><span class="g-fraga">${esc(st.fraga)}</span><span class="g-svar">${esc(a.text)}</span><a class="g-andra" href="${guideHash(bakat)}">Ändra</a></li>`;
+    }).join('');
+    const antal = steg.length;
+    let kropp;
+    if (aktuellt) {
+      kropp = `<section class="g-steg" aria-labelledby="g-fraga"><p class="overrubrik">Fråga ${valda.length + 1} av ${antal}</p>
+        <h2 id="g-fraga">${esc(aktuellt.fraga)}</h2>
+        <div class="g-alt">${aktuellt.alternativ.map((a) => `<a class="g-knapp" href="${guideHash({ ...val, [aktuellt.id]: a.id })}"><b>${esc(a.text)}</b><span>${esc(a.beskrivning || '')}</span></a>`).join('')}</div></section>`;
+    } else kropp = guideResultat(valda);
+    return `<nav class="brod"><a href="#/">Start</a> / Studieguide</nav>
+      <header class="dethuvud"><h1>${esc(g.rubrik)}</h1><p class="ingress">${esc(g.ingress)}</p></header>
+      <div class="smal">
+        <div class="g-progress" role="progressbar" aria-valuemin="0" aria-valuemax="${antal}" aria-valuenow="${valda.length}"><span style="width:${Math.round((valda.length / antal) * 100)}%"></span></div>
+        ${tidigare ? `<ol class="g-tidigare">${tidigare}</ol>` : ''}
+        ${kropp}
+        ${valda.length ? `<p class="g-omstart"><a href="#/guide">Börja om</a></p>` : ''}
+        ${embedKnapp('#/guide')}
+      </div>`;
+  }
+  function guideResultat(valda) {
+    const poang = { teori: {}, metod: {} }, paradigm = {};
+    for (const { a } of valda) {
+      for (const [id, p] of Object.entries(a.teorier || {})) poang.teori[id] = (poang.teori[id] || 0) + Number(p);
+      for (const [id, p] of Object.entries(a.metoder || {})) poang.metod[id] = (poang.metod[id] || 0) + Number(p);
+      if (a.paradigm) paradigm[a.paradigm] = (paradigm[a.paradigm] || 0) + 1;
+    }
+    const topp = (typ, n) => Object.entries(poang[typ]).filter(([id]) => state.items[id]).sort((x, y) => y[1] - x[1]).slice(0, n);
+    const t = topp('teori', 3), m = topp('metod', 3);
+    const syfte = valda.find((x) => x.a.plan);
+    const fraser = valda.map((x) => x.a.fras).filter(Boolean);
+    const mening = `Du ${fraser[0] || ''}${fraser.length > 1 ? ' ' + fraser.slice(1).join(', ') : ''}.`;
+    const huvud = Object.entries(paradigm).sort((x, y) => y[1] - x[1])[0];
+    const forslag = (lst, typ) => lst.map(([id], i) => {
+      const it = state.items[id];
+      return `<a class="g-forslag${i === 0 ? ' forst' : ''}" href="#/${typ}/${id}"><span class="g-etikett">${i === 0 ? 'Bäst match' : 'Passar också'}</span><b>${esc(it.kortnamn || it.namn)}</b><span>${esc(it.sammanfattning || '')}</span></a>`;
+    }).join('');
+    return `<section class="g-resultat"><p class="overrubrik">Ditt förslag</p><h2>Din studie i en mening</h2>
+      <p class="g-mening">${esc(mening)}</p>
+      ${syfte?.a.fragemall ? `<h3>En möjlig forskningsfråga</h3><p class="g-fragemall">${esc(syfte.a.fragemall)}</p><p class="g-hjalp">Byt ut det som står inom hakparentes mot ditt eget ämne.</p>` : ''}
+      <h3>Metoder som passar</h3><div class="g-lista">${forslag(m, 'metod')}</div>
+      <h3>Teorier att utgå från</h3><div class="g-lista">${forslag(t, 'teori')}</div>
+      <h3>Vetenskapssyn och typ av teori</h3>
+      ${huvud && state.guide.paradigmtexter[huvud[0]] ? `<p>${inline(state.guide.paradigmtexter[huvud[0]])}</p>` : ''}
+      ${syfte?.a.gregor ? `<p>Enligt Gregors indelning siktar du främst mot teori av <strong>${esc(syfte.a.gregor)}</strong>. Läs mer i <a href="#/sida/vad-ar-en-teori">Vad är en teori?</a></p>` : ''}
+      ${syfte?.a.plan ? `<h3>Så kan du gå vidare</h3><ol>${syfte.a.plan.map((x) => `<li>${inline(x)}</li>`).join('')}</ol>` : ''}
+      <aside class="callout"><p>Läs metod- och teorisidorna innan du bestämmer dig, och diskutera valet med din handledare. Se också <a href="#/sida/metodguide">metodguiden</a> för den röda tråden från problem till slutsats.</p></aside>
+    </section>`;
   }
   function sidOmraden() {
     const omr = omraden();
@@ -359,13 +413,14 @@
     if (!d.length) html = sidHem();
     else if (d[0] === 'teorier' || d[0] === 'metoder') { const typ = d[0] === 'teorier' ? 'teori' : 'metod'; html = sidLista(typ, q); efter = () => kopplaLista(typ); titel = d[0] === 'teorier' ? 'Teorier' : 'Metoder'; }
     else if ((d[0] === 'teori' || d[0] === 'metod') && state.items[d[1]]?.typ === d[0]) { const it = state.items[d[1]]; html = sidDetalj(it); efter = () => kopplaNiva(app, it); titel = it.kortnamn || it.namn; }
-    else if (d[0] === 'sida' && state.sidor[d[1]]) { const sd = state.sidor[d[1]]; html = sidSida(sd); efter = () => { if (Object.keys(sd.nivaer).length) kopplaNiva(app, sd); kopplaValjare(); }; titel = sd.namn; }
+    else if (d[0] === 'sida' && state.sidor[d[1]]) { const sd = state.sidor[d[1]]; html = sidSida(sd); efter = () => { if (Object.keys(sd.nivaer).length) kopplaNiva(app, sd); }; titel = sd.namn; }
+    else if (d[0] === 'guide') { html = sidGuide(q); titel = 'Studieguide'; }
     else if (d[0] === 'omraden') { html = sidOmraden(); titel = 'Användningsområden'; }
     else html = sid404();
     app.innerHTML = html;
     if (efter) efter();
     document.title = (titel ? titel + ' · ' : '') + 'Teori & metod i informatik';
-    const sekt = { teori: 'teori', teorier: 'teori', metod: 'metod', metoder: 'metod', omraden: 'omraden' }[d[0]] || (d[0] === 'sida' ? d[1] : '');
+    const sekt = { teori: 'teori', teorier: 'teori', metod: 'metod', metoder: 'metod', omraden: 'omraden', guide: 'guide' }[d[0]] || (d[0] === 'sida' ? d[1] : '');
     document.querySelectorAll('.huvudnav a').forEach((a) => a.classList.toggle('aktiv', a.dataset.sektion === sekt));
     window.scrollTo(0, 0);
     app.focus({ preventScroll: true });

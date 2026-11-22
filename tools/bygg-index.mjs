@@ -30,6 +30,10 @@ for (const m of mappar) {
     }
   }
 }
+try {
+  const g = JSON.parse(readFileSync(join(rot, 'studieguide.json'), 'utf8'));
+  for (const st of g.steg) for (const a of st.alternativ) for (const id of Object.keys({ ...a.teorier, ...a.metoder })) lankar.push([`studieguide.json (${st.id}/${a.id})`, id]);
+} catch (e) { fel.push(`studieguide.json: ${e.message}`); }
 for (const [fil, id] of lankar) if (!ids.has(id)) varningar.push(`${fil}: hänvisar till okänt id "${id}"`);
 
 writeFileSync(join(rot, 'index.json'), JSON.stringify(index, null, 2) + '\n');

@@ -1,0 +1,279 @@
+{
+  "rubrik": "Hitta teori och metod för din studie",
+  "ingress": "Svara på några frågor om vad du vill göra. Guiden föreslår teorier och metoder som brukar passa, och en plan för hur du kan gå vidare. Förslagen är en startpunkt för samtal med din handledare, inte ett facit.",
+  "steg": [
+    {
+      "id": "riktning",
+      "fraga": "Vad vill du göra?",
+      "alternativ": [
+        {
+          "id": "undersoka",
+          "text": "Undersöka något som redan finns",
+          "beskrivning": "Ett befintligt system, en app, en plattform eller hur människor använder teknik.",
+          "fras": "undersöker befintlig teknik och hur den används",
+          "metoder": { "fallstudie": 1, "enkat": 1, "intervju": 1, "etnografi": 1 }
+        },
+        {
+          "id": "skapa",
+          "text": "Skapa något nytt",
+          "beskrivning": "En app, en prototyp, en tjänst, en process eller en modell.",
+          "fras": "skapar och prövar något nytt",
+          "teorier": { "designansatser": 3, "affordanser": 1 },
+          "metoder": { "designvetenskap": 3, "aktionsforskning": 1 }
+        }
+      ]
+    },
+    {
+      "id": "syfte",
+      "visaOm": { "riktning": "undersoka" },
+      "fraga": "Vad är syftet med undersökningen?",
+      "alternativ": [
+        {
+          "id": "forsta",
+          "text": "Förstå hur och varför något sker",
+          "beskrivning": "Du vill förstå människors erfarenheter, tolkningar eller hur en process gick till.",
+          "fras": "för att förstå hur och varför",
+          "paradigm": "tolkande",
+          "gregor": "Typ II, förklaring och förståelse",
+          "teorier": { "strukturation": 1, "aktivitetsteori": 1, "sociomaterialitet": 1, "ant": 1, "domesticering": 1, "distribuerad-kognition": 1 },
+          "metoder": { "intervju": 2, "fallstudie": 2, "etnografi": 1 },
+          "fragemall": "Hur upplever och hanterar [vilka] [vad] i [vilket sammanhang], och varför?",
+          "plan": ["Läs in dig på tidigare forskning och välj en teori som lins.", "Välj fall eller informanter strategiskt och motivera valet.", "Gör en intervjuguide eller observationsplan utifrån teorins begrepp.", "Samla in data och koda materialet, t.ex. med tematisk analys.", "Tolka mönstren med hjälp av teorin och diskutera vad den hjälpte dig att se."]
+        },
+        {
+          "id": "forklara",
+          "text": "Förklara eller mäta vad som påverkar något",
+          "beskrivning": "Du vill veta vilka faktorer som hänger ihop med t.ex. användning, nöjdhet eller avsikt.",
+          "fras": "för att förklara vad som påverkar",
+          "paradigm": "positivistisk",
+          "gregor": "Typ IV, förklaring och prediktion",
+          "teorier": { "tam": 2, "utaut": 2, "uses-and-gratifications": 2, "diffusion": 1, "delone-mclean": 1 },
+          "metoder": { "enkat": 3 },
+          "fragemall": "Vilka faktorer påverkar [beteende eller upplevelse] bland [vilken grupp]?",
+          "plan": ["Välj en teori och härled hypoteser från den.", "Hitta etablerade mätskalor för teorins begrepp.", "Bygg och pilottesta enkäten.", "Samla in data från ett väl beskrivet urval.", "Testa mätmodellen och hypoteserna statistiskt och tolka resultaten mot teorin."]
+        },
+        {
+          "id": "utvardera",
+          "text": "Utvärdera hur bra något fungerar",
+          "beskrivning": "Du vill bedöma kvalitet, nytta eller användbarhet hos ett system.",
+          "fras": "för att utvärdera hur väl den fungerar",
+          "paradigm": "blandad",
+          "gregor": "Typ I, analys, eller typ IV, förklaring och prediktion",
+          "teorier": { "delone-mclean": 3, "affordanser": 1, "tam": 1 },
+          "metoder": { "enkat": 2, "fallstudie": 2, "intervju": 1 },
+          "fragemall": "Hur väl fungerar [system] för [vilken grupp], och vad påverkar det?",
+          "plan": ["Bestäm vad \"framgång\" betyder i ditt fall och för vem.", "Välj en utvärderingsram, t.ex. DeLone och McLeans dimensioner.", "Välj mått och datakällor för varje dimension.", "Samla in data, gärna från flera källor.", "Analysera styrkor och svagheter och ge underbyggda rekommendationer."]
+        },
+        {
+          "id": "forbattra",
+          "text": "Förbättra eller förändra en verksamhet",
+          "beskrivning": "Du vill vara med och förändra hur något fungerar, och lära dig av förändringen.",
+          "fras": "för att förbättra den",
+          "paradigm": "kritisk",
+          "gregor": "Typ V, design och handling",
+          "teorier": { "designansatser": 2, "aktivitetsteori": 2, "strukturation": 1 },
+          "metoder": { "aktionsforskning": 3, "designvetenskap": 1, "intervju": 1 },
+          "fragemall": "Hur kan [verksamhet] förändras för att [mål], och vad kan vi lära av förändringen?",
+          "plan": ["Kom överens med verksamheten om problem, roller och etik.", "Diagnostisera problemet tillsammans med deltagarna.", "Välj en teori som hjälper dig förstå problemet och planera åtgärder.", "Genomför och dokumentera en förändring.", "Utvärdera tillsammans och formulera vad ni har lärt er."]
+        }
+      ]
+    },
+    {
+      "id": "syfte",
+      "visaOm": { "riktning": "skapa" },
+      "fraga": "Vad vill du uppnå med det du skapar?",
+      "alternativ": [
+        {
+          "id": "losa",
+          "text": "Lösa ett konkret problem med en ny lösning",
+          "beskrivning": "Du har ett problem och vill bygga och utvärdera en lösning.",
+          "fras": "för att lösa ett konkret problem",
+          "paradigm": "design",
+          "gregor": "Typ V, design och handling",
+          "teorier": { "designansatser": 1, "affordanser": 1, "tam": 1 },
+          "metoder": { "designvetenskap": 3 },
+          "fragemall": "Hur kan en [artefakt] utformas för att stödja [vilken grupp] i [vilken uppgift]?",
+          "plan": ["Beskriv problemet och varför det är viktigt.", "Formulera mål för en bra lösning.", "Sök i forskningen efter tidigare lösningar och teorier att bygga på.", "Designa och bygg artefakten i iterationer.", "Utvärdera mot målen och formulera lärdomar, gärna som designprinciper."]
+        },
+        {
+          "id": "tillsammans",
+          "text": "Skapa tillsammans med dem som ska använda lösningen",
+          "beskrivning": "Användarna ska vara med och forma lösningen på riktigt.",
+          "fras": "tillsammans med användarna",
+          "paradigm": "kritisk",
+          "gregor": "Typ V, design och handling",
+          "teorier": { "designansatser": 3, "aktivitetsteori": 1 },
+          "metoder": { "aktionsforskning": 2, "designvetenskap": 2, "intervju": 1 },
+          "fragemall": "Hur kan [vilken grupp] och designers tillsammans utforma [vilken lösning], och vad betyder medverkan för resultatet?",
+          "plan": ["Identifiera vilka som berörs och bjud in dem tidigt.", "Kartlägg deras arbete och behov, t.ex. genom observation och samtal.", "Arbeta fram förslag tillsammans i workshoppar med enkla prototyper.", "Pröva lösningen i praktiken och utvärdera tillsammans.", "Reflektera över både lösningen och hur medverkan fungerade."]
+        },
+        {
+          "id": "utforska",
+          "text": "Utforska vad en ny teknik kan göra",
+          "beskrivning": "Du vill bygga prototyper för att se vilka möjligheter och problem som uppstår.",
+          "fras": "för att utforska vad tekniken gör möjligt",
+          "paradigm": "design",
+          "gregor": "Typ I, analys, eller typ V, design och handling",
+          "teorier": { "affordanser": 2, "distribuerad-kognition": 1, "designansatser": 1 },
+          "metoder": { "designvetenskap": 2, "intervju": 1 },
+          "fragemall": "Vilka möjligheter och problem uppstår när [teknik] används för [syfte] av [vilken grupp]?",
+          "plan": ["Avgränsa vilken teknik och vilket användningsområde du utforskar.", "Bygg en eller flera enkla prototyper.", "Låt användare pröva dem i realistiska situationer.", "Samla in observationer och reaktioner.", "Analysera vilka möjligheter och problem som uppstod, t.ex. med affordansbegreppet."]
+        }
+      ]
+    },
+    {
+      "id": "fokus",
+      "fraga": "Vad står i centrum för din studie?",
+      "alternativ": [
+        {
+          "id": "individ",
+          "text": "Enskilda användare och deras val",
+          "beskrivning": "Varför personer börjar, fortsätter eller slutar använda något.",
+          "fras": "med fokus på enskilda användare",
+          "teorier": { "tam": 2, "utaut": 2, "uses-and-gratifications": 2, "affordanser": 1 },
+          "metoder": { "enkat": 1, "intervju": 1 }
+        },
+        {
+          "id": "arbete",
+          "text": "Arbete och samarbete i grupper",
+          "beskrivning": "Hur människor arbetar tillsammans med hjälp av teknik.",
+          "fras": "med fokus på arbete och samarbete",
+          "teorier": { "aktivitetsteori": 2, "distribuerad-kognition": 2, "affordanser": 1, "designansatser": 1 },
+          "metoder": { "etnografi": 1, "fallstudie": 1 }
+        },
+        {
+          "id": "organisation",
+          "text": "Organisationer, införande och förändring",
+          "beskrivning": "Vad som händer när ett system införs eller en verksamhet digitaliseras.",
+          "fras": "med fokus på organisationer och förändring",
+          "teorier": { "strukturation": 2, "ant": 1, "delone-mclean": 1, "diffusion": 1, "sociomaterialitet": 1 },
+          "metoder": { "fallstudie": 2 }
+        },
+        {
+          "id": "vardag",
+          "text": "Vardagsliv, medier och sociala medier",
+          "beskrivning": "Hur medier och teknik blir en del av människors privatliv och identitet.",
+          "fras": "med fokus på vardagsliv och medier",
+          "teorier": { "domesticering": 3, "uses-and-gratifications": 1, "plattformisering": 1, "affordanser": 1 },
+          "metoder": { "intervju": 1, "etnografi": 1 }
+        },
+        {
+          "id": "samhalle",
+          "text": "Samhälle, plattformar och infrastrukturer",
+          "beskrivning": "Större sammanhang som plattformsekonomi, standarder eller offentliga system.",
+          "fras": "med fokus på samhälle och plattformar",
+          "teorier": { "plattformisering": 3, "ant": 2, "diffusion": 1 },
+          "metoder": { "fallstudie": 2 }
+        },
+        {
+          "id": "teknik",
+          "text": "Tekniken själv: gränssnitt, funktioner och design",
+          "beskrivning": "Vad tekniken gör möjligt och hur den är utformad.",
+          "fras": "med fokus på teknikens utformning",
+          "teorier": { "affordanser": 3, "designansatser": 1, "distribuerad-kognition": 1 },
+          "metoder": { "designvetenskap": 1 }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "visaOm": { "riktning": "undersoka" },
+      "fraga": "Hur vill du helst ta reda på det?",
+      "alternativ": [
+        {
+          "id": "siffror",
+          "text": "Med siffror från många personer",
+          "beskrivning": "Till exempel en enkät som du analyserar statistiskt.",
+          "fras": "med kvantitativa data",
+          "paradigm": "positivistisk",
+          "teorier": { "tam": 1, "utaut": 1, "uses-and-gratifications": 1, "delone-mclean": 1 },
+          "metoder": { "enkat": 3 }
+        },
+        {
+          "id": "ord",
+          "text": "Genom samtal med ett mindre antal personer",
+          "beskrivning": "Intervjuer där människor berättar med egna ord.",
+          "fras": "genom intervjuer",
+          "paradigm": "tolkande",
+          "metoder": { "intervju": 3, "fallstudie": 1 }
+        },
+        {
+          "id": "observera",
+          "text": "Genom att observera vad människor gör",
+          "beskrivning": "Vara på plats och se hur arbetet eller användningen faktiskt går till.",
+          "fras": "genom observation",
+          "paradigm": "tolkande",
+          "teorier": { "distribuerad-kognition": 1, "sociomaterialitet": 1, "aktivitetsteori": 1 },
+          "metoder": { "etnografi": 3, "fallstudie": 1 }
+        },
+        {
+          "id": "flera",
+          "text": "Med flera olika källor om ett avgränsat fall",
+          "beskrivning": "Intervjuer, dokument och kanske observationer i en organisation eller ett projekt.",
+          "fras": "med flera källor om ett fall",
+          "paradigm": "tolkande",
+          "metoder": { "fallstudie": 3, "intervju": 1 }
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "visaOm": { "riktning": "skapa" },
+      "fraga": "Hur vill du utvärdera det du skapar?",
+      "alternativ": [
+        {
+          "id": "test",
+          "text": "Med användartester och intervjuer",
+          "beskrivning": "Användare provar lösningen och berättar vad de tycker.",
+          "fras": "och utvärderar med användartester",
+          "metoder": { "designvetenskap": 1, "intervju": 2 }
+        },
+        {
+          "id": "mata",
+          "text": "Med mätningar eller enkät",
+          "beskrivning": "Till exempel tid, fel eller upplevd nytta, gärna före och efter.",
+          "fras": "och utvärderar med mätningar",
+          "paradigm": "positivistisk",
+          "teorier": { "tam": 1 },
+          "metoder": { "designvetenskap": 1, "enkat": 2 }
+        },
+        {
+          "id": "workshop",
+          "text": "Med workshoppar och gemensam reflektion",
+          "beskrivning": "Du och användarna bedömer resultatet tillsammans.",
+          "fras": "och utvärderar tillsammans med användarna",
+          "teorier": { "designansatser": 2 },
+          "metoder": { "aktionsforskning": 2 }
+        }
+      ]
+    },
+    {
+      "id": "tid",
+      "fraga": "Vilket tidsperspektiv har du?",
+      "alternativ": [
+        {
+          "id": "nu",
+          "text": "Hur det ser ut nu",
+          "beskrivning": "En ögonblicksbild vid ett tillfälle.",
+          "fras": "",
+          "metoder": { "enkat": 1 }
+        },
+        {
+          "id": "over-tid",
+          "text": "Hur något förändras över tid",
+          "beskrivning": "Före och efter, eller en process som pågår under en längre period.",
+          "fras": "över tid",
+          "teorier": { "strukturation": 1, "domesticering": 1, "diffusion": 1, "ant": 1 },
+          "metoder": { "fallstudie": 1, "etnografi": 1, "aktionsforskning": 1 }
+        }
+      ]
+    }
+  ],
+  "paradigmtexter": {
+    "positivistisk": "Dina val pekar mot en **positivistisk** ansats: du utgår från teori, formulerar hypoteser och mäter. Bedöm kvaliteten med reliabilitet och validitet.",
+    "tolkande": "Dina val pekar mot en **tolkande** ansats: du vill förstå människors meningsskapande och sammanhang. Bedöm kvaliteten med trovärdighet, överförbarhet och transparens.",
+    "kritisk": "Dina val pekar mot en **förändringsinriktad** ansats med rötter i kritisk och deltagande forskning. Var tydlig med roller, makt och etik, och reflektera över din egen påverkan.",
+    "design": "Dina val pekar mot en **designorienterad** ansats: kunskapen kommer ur att bygga och utvärdera. Var tydlig med vilket kunskapsbidrag designen ger, utöver själva lösningen.",
+    "blandad": "Dina val pekar mot en **blandad** ansats. Det är fullt möjligt, men var tydlig med hur de olika delarna hänger ihop och vilka kvalitetskriterier som gäller för respektive del."
+  }
+}

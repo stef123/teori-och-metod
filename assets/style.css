@@ -181,3 +181,30 @@ main:focus, main:focus-visible { outline: none; }
 .rutnat.omr { align-items: start; }
 .matris tbody th, .matris thead th:first-child { position: sticky; left: 0; z-index: 1; background: var(--yta); }
 .matris thead th:first-child { background: var(--yta2); }
+
+/* Studieguide */
+.g-progress { height: 6px; background: var(--yta2); border-radius: 99px; overflow: hidden; margin: 8px 0 20px; }
+.g-progress span { display: block; height: 100%; background: var(--accent); transition: width .3s; }
+.g-tidigare { list-style: none; padding: 0; margin: 0 0 20px; display: grid; gap: 6px; }
+.g-tidigare li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 2px 12px; background: var(--yta); border: 1px solid var(--linje); border-radius: 10px; padding: 8px 14px; font-size: .92rem; }
+.g-fraga { color: var(--dampad); grid-column: 1 / -1; font-size: .82rem; }
+.g-svar { font-weight: 600; min-width: 0; }
+.g-andra { font-size: .85rem; }
+.g-steg h2 { margin-top: .2em; }
+.g-alt { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+.g-knapp { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--text); background: var(--yta); border: 1.5px solid var(--linje); border-radius: 12px; padding: 16px 18px; transition: border-color .15s; }
+.g-knapp:hover, .g-knapp:focus-visible { border-color: var(--accent); }
+.g-knapp b { font-family: var(--rubrik); font-size: 1.12rem; }
+.g-knapp span { color: var(--dampad); font-size: .92rem; }
+.g-omstart { font-size: .9rem; margin-top: 20px; }
+.g-resultat { background: var(--yta); border: 1px solid var(--linje); border-radius: 14px; padding: 8px 22px 18px; }
+.g-mening { font-family: var(--rubrik); font-size: 1.3rem; line-height: 1.35; }
+.g-fragemall { background: var(--accent-ljus); border-radius: 10px; padding: 12px 16px; font-weight: 600; margin-bottom: 4px; }
+.g-hjalp { color: var(--dampad); font-size: .85rem; margin-top: 0; }
+.g-lista { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.g-forslag { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--text); border: 1px solid var(--linje); border-radius: 10px; padding: 12px 14px; }
+.g-forslag:hover { border-color: var(--accent); }
+.g-forslag.forst { border: 2px solid var(--accent); }
+.g-forslag b { font-family: var(--rubrik); font-size: 1.1rem; }
+.g-forslag > span:last-child { color: var(--dampad); font-size: .85rem; }
+.g-etikett { font-size: .7rem; text-transform: uppercase; letter-spacing: .07em; font-weight: 700; color: var(--accent); }

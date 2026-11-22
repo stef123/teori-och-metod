@@ -37,3 +37,5 @@ Allt innehåll ligger som textfiler i mappen `content`. För att lägga till en 
 3. Lägg till filnamnet i `content/index.json`. (Om sajten publiceras via GitHub sker detta automatiskt.)
 
 Länka till en annan teori eller metod i texten genom att skriva dess id inom dubbla hakparenteser, till exempel `[[tam]]`.
+
+**Studieguiden** styrs av filen `content/studieguide.json`. Varje fråga har alternativ som ger poäng till teorier och metoder (med deras id). Ett steg kan visas villkorat med `visaOm`, till exempel bara när studenten valt att skapa något. Förslagen i resultatet är de teorier och metoder som fått flest poäng.
