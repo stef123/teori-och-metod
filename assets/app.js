@@ -6,10 +6,10 @@
   'use strict';
 
   const NIVAER = [
-    { n: 1, namn: 'Enkelt förklarat', kort: 'ELI5', hjalp: 'Som om du vore tio år. Inga facktermer.' },
-    { n: 2, namn: 'Grunderna', kort: 'Grund', hjalp: 'De viktigaste begreppen och hur de hänger ihop.' },
-    { n: 3, namn: 'Fördjupning', kort: 'Fördjupning', hjalp: 'Antaganden, varianter och hur teorin används i studier.' },
-    { n: 4, namn: 'Forskarnivå', kort: 'Forskare', hjalp: 'Kritik, debatter och vetenskapsteoretiska frågor.' },
+    { n: 1, r: 'I', namn: 'Enkelt förklarat', kort: 'ELI5', hjalp: 'Som om du vore tio år. Inga facktermer.' },
+    { n: 2, r: 'II', namn: 'Grunderna', kort: 'Grund', hjalp: 'De viktigaste begreppen och hur de hänger ihop.' },
+    { n: 3, r: 'III', namn: 'Fördjupning', kort: 'Fördjupning', hjalp: 'Antaganden, varianter och hur teorin används i studier.' },
+    { n: 4, r: 'IV', namn: 'Forskarnivå', kort: 'Forskare', hjalp: 'Kritik, debatter och vetenskapsteoretiska frågor.' },
   ];
   const REF_ROLLER = {
     grund: 'Grundtexter',
@@ -173,7 +173,7 @@
     return `<div class="niva" role="group" aria-label="Förklaringsnivå">
       <div class="niva-topp"><span class="niva-etikett">Förklaringsnivå</span><span class="niva-hjalp" id="niva-hjalp">${esc(nv.hjalp)}</span></div>
       <input type="range" min="1" max="4" step="1" value="${state.niva}" id="niva-range" aria-valuetext="Nivå ${state.niva}: ${esc(nv.namn)}">
-      <div class="niva-steg">${NIVAER.map((x) => `<button type="button" data-niva="${x.n}" class="${x.n <= state.niva ? 'aktiv' : ''}${x.n === state.niva ? ' vald' : ''}"><b>${x.n}</b><span>${esc(x.namn)}</span></button>`).join('')}</div>
+      <div class="niva-steg">${NIVAER.map((x) => `<button type="button" data-niva="${x.n}" class="${x.n <= state.niva ? 'aktiv' : ''}${x.n === state.niva ? ' vald' : ''}"><b>${x.r}</b><span>${esc(x.namn)}</span></button>`).join('')}</div>
     </div>`;
   }
   function nivaInnehall(it) {
@@ -183,10 +183,10 @@
       const blk = it.nivaer[x.n];
       if (!blk) continue;
       delar.push(`<section class="nivablock n${x.n}${x.n === state.niva ? ' ny' : ''}" id="niva-${x.n}">
-        <div class="nivabadge">Nivå ${x.n} · ${esc(x.namn)}</div>${markdown(blk.text.join('\n'))}</section>`);
+        <div class="nivabadge">Nivå ${x.r} · ${esc(x.namn)}</div>${markdown(blk.text.join('\n'))}</section>`);
     }
     const nasta = NIVAER.find((x) => x.n > state.niva && it.nivaer[x.n]);
-    if (nasta) delar.push(`<button type="button" class="hoj" data-niva="${nasta.n}">Gå djupare: nivå ${nasta.n} · ${esc(nasta.namn)} <span aria-hidden="true">↓</span></button>`);
+    if (nasta) delar.push(`<button type="button" class="hoj" data-niva="${nasta.n}">Gå djupare: nivå ${nasta.r} · ${esc(nasta.namn)} <span aria-hidden="true">↓</span></button>`);
     else delar.push(`<p class="klar">Du har nått högsta nivån. <button type="button" class="lank" data-niva="1">Börja om från nivå 1</button></p>`);
     return delar.join('');
   }
@@ -240,6 +240,7 @@
       <p class="overrubrik">Studiestöd i informatik</p>
       <h1>Förstå teorierna. Välj rätt metod.</h1>
       <p class="ingress">Här kan du utforska vanliga teorier och forskningsmetoder inom informatik och informationssystem. Varje förklaring börjar på enklaste nivå, och du bestämmer själv när det är dags att gå djupare.</p>
+      <blockquote class="epigraf">“There is nothing so practical as a good theory.”<cite>Kurt Lewin (1951)</cite></blockquote>
       <div class="hero-knappar"><a class="knapp" href="#/sida/vad-ar-informatik">Börja här: vad är informatik?</a><a class="knapp sek" href="#/sida/vad-ar-en-teori">Vad är en teori?</a><a class="knapp sek" href="#/sida/metodguide">Hitta teori och metod för din studie</a></div>
     </section>
     <section class="stig">
