@@ -1,0 +1,36 @@
+{
+  "rubrik": "Vilken metod passar min fråga?",
+  "fraga": "Välj det alternativ som bäst beskriver vad du vill göra. Det här är en startpunkt för samtal med din handledare, inte ett facit.",
+  "alternativ": [
+    {
+      "text": "Mäta hur vanligt något är, eller testa samband mellan faktorer hos många personer",
+      "svar": "Du söker **utbredning eller samband**. En kvantitativ enkät passar, gärna byggd på en teori med etablerade mätskalor som [[tam]] eller [[utaut]].",
+      "metoder": ["enkat"]
+    },
+    {
+      "text": "Förstå hur och varför något hände i en viss organisation eller ett projekt",
+      "svar": "Du söker **förståelse av ett fenomen i sitt sammanhang**. En fallstudie med flera datakällor passar, ofta med intervjuer som huvudkälla.",
+      "metoder": ["fallstudie", "intervju"]
+    },
+    {
+      "text": "Förstå hur människor upplever och tolkar något",
+      "svar": "Du söker **erfarenheter och meningsskapande**. Kvalitativa intervjuer med tematisk analys är ett vanligt val.",
+      "metoder": ["intervju"]
+    },
+    {
+      "text": "Förstå hur människor faktiskt arbetar med teknik i vardagen",
+      "svar": "Du söker **praktik**, det människor gör snarare än det de säger. Etnografi eller observationer, gärna kombinerat med intervjuer.",
+      "metoder": ["etnografi", "fallstudie"]
+    },
+    {
+      "text": "Bygga och testa en IT-lösning på ett problem",
+      "svar": "Du vill **skapa en artefakt och utvärdera den**. Designvetenskaplig forskning ger en struktur som gör utvecklingsarbetet till forskning.",
+      "metoder": ["designvetenskap"]
+    },
+    {
+      "text": "Förändra en verksamhet tillsammans med de som arbetar där",
+      "svar": "Du vill **förändra och lära samtidigt**. Aktionsforskning passar om du har ett nära samarbete med verksamheten och tid för minst en cykel.",
+      "metoder": ["aktionsforskning", "designvetenskap"]
+    }
+  ]
+}

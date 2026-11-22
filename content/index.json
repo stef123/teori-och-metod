@@ -1,0 +1,25 @@
+{
+  "teorier": [
+    "aktivitetsteori.md",
+    "ant.md",
+    "delone-mclean.md",
+    "diffusion.md",
+    "sociomaterialitet.md",
+    "strukturation.md",
+    "tam.md",
+    "utaut.md"
+  ],
+  "metoder": [
+    "aktionsforskning.md",
+    "designvetenskap.md",
+    "enkat.md",
+    "etnografi.md",
+    "fallstudie.md",
+    "intervju.md"
+  ],
+  "sidor": [
+    "metodguide.md",
+    "om.md",
+    "vad-ar-en-teori.md"
+  ]
+}
