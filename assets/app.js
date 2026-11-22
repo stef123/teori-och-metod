@@ -179,7 +179,7 @@
   // ---------- Komponenter ----------
   function nivaReglage() {
     const nv = NIVAER[state.niva - 1];
-    return `<div class="niva" role="group" aria-label="Förklaringsnivå">
+    return `<div class="niva nivastyrd" role="group" aria-label="Förklaringsnivå">
       <div class="niva-topp"><span class="niva-etikett">Förklaringsnivå</span><span class="niva-hjalp" id="niva-hjalp">${esc(nv.hjalp)}</span></div>
       <input type="range" min="1" max="4" step="1" value="${state.niva}" id="niva-range" aria-valuetext="Nivå ${state.niva}: ${esc(nv.namn)}">
       <div class="niva-steg">${NIVAER.map((x) => `<button type="button" data-niva="${x.n}" class="${x.n <= state.niva ? 'aktiv' : ''}${x.n === state.niva ? ' vald' : ''}"><b>${x.r}</b><span>${esc(x.namn)}</span></button>`).join('')}</div>
@@ -201,16 +201,41 @@
   }
   function kopplaNiva(rot, it) {
     const satt = (n, rulla) => {
-      state.niva = n; sparaNiva(n);
-      rot.querySelector('.niva-wrap').innerHTML = nivaReglage();
-      rot.querySelector('.nivainnehall').innerHTML = nivaInnehall(it);
-      kopplaNiva(rot, it);
+      settNiva(n);
       if (rulla) { const el = rot.querySelector(`#niva-${n}`); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     };
     rot.querySelectorAll('[data-niva]').forEach((b) => b.addEventListener('click', () => satt(+b.dataset.niva, b.classList.contains('hoj'))));
     const rng = rot.querySelector('#niva-range');
-    if (rng) rng.addEventListener('input', () => satt(+rng.value, false));
+    if (rng) rng.addEventListener('change', () => satt(+rng.value, false));
   }
+  // Text i kort och förslag som följer förklaringsnivån
+  function ren(t) {
+    return String(t || '').replace(/\[\[([\w-]+)(?:\|([^\]]+))?\]\]/g, (_, id, txt) => txt || state.items[id]?.kortnamn || id)
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*?|`/g, '').replace(/\s+/g, ' ').trim();
+  }
+  function kapa(t, max) {
+    if (t.length <= max) return t;
+    const k = t.slice(0, max); return k.slice(0, k.lastIndexOf(' ')).replace(/[,.;:]$/, '') + ' …';
+  }
+  function stycken(blk) {
+    const ut = []; let buf = [];
+    for (const r of (blk?.text || []).concat([''])) {
+      if (!r.trim()) { if (buf.length) ut.push(buf.join(' ')); buf = []; } else buf.push(r.trim());
+    }
+    return ut;
+  }
+  function nivaText(it) {
+    const n = state.niva, sam = it.sammanfattning || '';
+    if (n === 1) {
+      const st = stycken(it.nivaer?.[1]).find((x) => !/^([|#>]|[-*] |\d+\.)/.test(x));
+      return st ? kapa(ren(st), 230) : sam;
+    }
+    if (n === 2) return sam;
+    if (n === 3) { const k = lista(it.nyckelord).slice(0, 5); return sam + (k.length ? ` Nyckelbegrepp: ${k.join(', ')}.` : ''); }
+    const deb = stycken(it.nivaer?.[4]).map((x) => (x.match(/^[-*] \*\*([^*]+)\*\*/) || [])[1]).filter(Boolean).slice(0, 3).map((x) => ren(x).replace(/^Kritik: /, '').replace(/[:.]$/, ''));
+    return sam + (deb.length ? ` Forskningsdebatter: ${deb.join(' · ')}.`.replace('?.', '?') : '');
+  }
+  const nivaMarke = () => `<span class="nivamarke" title="Följer förklaringsnivån (nivå ${NIVAER[state.niva - 1].r})" aria-hidden="true">${NIVAER[state.niva - 1].r}</span>`;
   const chip = (t, href, kl = '') => href ? `<a class="chip ${kl}" href="${href}">${esc(t)}</a>` : `<span class="chip ${kl}">${esc(t)}</span>`;
   function referens(r) {
     const doi = r.doi ? `<a class="doi" href="https://doi.org/${esc(r.doi)}" target="_blank" rel="noopener">doi:${esc(r.doi)}</a>` : '';
@@ -231,7 +256,7 @@
       ${it.namn !== it.kortnamn ? `<div class="kort-namn">${esc(it.namn)}</div>` : ''}
       ${it.svnamn && it.svnamn !== it.kortnamn ? `<div class="kort-sv"><span>sv.</span> ${esc(it.svnamn)}</div>` : ''}
       ${lista(it.tradition).length ? `<div class="kort-trad">${lista(it.tradition).map(esc).join(' · ')}</div>` : ''}
-      <p>${esc(it.sammanfattning || '')}</p>
+      <p class="nivastyrd">${nivaMarke()}${esc(nivaText(it))}</p>
       <div class="chips">${lista(it.paradigm).map((p) => chip(p, null, 'p')).join('')}${it.ansats ? chip(it.ansats, null, 'p') : ''}${it.analysniva ? chip(it.analysniva, null) : ''}</div>
     </a>`;
   }
@@ -292,6 +317,7 @@
       document.getElementById('tom').hidden = tr.length > 0;
     };
     sok.addEventListener('input', rita); omr.addEventListener('change', rita); if (trad) trad.addEventListener('change', rita); rita();
+    state.omrita = rita;
   }
   function sidDetalj(it) {
     const rel = (ids) => lista(ids).map((id) => state.items[id]).filter(Boolean);
@@ -312,7 +338,7 @@
       <div class="detalj">
         <div class="huvudkol">
           <div class="niva-wrap">${nivaReglage()}</div>
-          <div class="nivainnehall">${nivaInnehall(it)}</div>
+          <div class="nivainnehall nivastyrd">${nivaInnehall(it)}</div>
           ${it.sektioner.map((s) => `<section class="sektion"><h2>${esc(s.titel)}</h2>${markdown(s.text.join('\n'))}</section>`).join('')}
           ${referenser(it)}
         </div>${sido}
@@ -323,7 +349,7 @@
     return `<nav class="brod"><a href="#/">Start</a> / ${esc(sd.namn)}</nav>
       <header class="dethuvud"><h1>${esc(sd.namn)}</h1>${sd.sammanfattning ? `<p class="ingress">${esc(sd.sammanfattning)}</p>` : ''}</header>
       <div class="smal">
-      ${harNivaer ? `<div class="niva-wrap">${nivaReglage()}</div><div class="nivainnehall">${nivaInnehall(sd)}</div>` : ''}
+      ${harNivaer ? `<div class="niva-wrap">${nivaReglage()}</div><div class="nivainnehall nivastyrd">${nivaInnehall(sd)}</div>` : ''}
       ${sd.id === 'metodguide' ? guideSektion(q) : ''}
       ${sd.sektioner.map((s) => `<section class="sektion" id="${slug(s.titel)}"><h2>${esc(s.titel)}</h2>${markdown(s.text.join('\n'))}</section>`).join('')}
       ${referenser(sd)}
@@ -384,7 +410,7 @@
     const huvud = Object.entries(paradigm).sort((x, y) => y[1] - x[1])[0];
     const forslag = (lst, typ) => lst.map(([id], i) => {
       const it = state.items[id];
-      return `<a class="g-forslag${i === 0 ? ' forst' : ''}" href="#/${typ}/${id}"><span class="g-etikett">${i === 0 ? 'Bäst match' : 'Passar också'}</span><b>${esc(it.kortnamn || it.namn)}</b><span>${esc(it.sammanfattning || '')}</span></a>`;
+      return `<a class="g-forslag${i === 0 ? ' forst' : ''}" href="#/${typ}/${id}"><span class="g-etikett">${i === 0 ? 'Bäst match' : 'Passar också'}</span><b>${esc(it.kortnamn || it.namn)}</b><span class="nivastyrd">${nivaMarke()}${esc(nivaText(it))}</span></a>`;
     }).join('');
     return `<section class="g-resultat"><p class="overrubrik">Ditt förslag</p><h3>Din studie i en mening</h3>
       <p class="g-mening">${esc(mening)}</p>
@@ -421,8 +447,41 @@
   }
   const sid404 = () => `<h1>Sidan finns inte</h1><p>Den här sidan kunde inte hittas. <a href="#/">Till startsidan</a></p>`;
 
+  // ---------- Global förklaringsnivå (flytande reglage) ----------
+  function pilotHtml() {
+    const nv = NIVAER[state.niva - 1];
+    return `<div class="pilot-rad"><span class="pilot-etikett">Nivå</span>${NIVAER.map((x) => `<button type="button" data-gniva="${x.n}" class="${x.n === state.niva ? 'vald' : ''}" aria-pressed="${x.n === state.niva}" title="Nivå ${x.r}: ${esc(x.namn)}">${x.r}</button>`).join('')}</div>
+      <div class="pilot-info"><b>${nv.r} · ${esc(nv.namn)}</b><span>${esc(nv.hjalp)}</span><span class="pilot-tips">Gäller hela sajten. Delar märkta <span class="nivamarke">${nv.r}</span> eller med en ram följer nivån.</span></div>`;
+  }
+  function byggPilot() {
+    const el = document.createElement('div');
+    el.id = 'nivapilot'; el.setAttribute('role', 'group'); el.setAttribute('aria-label', 'Förklaringsnivå för hela sajten');
+    el.innerHTML = pilotHtml();
+    document.body.appendChild(el);
+    el.addEventListener('click', (e) => { const b = e.target.closest('[data-gniva]'); if (b) settNiva(+b.dataset.gniva); });
+    const visa = (on) => document.documentElement.classList.toggle('visa-niva', on);
+    el.addEventListener('mouseenter', () => visa(true)); el.addEventListener('mouseleave', () => visa(false));
+    el.addEventListener('focusin', () => visa(true)); el.addEventListener('focusout', () => visa(false));
+  }
+  let blinkTimer;
+  function settNiva(n) {
+    if (n < 1 || n > 4) return;
+    state.niva = n; sparaNiva(n);
+    const pilot = document.getElementById('nivapilot');
+    if (pilot) pilot.innerHTML = pilotHtml();
+    const ae = document.activeElement, fokNiva = ae && app.contains(ae) && ae.closest('.niva') && ae.dataset.niva;
+    if (document.getElementById('lista') && state.omrita) state.omrita();
+    else { const y = window.scrollY; route(true); window.scrollTo(0, y); }
+    if (fokNiva) app.querySelector(`.niva [data-niva="${fokNiva}"]`)?.focus({ preventScroll: true });
+    document.documentElement.classList.add('niva-blink');
+    clearTimeout(blinkTimer); blinkTimer = setTimeout(() => document.documentElement.classList.remove('niva-blink'), 1200);
+    const f = pilot && pilot.querySelector(`[data-gniva="${n}"]`);
+    if (f && pilot.contains(document.activeElement)) f.focus();
+  }
+
   // ---------- Router ----------
-  function route() {
+  function route(behall) {
+    state.omrita = null;
     const [vag, qs] = (location.hash.slice(1) || '/').split('?');
     const q = new URLSearchParams(qs || '');
     const d = vag.split('/').filter(Boolean);
@@ -441,13 +500,14 @@
     document.querySelectorAll('.huvudnav a').forEach((a) => a.classList.toggle('aktiv', a.dataset.sektion === sekt));
     const guideEl = q.has('val') && document.getElementById('guide');
     const tillEl = q.has('till') && document.getElementById(q.get('till'));
+    if (behall === true) return;
     if (guideEl) guideEl.scrollIntoView({ block: 'start' }); else if (tillEl) tillEl.scrollIntoView({ block: 'start' }); else window.scrollTo(0, 0);
     app.focus({ preventScroll: true });
   }
 
   // ---------- Start ----------
   if (new URLSearchParams(location.search).has('embed')) document.documentElement.classList.add('embed');
-  laddaAllt().then(() => { window.addEventListener('hashchange', route); route(); }).catch((e) => {
+  laddaAllt().then(() => { byggPilot(); window.addEventListener('hashchange', () => route()); route(); }).catch((e) => {
     app.innerHTML = `<h1>Innehållet kunde inte laddas</h1><p>${esc(e.message)}</p><p>Om du öppnat filen direkt från datorn (file://) behöver sajten i stället köras via en webbserver, till exempel GitHub Pages eller <code>python3 -m http.server</code>.</p>`;
   });
 })();

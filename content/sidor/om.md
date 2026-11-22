@@ -10,7 +10,9 @@ Sajten är ett studiestöd för kurser i informatik. Den ska hjälpa studenter a
 
 ## Så fungerar nivåerna
 
-Varje teori och metod förklaras på fyra nivåer. Du börjar på nivå 1 och väljer själv när du vill gå djupare med reglaget. Din valda nivå sparas i webbläsaren.
+Varje teori och metod förklaras på fyra nivåer. Du börjar på nivå 1 och väljer själv när du vill gå djupare. Din valda nivå sparas i webbläsaren.
+
+Nivån är en **grundinställning för hela sajten**. Du ändrar den med den lilla nivåväljaren (I–IV) som alltid ligger i nedre högra hörnet, eller med reglaget på en teori- eller metodsida. Allt som följer nivån är märkt med en liten romersk siffra, och när du håller muspekaren över nivåväljaren ramas dessa delar in. På nivå I visar korten en enkel förklaring, på nivå II den vanliga sammanfattningen, på nivå III även nyckelbegrepp och på nivå IV vad forskningen diskuterar.
 
 | Nivå | Namn | Innehåll |
 |---|---|---|
