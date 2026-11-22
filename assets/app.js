@@ -214,7 +214,7 @@
     const n = state.niva, sam = it.sammanfattning || '';
     if (n === 1) {
       const st = stycken(it.nivaer?.[1]).find((x) => !/^([|#>]|[-*] |\d+\.)/.test(x));
-      return st ? kapa(ren(st), 230) : sam;
+      return st ? kapa(ren(st), 230).replace(/:$/, ' …') : sam;
     }
     if (n === 2) return sam;
     if (n === 3) { const k = lista(it.nyckelord).slice(0, 5); return sam + (k.length ? ` Nyckelbegrepp: ${k.join(', ')}.` : ''); }
@@ -323,7 +323,7 @@
       <header class="dethuvud"><p class="overrubrik">${it.typ === 'teori' ? 'Teori' : 'Metod'}${it.upphov ? ' · ' + esc(it.upphov) : ''}</p><h1 lang="${it.svnamn ? 'en' : 'sv'}">${esc(it.namn)}</h1>${it.svnamn ? `<p class="svnamn"><span>På svenska:</span> ${esc(it.svnamn)}</p>` : ''}<p class="ingress">${esc(it.sammanfattning || '')}</p></header>
       <div class="detalj">
         <div class="huvudkol">
-          <div class="nivainnehall nivastyrd">${nivaInnehall(it)}</div>
+          <div class="nivainnehall">${nivaInnehall(it)}</div>
           ${it.sektioner.map((s) => `<section class="sektion"><h2>${esc(s.titel)}</h2>${markdown(s.text.join('\n'))}</section>`).join('')}
           ${referenser(it)}
         </div>${sido}
@@ -334,7 +334,7 @@
     return `<nav class="brod"><a href="#/">Start</a> / ${esc(sd.namn)}</nav>
       <header class="dethuvud"><h1>${esc(sd.namn)}</h1>${sd.sammanfattning ? `<p class="ingress">${esc(sd.sammanfattning)}</p>` : ''}</header>
       <div class="smal">
-      ${harNivaer ? `<div class="nivainnehall nivastyrd">${nivaInnehall(sd)}</div>` : ''}
+      ${harNivaer ? `<div class="nivainnehall">${nivaInnehall(sd)}</div>` : ''}
       ${sd.id === 'metodguide' ? guideSektion(q) : ''}
       ${sd.sektioner.map((s) => `<section class="sektion" id="${slug(s.titel)}"><h2>${esc(s.titel)}</h2>${markdown(s.text.join('\n'))}</section>`).join('')}
       ${referenser(sd)}
@@ -435,12 +435,11 @@
   // ---------- Global förklaringsnivå (flytande reglage) ----------
   function pilotHtml() {
     const nv = NIVAER[state.niva - 1];
-    return `<div class="pilot-rad"><span class="pilot-etikett">Nivå</span>${NIVAER.map((x) => `<button type="button" data-gniva="${x.n}" class="${x.n === state.niva ? 'vald' : ''}" aria-pressed="${x.n === state.niva}" title="Nivå ${x.r}: ${esc(x.namn)}">${x.r}</button>`).join('')}</div>
-      <div class="pilot-info"><b>${nv.r} · ${esc(nv.namn)}</b><span>${esc(nv.hjalp)}</span><span class="pilot-tips">Gäller hela sajten. Kort i guldton, märkta <span class="nivamarke">Nivå ${nv.n}</span>, och texterna på teori- och metodsidorna följer valet.</span></div>`;
+    return `<div class="pilot-rad"><span class="pilot-etikett">Nivå</span>${NIVAER.map((x) => `<button type="button" data-gniva="${x.n}" class="${x.n === state.niva ? 'vald' : ''}" aria-pressed="${x.n === state.niva}" title="Nivå ${x.r}: ${esc(x.namn)}">${x.r}</button>`).join('')}</div>`;
   }
   function byggPilot() {
     const el = document.createElement('div');
-    el.id = 'nivapilot'; el.setAttribute('role', 'group'); el.setAttribute('aria-label', 'Förklaringsnivå för hela sajten');
+    el.id = 'nivapilot'; el.setAttribute('role', 'group'); el.setAttribute('aria-label', 'Förklaringsnivå för hela sajten'); el.title = 'Förklaringsnivå för hela sajten. Texter på guldfärgad platta följer valet.';
     el.innerHTML = pilotHtml();
     document.body.appendChild(el);
     const hojd = () => { const h = document.querySelector('.sidhuvud'); const nere = h && h.offsetParent !== null ? Math.max(0, h.getBoundingClientRect().bottom) : 0; el.style.top = Math.max(8, nere + 10) + 'px'; };

@@ -257,14 +257,10 @@ details.embed input, details.embed textarea { font-size: .8rem; }
 :root { --niva-yta: #f5eedb; --niva-kant: #c9b06a; --niva-etikett: #6e5716; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --niva-yta: #25211a; --niva-kant: #7d6a36; --niva-etikett: #e3c983; } }
 :root[data-theme="dark"] { --niva-yta: #25211a; --niva-kant: #7d6a36; --niva-etikett: #e3c983; }
-.kort.nivakort, .g-forslag.nivakort { background: var(--niva-yta); border-color: var(--niva-kant); }
-.kort.nivakort { border-top-color: var(--black); }
-a.kort.nivakort:hover { border-top-color: var(--accent); }
-.g-forslag.nivakort.forst { border-color: var(--accent); }
 .nivamarke { display: inline-block; width: fit-content; margin: 0 0 6px; padding: 2px 9px; border-radius: 999px; background: var(--niva-etikett); color: var(--niva-yta); font-family: var(--ui); font-size: .72rem; font-weight: 700; letter-spacing: .04em; line-height: 1.5; white-space: nowrap; }
 p.nivastyrd > .nivamarke, span.nivastyrd > .nivamarke { display: table; }
 .nivastyrd { transition: box-shadow .25s, background-color .25s; border-radius: 4px; }
-.visa-niva .nivakort, .niva-blink .nivakort, .visa-niva .nivainnehall, .niva-blink .nivainnehall { box-shadow: 0 0 0 2px var(--papper), 0 0 0 4px var(--niva-kant); }
+.visa-niva .nivastyrd, .niva-blink .nivastyrd, .visa-niva .nivablock, .niva-blink .nivablock { box-shadow: 0 0 0 2px var(--papper), 0 0 0 4px var(--niva-kant); }
 #nivapilot { position: fixed; right: 16px; top: 12px; z-index: 20; background: var(--yta); border: 1px solid var(--niva-kant); border-radius: 12px; box-shadow: 0 6px 24px rgba(20, 24, 34, .18); font-family: var(--ui); max-width: calc(100vw - 32px); }
 .pilot-rad { display: flex; align-items: center; gap: 4px; padding: 6px; }
 .pilot-etikett { font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--niva-etikett); padding: 0 6px 0 4px; }
@@ -277,7 +273,6 @@ p.nivastyrd > .nivamarke, span.nivastyrd > .nivamarke { display: table; }
 .pilot-info span { display: block; }
 .pilot-tips { margin-top: 6px; font-size: .76rem; }
 .pilot-tips .nivamarke { display: inline-block; margin: 0 .15em; font-size: .66rem; padding: 0 6px; }
-#nivapilot:hover .pilot-info, #nivapilot:focus-within .pilot-info { display: block; }
 @media (max-width: 600px) {
   #nivapilot { right: 12px; }
   #nivapilot button { min-width: 34px; height: 32px; }
@@ -289,3 +284,11 @@ p.nivastyrd > .nivamarke, span.nivastyrd > .nivamarke { display: table; }
 .niva-nav .lank { font: 600 .92rem var(--ui); }
 .niva-nav .klar { margin: 0 0 0 auto; }
 .nivablock { scroll-margin-top: 120px; }
+
+/* Färgplatta bakom nivåstyrd text */
+p.nivastyrd, span.nivastyrd { background: var(--niva-yta); border: 1px solid var(--niva-kant); border-radius: 8px; padding: 10px 12px 12px; margin: 6px 0 12px; }
+.g-forslag > span.nivastyrd:last-child { color: var(--black); }
+.nivablock { background: var(--niva-yta); border: 1px solid var(--niva-kant); border-left-width: 4px; border-radius: 8px; padding: 16px 22px 8px; }
+.nivablock.n1 { border-left-color: var(--n1); } .nivablock.n2 { border-left-color: var(--n2); } .nivablock.n3 { border-left-color: var(--n3); } .nivablock.n4 { border-left-color: var(--n4); }
+.nivablock .tabell, .nivablock table { background: var(--yta); }
+@media (max-width: 600px) { .nivablock { padding: 14px 14px 6px; } }
