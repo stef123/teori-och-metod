@@ -20,6 +20,8 @@ jobs:
           node-version: 20
       - name: Bygg innehållsindex och kontrollera filerna
         run: node tools/bygg-index.mjs
+      - name: Versionsmärk CSS och JS så att webbläsare hämtar nya filer
+        run: sed -i "s/__VERSION__/${GITHUB_SHA::8}/g" index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
