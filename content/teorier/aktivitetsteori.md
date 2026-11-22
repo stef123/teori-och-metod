@@ -6,14 +6,14 @@ svnamn: Aktivitetsteori
 upphov: Vygotskij, Leontiev; Engeström (1987)
 ar: 1987
 paradigm: [Tolkande, Kritisk]
-tradition: [Psykologi och socialpsykologi, Design och HCI]
+tradition: [Psykologi och socialpsykologi, Design och HCI, Lärande och pedagogik]
 analysniva: Aktivitetssystem
 disciplin: Psykologi (kulturhistorisk skola)
 sammanfattning: Studerar mänsklig verksamhet som ett system där människor med hjälp av verktyg arbetar mot ett mål, inom regler, gemenskaper och arbetsdelning.
 nyckelord: [aktivitetssystem, mediering, verktyg, motsättningar, expansivt lärande, Engeström]
 omraden: [Människa–datorinteraktion, Samarbete och CSCW, Utbildning och lärplattformar, Systemutveckling, E-hälsa]
 metoder: [fallstudie, etnografi, intervju, aktionsforskning]
-relaterade: [strukturation, ant]
+relaterade: [strukturation, ant, sociokulturellt]
 referenser:
   - forfattare: Engeström, Y.
     ar: 1987

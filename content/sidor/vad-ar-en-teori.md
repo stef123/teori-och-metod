@@ -114,8 +114,9 @@ Teorier växer fram i olika forskningstraditioner. Varje tradition har sina typi
 | **Design och HCI** | Hur kan vi förstå och forma interaktionen mellan människor och teknik? | [[designansatser]], [[affordanser]], [[aktivitetsteori]] |
 | **IS och management** | Hur skapar informationssystem nytta och förändring i organisationer? | [[delone-mclean]], [[utaut]], [[plattformisering]] |
 | **Medie- och kommunikationsvetenskap** | Hur använder vi medier, och hur förändrar medier samhället? | [[uses-and-gratifications]], [[medialisering]], [[domesticering]], [[context-collapse]] |
+| **Lärande och pedagogik** | Hur lär sig människor med och genom teknik, och hur kan undervisning utformas? | [[sociokulturellt]], [[communities-of-practice]], [[community-of-inquiry]], [[tpack]], [[cognitive-load]] |
 
-**Varför spelar det roll?** Traditionen avgör ofta vilka metoder som passar. Fenomenologiska teorier kombineras med [[fenomenologisk-metod]] eller [[ipa]], psykologiska modeller ofta med [[enkat]], och sociologiska och STS-teorier med [[intervju]], [[etnografi]] och [[fallstudie]]. Att veta var en teori kommer ifrån hjälper dig också att förstå kritiken mot den: den kommer ofta från en annan tradition.
+**Varför spelar det roll?** Traditionen avgör ofta vilka metoder som passar. Fenomenologiska teorier kombineras med [[fenomenologisk-metod]] eller [[ipa]], psykologiska modeller och lärandeteorier som [[cognitive-load]] ofta med [[enkat]], och sociologiska och STS-teorier med [[intervju]], [[etnografi]] och [[fallstudie]]. Att veta var en teori kommer ifrån hjälper dig också att förstå kritiken mot den: den kommer ofta från en annan tradition.
 
 ## Checklista: har jag använt teori på ett bra sätt?
 

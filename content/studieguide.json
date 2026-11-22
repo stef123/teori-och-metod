@@ -57,7 +57,9 @@
             "distribuerad-kognition": 1,
             "symbolisk-interaktionism": 1,
             "postfenomenologi": 1,
-            "dramaturgi": 1
+            "dramaturgi": 1,
+            "sociokulturellt": 1,
+            "communities-of-practice": 1
           },
           "metoder": {
             "intervju": 2,
@@ -90,7 +92,9 @@
             "delone-mclean": 1,
             "social-presence": 2,
             "parasocial-interaction": 1,
-            "praktikteori": 1
+            "praktikteori": 1,
+            "cognitive-load": 1,
+            "community-of-inquiry": 1
           },
           "metoder": {
             "enkat": 3
@@ -115,7 +119,10 @@
             "delone-mclean": 3,
             "affordanser": 1,
             "tam": 1,
-            "social-presence": 1
+            "social-presence": 1,
+            "community-of-inquiry": 1,
+            "samr": 1,
+            "cognitive-load": 1
           },
           "metoder": {
             "enkat": 2,
@@ -141,7 +148,9 @@
           "teorier": {
             "designansatser": 2,
             "aktivitetsteori": 2,
-            "strukturation": 1
+            "strukturation": 1,
+            "experiential-learning": 1,
+            "tpack": 1
           },
           "metoder": {
             "aktionsforskning": 3,
@@ -177,7 +186,9 @@
             "designansatser": 1,
             "affordanser": 1,
             "tam": 1,
-            "ready-to-hand": 1
+            "ready-to-hand": 1,
+            "cognitive-load": 2,
+            "konstruktionism": 1
           },
           "metoder": {
             "designvetenskap": 3
@@ -200,7 +211,8 @@
           "gregor": "Typ V, design och handling",
           "teorier": {
             "designansatser": 3,
-            "aktivitetsteori": 1
+            "aktivitetsteori": 1,
+            "experiential-learning": 1
           },
           "metoder": {
             "aktionsforskning": 2,
@@ -229,7 +241,8 @@
             "designansatser": 1,
             "embodied-interaction": 2,
             "ready-to-hand": 1,
-            "postfenomenologi": 1
+            "postfenomenologi": 1,
+            "konstruktionism": 2
           },
           "metoder": {
             "designvetenskap": 2,
@@ -279,10 +292,30 @@
             "affordanser": 1,
             "designansatser": 1,
             "ready-to-hand": 1,
-            "symbolisk-interaktionism": 1
+            "symbolisk-interaktionism": 1,
+            "communities-of-practice": 1
           },
           "metoder": {
             "etnografi": 1,
+            "fallstudie": 1
+          }
+        },
+        {
+          "id": "larande",
+          "text": "Lärande och undervisning med teknik",
+          "beskrivning": "Hur studenter, elever, lärare eller anställda lär sig med digitala verktyg och miljöer.",
+          "fras": "med fokus på lärande och undervisning",
+          "teorier": {
+            "sociokulturellt": 3,
+            "community-of-inquiry": 2,
+            "tpack": 2,
+            "communities-of-practice": 1,
+            "cognitive-load": 1,
+            "konstruktionism": 1
+          },
+          "metoder": {
+            "intervju": 1,
+            "enkat": 1,
             "fallstudie": 1
           }
         },
@@ -385,7 +418,8 @@
             "distribuerad-kognition": 1,
             "embodied-interaction": 2,
             "scot": 1,
-            "postfenomenologi": 1
+            "postfenomenologi": 1,
+            "cognitive-load": 1
           },
           "metoder": {
             "designvetenskap": 1
@@ -412,7 +446,10 @@
             "uses-and-gratifications": 1,
             "delone-mclean": 1,
             "social-presence": 1,
-            "parasocial-interaction": 1
+            "parasocial-interaction": 1,
+            "community-of-inquiry": 1,
+            "tpack": 1,
+            "cognitive-load": 1
           },
           "metoder": {
             "enkat": 3
@@ -442,7 +479,9 @@
             "sociomaterialitet": 1,
             "aktivitetsteori": 1,
             "embodied-interaction": 1,
-            "symbolisk-interaktionism": 1
+            "symbolisk-interaktionism": 1,
+            "sociokulturellt": 1,
+            "communities-of-practice": 1
           },
           "metoder": {
             "etnografi": 3,
@@ -477,6 +516,9 @@
           "metoder": {
             "designvetenskap": 1,
             "intervju": 2
+          },
+          "teorier": {
+            "cognitive-load": 1
           }
         },
         {
@@ -531,7 +573,9 @@
             "diffusion": 1,
             "ant": 1,
             "medialisering": 2,
-            "scot": 1
+            "scot": 1,
+            "communities-of-practice": 1,
+            "experiential-learning": 1
           },
           "metoder": {
             "fallstudie": 1,

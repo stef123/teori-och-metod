@@ -8,7 +8,7 @@ passar: Du vill förändra en verksamhet tillsammans med deltagarna och samtidig
 sammanfattning: Forskning där forskare och praktiker tillsammans genomför en förändring i cykler, och där lärandet från förändringen är forskningsresultatet.
 nyckelord: [aktion, intervention, cykel, deltagande, canonical action research, ADR]
 omraden: [Organisationsförändring, Systemutveckling, Utbildning och lärplattformar, E-hälsa, Digital förvaltning]
-teorier: [aktivitetsteori, designansatser]
+teorier: [aktivitetsteori, designansatser, tpack, experiential-learning]
 relaterade: [designvetenskap, fallstudie]
 referenser:
   - forfattare: Susman, G. I. & Evered, R. D.

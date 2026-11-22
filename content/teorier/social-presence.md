@@ -13,7 +13,7 @@ sammanfattning: Handlar om i vilken grad man upplever den andra personen som ver
 nyckelord: [social närvaro, medierikedom, distansutbildning, videomöten, e-handel, förtroende, chattbot, avatar, VR]
 omraden: [Utbildning och lärplattformar, E-handel och digitala tjänster, Samarbete och CSCW, Människa–datorinteraktion, AI och automatisering]
 metoder: [enkat, designvetenskap, intervju]
-relaterade: [parasocial-interaction, tam, embodied-interaction, uses-and-gratifications]
+relaterade: [parasocial-interaction, tam, embodied-interaction, uses-and-gratifications, community-of-inquiry]
 referenser:
   - forfattare: Short, J., Williams, E. & Christie, B.
     ar: 1976

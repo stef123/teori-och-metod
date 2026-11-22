@@ -8,7 +8,7 @@ passar: Du vill förstå människors erfarenheter, tolkningar och resonemang
 sammanfattning: Samtal där forskaren genom öppna frågor försöker förstå hur människor upplever och tolkar något, ofta analyserade med tematisk analys.
 nyckelord: [intervju, semistrukturerad, intervjuguide, tematisk analys, kodning, transkribering]
 omraden: [Systemimplementering, E-hälsa, Organisationsförändring, Människa–datorinteraktion, Utbildning och lärplattformar, Digital förvaltning, Medier och vardagsliv, Sociala medier och plattformar, Digital ojämlikhet]
-teorier: [strukturation, aktivitetsteori, ant, sociomaterialitet, diffusion, domesticering, uses-and-gratifications, plattformisering, designansatser, affordanser, postfenomenologi, embodied-interaction, ready-to-hand, dramaturgi, symbolisk-interaktionism, scot, praktikteori, medialisering, social-presence, parasocial-interaction, context-collapse]
+teorier: [strukturation, aktivitetsteori, ant, sociomaterialitet, diffusion, domesticering, uses-and-gratifications, plattformisering, designansatser, affordanser, postfenomenologi, embodied-interaction, ready-to-hand, dramaturgi, symbolisk-interaktionism, scot, praktikteori, medialisering, social-presence, parasocial-interaction, context-collapse, sociokulturellt, konstruktionism, communities-of-practice, community-of-inquiry, tpack, samr, connectivism, experiential-learning]
 relaterade: [fallstudie, etnografi, fenomenologisk-metod, ipa]
 referenser:
   - forfattare: Myers, M. D. & Newman, M.

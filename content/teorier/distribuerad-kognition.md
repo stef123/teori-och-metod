@@ -13,7 +13,7 @@ sammanfattning: Ser tänkande och problemlösning som något som sker i hela sys
 nyckelord: [kognition, representationer, artefakter, samarbete, Hutchins, cockpit, DiCoT]
 omraden: [Människa–datorinteraktion, Samarbete och CSCW, E-hälsa, Systemutveckling, AI och automatisering]
 metoder: [etnografi, fallstudie, intervju]
-relaterade: [aktivitetsteori, affordanser, ant, embodied-interaction]
+relaterade: [aktivitetsteori, affordanser, ant, embodied-interaction, cognitive-load, sociokulturellt]
 referenser:
   - forfattare: Hutchins, E.
     ar: 1995

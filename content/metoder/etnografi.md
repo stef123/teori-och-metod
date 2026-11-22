@@ -8,7 +8,7 @@ passar: Du vill förstå vardagliga praktiker och kultur inifrån, under en län
 sammanfattning: Forskaren vistas under en längre tid i en miljö och observerar och deltar för att förstå människors praktiker och perspektiv inifrån.
 nyckelord: [etnografi, deltagande observation, fältarbete, fältanteckningar, praktik, kultur, netnografi]
 omraden: [Samarbete och CSCW, Människa–datorinteraktion, Organisationsförändring, Systemutveckling, E-hälsa, Medier och vardagsliv, Sociala medier och plattformar]
-teorier: [sociomaterialitet, ant, aktivitetsteori, strukturation, domesticering, distribuerad-kognition, plattformisering, affordanser, postfenomenologi, embodied-interaction, ready-to-hand, dramaturgi, symbolisk-interaktionism, scot, praktikteori, medialisering, parasocial-interaction, context-collapse]
+teorier: [sociomaterialitet, ant, aktivitetsteori, strukturation, domesticering, distribuerad-kognition, plattformisering, affordanser, postfenomenologi, embodied-interaction, ready-to-hand, dramaturgi, symbolisk-interaktionism, scot, praktikteori, medialisering, parasocial-interaction, context-collapse, sociokulturellt, konstruktionism, communities-of-practice, connectivism]
 relaterade: [fallstudie, intervju, fenomenologisk-metod]
 referenser:
   - forfattare: Myers, M. D.
